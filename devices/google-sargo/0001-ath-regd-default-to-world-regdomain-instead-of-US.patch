@@ -1,0 +1,39 @@
+--- a/drivers/net/wireless/ath/regd.c
++++ b/drivers/net/wireless/ath/regd.c
+@@ -654,9 +654,15 @@
+ 		/*
+ 		 * This gets applied in the case of the absence of CRDA,
+ 		 * it's our own custom world regulatory domain, similar to
+-		 * cfg80211's but we enable passive scanning.
++		 * cfg80211's but we enable passive scanning. Omnipha: use
++		 * the world domain with 2.4 GHz channels 12/13 (NO_IR).
++		 * The default ath_default_world_regdomain() (0x64) has no
++		 * rule for 2472 MHz, so channel 13 gets IEEE80211_CHAN_DISABLED
++		 * baked into orig_flags as a STRICT_REG base and can never be
++		 * re-enabled by a DE regdomain. Needed for Google Pixel 3a
++		 * (sargo), WLAN MINDSTORMS on channel 13.
+ 		 */
+-		regd = ath_default_world_regdomain();
++		regd = &ath_world_regdom_63_65;
+ 	}
+ 
+ 	wiphy_apply_custom_regulatory(wiphy, regd);
+@@ -702,9 +708,15 @@
+ 
+ 	if (reg->country_code == CTRY_DEFAULT &&
+ 	    regdmn == CTRY_DEFAULT) {
+-		printk(KERN_DEBUG "ath: EEPROM indicates default "
+-		       "country code should be used\n");
+-		reg->country_code = CTRY_UNITED_STATES;
++		/* Omnipha: unprogrammed EEPROM regdomain (0x0) used to force
++		 * CTRY_UNITED_STATES, which hard-disables channels 12/13 for
++		 * users with a DE regdomain. Use WOR5_ETSIC (0x65) instead:
++		 * its world regdomain ath_world_regdom_63_65 contains
++		 * 2.4 GHz channels 12/13 (NO_IR), so channel 13 stays
++		 * usable. Needed for Google Pixel 3a (sargo), WLAN
++		 * MINDSTORMS on channel 13.
++		 */
++		regdmn = 0x65;
+ 	}
+ 
+ 	if (reg->country_code == CTRY_DEFAULT) {
