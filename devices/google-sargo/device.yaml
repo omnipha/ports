@@ -12,10 +12,10 @@ kernel:
 status:
   boot: works
   ssh: works
-  wifi: partial  # ath10k/WCN3990; regdom patch pending, see below
+  wifi: works    # ath10k/WCN3990, regdom patch applied; 5 GHz DFS still crashes fw
   display: works
   gpu: works     # Adreno 615
-  ui: partial    # Phosh boots with greetd autologin, no lockscreen
+  ui: works      # Phosh, greetd autologin, no lockscreen
   touchscreen: untested
   audio: untested
   bluetooth: untested
@@ -30,11 +30,12 @@ image: images/google-sargo
 
 notes: >
   wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver
-  maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. The AP uses
-  ch 13. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch
-  maps the unprogrammed EEPROM to world regdomain 0x64 (same state as
-  xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes
-  wlan firmware (halphy_caldb.c assertion), unpatched.
+  maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. Patch
+  0001-ath-regd-default-to-world-regdomain-instead-of-US.patch maps the
+  unprogrammed EEPROM to world regdomain 0x64 (same state as xiaomi-laurel).
+  Applied and verified 2026-10-18: MINDSTORMS (ch 13) connects, host is
+  resolvable via Fritzbox DNS. 5 GHz (DFS ch 116) still crashes wlan firmware
+  (halphy_caldb.c assertion) — separate issue, not fixed by the regdom patch.
 
 variants:
 - ram_gb: 4
