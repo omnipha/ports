@@ -1,0 +1,27 @@
+codename: samsung-beyond1lte
+name: Galaxy S10 (Exynos)
+vendor: Samsung
+year: 2019
+soc: exynos9820
+soc_name: Exynos 9820
+variants:
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: beyond1lte
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: generic-image
+    image: generic-exynos9820
+    note: boots from the shared SoC image; no own device package
+    source: pmaports-mirror
+    url: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing
+    checked: '2026-10-18'

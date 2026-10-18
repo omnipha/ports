@@ -1,0 +1,29 @@
+codename: asus-zs620kl
+name: ZenFone 5z
+vendor: Asus
+year: 2018
+soc: sdm845
+soc_name: Snapdragon 845
+variants:
+- ram_gb: 4
+  storage_gb: 64
+- ram_gb: 6
+  storage_gb: 64
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: zs620kl
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: generic-image
+    image: generic-sdm845
+    note: boots from the shared SoC image; no own device package
+    source: pmaports-mirror
+    url: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing
+    checked: '2026-10-18'
