@@ -27,6 +27,14 @@ Verified 2026-10-18: channel 13 (2472 MHz) WPA2 connects with
 regdomain; on this unit starting a vdev there crashes the ath10k_snoc firmware
 (`halphy_caldb.c` assertion). Treat 5 GHz DFS as broken until proven otherwise.
 
+## USB host
+
+The USB-C controller has no runtime role switch. Changing only `dr_mode` from
+`peripheral` to `host` in the boot DTB enables xHCI host mode. Verified
+2026-10-19 through a powered hub: USB Ethernet (RTL8152), a card reader and a
+video adapter enumerate. Gadget networking is unavailable while host mode is
+active, and VBUS output without external hub power is untested.
+
 ## Build your own image (generic, no private data)
 
 ```sh

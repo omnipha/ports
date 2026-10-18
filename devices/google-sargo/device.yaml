@@ -19,11 +19,12 @@ status:
   touchscreen: untested
   audio: untested
   bluetooth: untested
-  cameras: untested
+  cameras: partial # IMX363 rear and IMX355 front capture through libcamera
   modem: partial # MPSS remoteproc running
-  sensors: untested
+  sensors: partial # tilt, light, proximity, temperature and battery measured
   gps: untested
-  nfc: works     # NXP NFC per upstream port, untested by us
+  nfc: partial # NXP controller detects a MIFARE Type 2 tag; NDEF payload not read
+  usb_host: works # dr_mode=host; powered hub, Ethernet, card reader and video adapter detected
 profiles: [server, agent-host]
 flash: fastboot
 image: images/google-sargo
@@ -36,6 +37,10 @@ notes: >
   Verified 2026-10-18: a WPA2 network on channel 13 (2472 MHz) connects with
   options cfg80211 ieee80211_regdom=DE. 5 GHz (DFS ch 116) crashes wlan firmware
   (halphy_caldb.c assertion) — separate issue, not fixed by the regdom patch.
+  USB-C has no runtime role switch on this port. Setting dr_mode to host in the
+  boot DTB enables xHCI host mode: a powered hub exposed a USB Ethernet adapter,
+  card reader and video adapter. Gadget mode and its 172.16.42.1 interface are
+  unavailable in that boot. VBUS without an externally powered hub is untested.
 
 variants:
 - ram_gb: 4
