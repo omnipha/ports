@@ -8,8 +8,11 @@ variants:
 - ram_gb: 6
   storage_gb: 128
 - ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
   storage_gb: 256
-
+- ram_gb: 12
+  storage_gb: 256
 upstream_os:
   ut:
     key: alioth
@@ -19,6 +22,6 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: 'port candidate added 2026-10-19: no mainline device tree yet, see note'
+    note: port candidate; Poco F3 sold only as 6/128 and 8/256, Redmi K40 (CN) adds 8/128 and 12/256
     source: pmaports-mirror
     checked: '2026-10-19'
