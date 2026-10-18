@@ -5,11 +5,12 @@ year: 2019
 soc: sm8150
 soc_name: Snapdragon 855
 variants:
-- ram_gb: 8
+- ram_gb: 6
+  storage_gb: 64
+- ram_gb: 6
   storage_gb: 128
 - ram_gb: 8
   storage_gb: 256
-
 upstream_os:
   ut:
     key: raphael
@@ -19,6 +20,6 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: 'port candidate added 2026-10-19: no mainline device tree yet, see note'
+    note: port candidate; K20 Pro Premium (CN) adds 12/512 with SD855+ as separate model
     source: pmaports-mirror
     checked: '2026-10-19'

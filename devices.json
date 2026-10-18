@@ -898,6 +898,36 @@
     }
   },
   {
+    "id": "oppo-cph2009",
+    "codename": "oppo-cph2009",
+    "name": "Find X2 Neo",
+    "vendor": "Oppo",
+    "year": 2020,
+    "soc": "sm7250",
+    "soc_name": "Snapdragon 765G",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cph2009",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "port candidate added 2026-10-19: no mainline device tree yet, see note",
+        "source": "pmaports-mirror",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oppo-cph2025",
     "codename": "oppo-cph2025",
     "name": "Find X2 Pro",
@@ -914,36 +944,6 @@
     "upstream_os": {
       "ut": {
         "key": "cph2025",
-        "listed": false,
-        "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
-      },
-      "nura": {
-        "status": "unverified",
-        "image": "none",
-        "note": "port candidate added 2026-10-19: no mainline device tree yet, see note",
-        "source": "pmaports-mirror",
-        "checked": "2026-10-19"
-      }
-    }
-  },
-  {
-    "id": "oppo-cph2065",
-    "codename": "oppo-cph2065",
-    "name": "Find X2 Neo",
-    "vendor": "Oppo",
-    "year": 2020,
-    "soc": "sm7250",
-    "soc_name": "Snapdragon 765G",
-    "variants": [
-      {
-        "ram_gb": 12,
-        "storage_gb": 256
-      }
-    ],
-    "upstream_os": {
-      "ut": {
-        "key": "cph2065",
         "listed": false,
         "source": "devices.ubuntu-touch.io",
         "checked": "2026-10-19"
@@ -1426,6 +1426,10 @@
       {
         "ram_gb": 12,
         "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
       }
     ],
     "upstream_os": {
@@ -1877,7 +1881,15 @@
       },
       {
         "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
         "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 128
       }
     ],
     "upstream_os": {
@@ -2129,7 +2141,11 @@
     "soc_name": "Snapdragon 855",
     "variants": [
       {
-        "ram_gb": 8,
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
         "storage_gb": 128
       },
       {
@@ -2147,7 +2163,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "port candidate added 2026-10-19: no mainline device tree yet, see note",
+        "note": "port candidate; K20 Pro Premium (CN) adds 12/512 with SD855+ as separate model",
         "source": "pmaports-mirror",
         "checked": "2026-10-19"
       }

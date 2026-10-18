@@ -1,4 +1,4 @@
-codename: oppo-cph2065
+codename: oppo-cph2009
 name: Find X2 Neo
 vendor: Oppo
 year: 2020
@@ -7,10 +7,9 @@ soc_name: Snapdragon 765G
 variants:
 - ram_gb: 12
   storage_gb: 256
-
 upstream_os:
   ut:
-    key: cph2065
+    key: cph2009
     listed: false
     source: devices.ubuntu-touch.io
     checked: '2026-10-19'

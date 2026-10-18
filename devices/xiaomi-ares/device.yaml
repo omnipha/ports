@@ -13,7 +13,8 @@ variants:
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 128
-
+- ram_gb: 12
+  storage_gb: 256
 upstream_os:
   ut:
     key: ares
