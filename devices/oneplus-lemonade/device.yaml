@@ -1,0 +1,24 @@
+codename: oneplus-lemonade
+name: OnePlus 9
+vendor: OnePlus
+year: 2021
+soc: sm8350
+soc_name: Snapdragon 888
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: lemonade
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 24.0; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

@@ -1,0 +1,22 @@
+codename: xiaomi-ursa
+name: Mi 8 Explorer Edition
+vendor: Xiaomi
+year: 2018
+soc: sdm845
+soc_name: Snapdragon 845
+variants:
+- ram_gb: 8
+  storage_gb: 128
+
+upstream_os:
+  ut:
+    key: ursa
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 22.2 (EOL); China only; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

@@ -1,0 +1,28 @@
+codename: xiaomi-diting
+name: Xiaomi 12T Pro / Redmi K50 Ultra
+vendor: Xiaomi
+year: 2022
+soc: sm8475
+soc_name: Snapdragon 8+ Gen 1
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: diting
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 24.0; DE sold; 8/256 seen 140-150 EUR; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

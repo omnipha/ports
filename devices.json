@@ -818,6 +818,44 @@
     }
   },
   {
+    "id": "oneplus-avicii",
+    "codename": "oneplus-avicii",
+    "name": "OnePlus Nord",
+    "vendor": "OnePlus",
+    "year": 2020,
+    "soc": "sm7250",
+    "soc_name": "Snapdragon 765G",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "avicii",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 21 (EOL); huge DE sales; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-billie",
     "codename": "oneplus-billie",
     "aliases": [
@@ -1026,6 +1064,116 @@
     }
   },
   {
+    "id": "oneplus-guacamoleb",
+    "codename": "oneplus-guacamoleb",
+    "name": "OnePlus 7",
+    "vendor": "OnePlus",
+    "year": 2019,
+    "soc": "sm8150",
+    "soc_name": "Snapdragon 855",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "guacamoleb",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-hotdog",
+    "codename": "oneplus-hotdog",
+    "name": "OnePlus 7T Pro",
+    "vendor": "OnePlus",
+    "year": 2019,
+    "soc": "sm8150",
+    "soc_name": "Snapdragon 855+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "hotdog",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; McLaren 12/256 seen at 169 EUR; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-instantnoodle",
+    "codename": "oneplus-instantnoodle",
+    "name": "OnePlus 8",
+    "vendor": "OnePlus",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "instantnoodle",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-instantnoodlep",
     "codename": "oneplus-instantnoodlep",
     "name": "OnePlus 8 Pro",
@@ -1096,6 +1244,78 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oneplus-lemonade",
+    "codename": "oneplus-lemonade",
+    "name": "OnePlus 9",
+    "vendor": "OnePlus",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "lemonade",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-lemonadep",
+    "codename": "oneplus-lemonadep",
+    "name": "OnePlus 9 Pro",
+    "vendor": "OnePlus",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "lemonadep",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -1919,6 +2139,78 @@
     }
   },
   {
+    "id": "xiaomi-cmi",
+    "codename": "xiaomi-cmi",
+    "name": "Mi 10 Pro",
+    "vendor": "Xiaomi",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cmi",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; DE sold; 8/256 seen at 95 EUR; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-cupid",
+    "codename": "xiaomi-cupid",
+    "name": "Xiaomi 12",
+    "vendor": "Xiaomi",
+    "year": 2021,
+    "soc": "sm8450",
+    "soc_name": "Snapdragon 8 Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cupid",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; DE sold; compact flagship; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-daisy",
     "codename": "xiaomi-daisy",
     "aliases": [
@@ -1983,6 +2275,48 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-diting",
+    "codename": "xiaomi-diting",
+    "name": "Xiaomi 12T Pro / Redmi K50 Ultra",
+    "vendor": "Xiaomi",
+    "year": 2022,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "diting",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; DE sold; 8/256 seen 140-150 EUR; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -2536,6 +2870,90 @@
     }
   },
   {
+    "id": "xiaomi-munch",
+    "codename": "xiaomi-munch",
+    "name": "POCO F4 / Redmi K40S",
+    "vendor": "Xiaomi",
+    "year": 2022,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 870",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "munch",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 23.2; F4 GT is a different device; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-perseus",
+    "codename": "xiaomi-perseus",
+    "name": "Mi MIX 3",
+    "vendor": "Xiaomi",
+    "year": 2018,
+    "soc": "sdm845",
+    "soc_name": "Snapdragon 845",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 10,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "perseus",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 22.2 (EOL); 10GB only Palace Pig edition CN; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-pipa",
     "codename": "xiaomi-pipa",
     "name": "Pad 6",
@@ -2686,6 +3104,48 @@
     }
   },
   {
+    "id": "xiaomi-shark",
+    "codename": "xiaomi-shark",
+    "name": "Black Shark",
+    "vendor": "Xiaomi",
+    "year": 2018,
+    "soc": "sdm845",
+    "soc_name": "Snapdragon 845",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "shark",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 22.2 (EOL); gaming phone; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-socrates",
     "codename": "xiaomi-socrates",
     "name": "Redmi K60 Pro",
@@ -2811,6 +3271,44 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-thyme",
+    "codename": "xiaomi-thyme",
+    "name": "Mi 10S",
+    "vendor": "Xiaomi",
+    "year": 2021,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 870",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "thyme",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 23.2; China only; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -2949,6 +3447,36 @@
     }
   },
   {
+    "id": "xiaomi-ursa",
+    "codename": "xiaomi-ursa",
+    "name": "Mi 8 Explorer Edition",
+    "vendor": "Xiaomi",
+    "year": 2018,
+    "soc": "sdm845",
+    "soc_name": "Snapdragon 845",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "ursa",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 22.2 (EOL); China only; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-vayu",
     "codename": "xiaomi-vayu",
     "name": "Poco X3 Pro",
@@ -2980,6 +3508,44 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-venus",
+    "codename": "xiaomi-venus",
+    "name": "Mi 11",
+    "vendor": "Xiaomi",
+    "year": 2020,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "venus",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 23.2; DE sold; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -3115,6 +3681,40 @@
         "status": "unverified",
         "image": "none",
         "note": "official LineageOS 24.0 (xaga); family variants per LineageOS wiki: X4 GT 8/128+8/256, Note 11T Pro 6/8/12 GB up to 512, Pro+ 8 GB up to 512, K50i 6/8; MediaTek MT6895, no mainline DT; top self-porting candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-zeus",
+    "codename": "xiaomi-zeus",
+    "name": "Xiaomi 12 Pro",
+    "vendor": "Xiaomi",
+    "year": 2021,
+    "soc": "sm8450",
+    "soc_name": "Snapdragon 8 Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "zeus",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; DE sold; port candidate",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }

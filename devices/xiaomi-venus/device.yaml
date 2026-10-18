@@ -1,0 +1,26 @@
+codename: xiaomi-venus
+name: Mi 11
+vendor: Xiaomi
+year: 2020
+soc: sm8350
+soc_name: Snapdragon 888
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: venus
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 23.2; DE sold; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

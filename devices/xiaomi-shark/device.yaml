@@ -1,0 +1,28 @@
+codename: xiaomi-shark
+name: Black Shark
+vendor: Xiaomi
+year: 2018
+soc: sdm845
+soc_name: Snapdragon 845
+variants:
+- ram_gb: 6
+  storage_gb: 64
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: shark
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 22.2 (EOL); gaming phone; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'
