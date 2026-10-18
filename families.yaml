@@ -1,0 +1,52 @@
+# Generic SoC image families (postmarketOS-style shared device packages).
+# Facts below are read from the pmaports tree (commit dfb010f5b, checked 2026-10-18).
+# Coverage rule: only exynos9820 names devices explicitly (provides=).
+# Qualcomm generic packages ship one shared kernel; per-device dtb support is
+# decided by the kernel, not by this package. Do not claim device coverage
+# without a wiki page or boot log.
+
+- image: generic-exynos9820
+  package: device-samsung-exynos9820
+  tier: testing
+  kernel: linux-postmarketos-exynos9820
+  boot_method: systemd-boot
+  provides_devices:  # explicit in APKBUILD provides=
+    - samsung-beyond1lte  # Galaxy S10 SM-G973F
+    - samsung-beyond2lte  # Galaxy S10+ SM-G975F
+  note: >-
+    Explicit provides covers only the Exynos LTE models. US Snapdragon
+    variants (SM-G97xU) are not covered. Flash method none, TWRP needed.
+
+- image: generic-sm7125
+  package: device-qcom-sm7125
+  tier: testing
+  kernel: linux-postmarketos-qcom-sm7125
+  boot_method: systemd-boot
+  provides_devices: []  # no explicit provides in APKBUILD
+  note: >-
+    Snapdragon 720G/730G family (SM7125). Which phones boot is decided by
+    dtb support in the kernel; verify per model on the wiki page
+    https://wiki.postmarketos.org/wiki/Qualcomm_Snapdragon_720G_(SM7125)
+    before listing a device.
+
+- image: generic-sm7150
+  package: device-qcom-sm7150
+  tier: community
+  kernel: linux-postmarketos-qcom-sm7150
+  boot_method: systemd-boot
+  provides_devices: []
+  note: >-
+    Snapdragon 730/730G/732G family (SM7150). Same rule as sm7125: per-model
+    verification needed, e.g. Mi 9 Lite (xiaomi-pyxis) is in our DB with
+    status packaged-edge via device-qcom-sm7150.
+
+- image: generic-msm8953
+  package: device-qcom-msm8953
+  tier: community
+  kernel: linux-postmarketos-qcom-msm8953
+  boot_method: fastboot (lk2nd-msm8953)
+  provides_devices: []
+  note: >-
+    Snapdragon 450/625/626/632 family. lk2nd included, so devices can boot
+    via lk2nd even without an own device package. Max RAM in this family is
+    mostly <=6GB, below our 8GB target.
