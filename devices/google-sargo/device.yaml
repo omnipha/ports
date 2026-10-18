@@ -1,0 +1,58 @@
+codename: google-sargo
+aliases: [sargo]
+name: Google Pixel 3a
+vendor: Google
+year: 2019
+soc: sdm670
+arch: aarch64
+ram_gb: [4]
+storage_gb: [64]
+kernel:
+  repo: sdm670-mainline/linux  # mirror: omnipha/linux-sdm670 (planned)
+  branch: omnipha
+  base_tag: sdm670-v7.2.3_beta2
+status:
+  boot: works
+  ssh: works
+  wifi: partial  # ath10k/WCN3990; regdom patch pending, see below
+  display: works
+  gpu: works     # Adreno 615
+  ui: partial    # Phosh boots with greetd autologin, no lockscreen
+  touchscreen: untested
+  audio: untested
+  bluetooth: untested
+  cameras: untested
+  modem: partial # MPSS remoteproc running
+  sensors: untested
+  gps: untested
+  nfc: works     # NXP NFC per upstream port, untested by us
+profiles: [server, agent-host]
+flash: fastboot
+image: images/google-sargo
+
+notes: >
+  wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver
+  maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. The AP uses
+  ch 13. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch
+  maps the unprogrammed EEPROM to world regdomain 0x64 (same state as
+  xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes
+  wlan firmware (halphy_caldb.c assertion), unpatched.
+
+upstream_os:
+  ut:
+    key: sargo
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 97.3
+    url: https://devices.ubuntu-touch.io/device/sargo
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: own
+    release: v26.06
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

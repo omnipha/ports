@@ -1,0 +1,22 @@
+codename: xiaomi-toco
+aliases:
+- toco
+name: Xiaomi Mi Note 10 Lite
+vendor: Xiaomi
+soc_name: Snapdragon 730G (SM7150)
+ram_gb:
+- 6
+
+upstream_os:
+  ut:
+    key: toco
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: unverified
+    image: generic-sm7150
+    note: device DTB in release kernel; device-specific firmware not evidenced
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

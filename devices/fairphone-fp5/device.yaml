@@ -1,0 +1,29 @@
+codename: fairphone-fp5
+aliases:
+- fp5
+name: Fairphone 5
+vendor: Fairphone
+ram_gb:
+- 8
+storage_gb:
+- 256
+
+upstream_os:
+  ut:
+    key: FP5
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 97.4
+    note: reference port
+    url: https://devices.ubuntu-touch.io/device/fp5
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: testing
+    image: own
+    release: v26.06
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

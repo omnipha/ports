@@ -1,0 +1,26 @@
+codename: xiaomi-merlin
+aliases:
+- merlin
+name: Xiaomi Redmi Note 9
+vendor: Xiaomi
+soc_name: MediaTek Helio G85
+stock_android: Android 11 (MIUI 12.5.4.0)
+
+upstream_os:
+  ut:
+    key: merlin
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 94.0
+    url: https://devices.ubuntu-touch.io/device/merlin
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: unverified
+    image: none
+    note: not in release images; edge APKINDEX shows no unambiguous package
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

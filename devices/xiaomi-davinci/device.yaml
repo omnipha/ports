@@ -1,0 +1,22 @@
+codename: xiaomi-davinci
+aliases:
+- davinci
+name: Xiaomi Mi 9T / Redmi K20
+vendor: Xiaomi
+soc_name: Snapdragon 730 (SM7150)
+ram_gb:
+- 6
+
+upstream_os:
+  ut:
+    key: davinci
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: generic-sm7150
+    note: device DTB and firmware in the community image
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

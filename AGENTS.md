@@ -4,8 +4,15 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 
 ## Layout
 - `devices/<codename>/device.yaml` — machine-readable device status. THE source of truth.
+- `devices.json` — aggregate index of all device.yaml; rebuild with `tools/harvest.py index`.
+- `schema/device.schema.json` — validates every device.yaml; `tools/harvest.py check` fails on stale index or schema violations.
 - `devices/<codename>/` — packaging files (APKBUILD, deviceinfo) derived from upstream pmaports.
 - `firmware/` — policy: never commit blobs; document extraction + checksums.
+
+## Data rules
+- `upstream_os.ut` is refreshed by `tools/harvest.py ut` from devices.ubuntu-touch.io; do not hand-edit its numbers.
+- `upstream_os.nura` is curated by hand (the Nura wiki is not machine-readable). Keep `source` and `checked` on every claim.
+- Never add prices, market data, or eBay availability. That lives in the private purchasing stack, not here.
 
 ## Commands
 No build here directly; images are built from omnipha/images (which references this repo).

@@ -1,11 +1,12 @@
 codename: xiaomi-laurel
+aliases: [laurel_sprout, laurel]
 name: Xiaomi Mi A3
+vendor: Xiaomi
 year: 2019
 soc: sm6125
 arch: aarch64
-ram: "4 GB"
-storage: "64/128 GB"
-used_price_eur: "70-110"
+ram_gb: [4]
+storage_gb: [64, 128]
 kernel:
   repo: omnipha/linux-sm61x5
   branch: omnipha
@@ -28,3 +29,25 @@ status:
 profiles: [server, agent-host]
 flash: fastboot
 image: images/xiaomi-laurel
+
+upstream_os:
+  ut:
+    key: laurel_sprout
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 94.7
+    note: 'Observed on our unit: not installable on Android 11 firmware; Android 9 firmware required,
+      rollback flagged as dangerous by the UBports installer'
+    url: https://devices.ubuntu-touch.io/device/laurel-sprout
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: self-built
+    image: none
+    note: 'self-built edge image verified: boot, USB-SSH, WLAN, DRM display, Adreno 610, Phosh without
+      lockscreen; no release image'
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-18'

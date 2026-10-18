@@ -1,0 +1,835 @@
+[
+  {
+    "id": "fairphone-fp3",
+    "codename": "fairphone-fp3",
+    "aliases": [
+      "fp3"
+    ],
+    "name": "Fairphone 3 / 3+",
+    "vendor": "Fairphone",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "FP3",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.4,
+        "url": "https://devices.ubuntu-touch.io/device/fp3",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "package in pmaports edge, not in release images",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "fairphone-fp4",
+    "codename": "fairphone-fp4",
+    "aliases": [
+      "fp4"
+    ],
+    "name": "Fairphone 4",
+    "vendor": "Fairphone",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "storage_gb": [
+      128,
+      256
+    ],
+    "stock_android": "Android 11 (Fairphone OS)",
+    "upstream_os": {
+      "ut": {
+        "key": "FP4",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.3,
+        "url": "https://devices.ubuntu-touch.io/device/fp4",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "fairphone-fp5",
+    "codename": "fairphone-fp5",
+    "aliases": [
+      "fp5"
+    ],
+    "name": "Fairphone 5",
+    "vendor": "Fairphone",
+    "ram_gb": [
+      8
+    ],
+    "storage_gb": [
+      256
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "FP5",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.4,
+        "note": "reference port",
+        "url": "https://devices.ubuntu-touch.io/device/fp5",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "testing",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "google-bonito",
+    "codename": "google-bonito",
+    "aliases": [
+      "bonito"
+    ],
+    "name": "Google Pixel 3a XL",
+    "vendor": "Google",
+    "ram_gb": [
+      4
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "bonito",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.3,
+        "url": "https://devices.ubuntu-touch.io/device/bonito",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "google-sargo",
+    "codename": "google-sargo",
+    "aliases": [
+      "sargo"
+    ],
+    "name": "Google Pixel 3a",
+    "vendor": "Google",
+    "year": 2019,
+    "soc": "sdm670",
+    "arch": "aarch64",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64
+    ],
+    "kernel": {
+      "repo": "sdm670-mainline/linux",
+      "branch": "omnipha",
+      "base_tag": "sdm670-v7.2.3_beta2"
+    },
+    "status": {
+      "boot": "works",
+      "ssh": "works",
+      "wifi": "partial",
+      "display": "works",
+      "gpu": "works",
+      "ui": "partial",
+      "touchscreen": "untested",
+      "audio": "untested",
+      "bluetooth": "untested",
+      "cameras": "untested",
+      "modem": "partial",
+      "sensors": "untested",
+      "gps": "untested",
+      "nfc": "works"
+    },
+    "profiles": [
+      "server",
+      "agent-host"
+    ],
+    "flash": "fastboot",
+    "image": "images/google-sargo",
+    "notes": "wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. The AP uses ch 13. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch maps the unprogrammed EEPROM to world regdomain 0x64 (same state as xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes wlan firmware (halphy_caldb.c assertion), unpatched.\n",
+    "upstream_os": {
+      "ut": {
+        "key": "sargo",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.3,
+        "url": "https://devices.ubuntu-touch.io/device/sargo",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "google-sunfish",
+    "codename": "google-sunfish",
+    "aliases": [
+      "sunfish"
+    ],
+    "name": "Google Pixel 4a",
+    "vendor": "Google",
+    "soc_name": "Snapdragon 730G (SM7150)",
+    "ram_gb": [
+      6
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "sunfish",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-sm7150",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "oneplus-billie",
+    "codename": "oneplus-billie",
+    "aliases": [
+      "billie"
+    ],
+    "name": "OnePlus Nord N10 5G",
+    "vendor": "OnePlus",
+    "ram_gb": [
+      6
+    ],
+    "storage_gb": [
+      128
+    ],
+    "nfc": true,
+    "stock_android": "OxygenOS",
+    "upstream_os": {
+      "ut": {
+        "key": "billie",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.4,
+        "url": "https://devices.ubuntu-touch.io/device/billie",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "package in pmaports edge, not in release images",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "oneplus-billie2",
+    "codename": "oneplus-billie2",
+    "aliases": [
+      "billie2"
+    ],
+    "name": "OnePlus Nord N100",
+    "vendor": "OnePlus",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64
+    ],
+    "nfc": false,
+    "stock_android": "OxygenOS",
+    "upstream_os": {
+      "ut": {
+        "key": "billie2",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.3,
+        "note": "single maintainer",
+        "url": "https://devices.ubuntu-touch.io/device/billie2",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "package in pmaports edge, not in release images",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "oneplus-enchilada",
+    "codename": "oneplus-enchilada",
+    "aliases": [
+      "enchilada"
+    ],
+    "name": "OnePlus 6",
+    "vendor": "OnePlus",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "enchilada",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "focal",
+        "progress_pct": 93.8,
+        "url": "https://devices.ubuntu-touch.io/device/enchilada",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "oneplus-fajita",
+    "codename": "oneplus-fajita",
+    "aliases": [
+      "fajita"
+    ],
+    "name": "OnePlus 6T",
+    "vendor": "OnePlus",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "fajita",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "focal",
+        "progress_pct": 93.8,
+        "url": "https://devices.ubuntu-touch.io/device/fajita",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-beryllium",
+    "codename": "xiaomi-beryllium",
+    "aliases": [
+      "beryllium"
+    ],
+    "name": "Xiaomi Pocophone F1",
+    "vendor": "Xiaomi",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "beryllium",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "xenial",
+        "progress_pct": 91.2,
+        "url": "https://devices.ubuntu-touch.io/device/beryllium",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "own",
+        "release": "v26.06",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-daisy",
+    "codename": "xiaomi-daisy",
+    "aliases": [
+      "daisy"
+    ],
+    "name": "Xiaomi Mi A2 Lite",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 625 (MSM8953)",
+    "ram_gb": [
+      3,
+      4
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "daisy",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-msm8953",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-davinci",
+    "codename": "xiaomi-davinci",
+    "aliases": [
+      "davinci"
+    ],
+    "name": "Xiaomi Mi 9T / Redmi K20",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 730 (SM7150)",
+    "ram_gb": [
+      6
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "davinci",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-sm7150",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-joyeuse",
+    "codename": "xiaomi-joyeuse",
+    "aliases": [
+      "joyeuse"
+    ],
+    "name": "Xiaomi Redmi Note 9 Pro (Global)",
+    "vendor": "Xiaomi",
+    "upstream_os": {
+      "ut": {
+        "key": "joyeuse",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.4,
+        "note": "known hotspot bug",
+        "url": "https://devices.ubuntu-touch.io/device/joyeuse",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "miatoll family has packages in pmaports edge; this device not checked",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-laurel",
+    "codename": "xiaomi-laurel",
+    "aliases": [
+      "laurel_sprout",
+      "laurel"
+    ],
+    "name": "Xiaomi Mi A3",
+    "vendor": "Xiaomi",
+    "year": 2019,
+    "soc": "sm6125",
+    "arch": "aarch64",
+    "ram_gb": [
+      4
+    ],
+    "storage_gb": [
+      64,
+      128
+    ],
+    "kernel": {
+      "repo": "omnipha/linux-sm61x5",
+      "branch": "omnipha",
+      "base_tag": "v7.2.3-r0"
+    },
+    "status": {
+      "boot": "works",
+      "ssh": "works",
+      "wifi": "works",
+      "display": "works",
+      "gpu": "works",
+      "ui": "partial",
+      "touchscreen": "untested",
+      "audio": "untested",
+      "bluetooth": "untested",
+      "cameras": "broken",
+      "modem": "partial",
+      "sensors": "untested",
+      "gps": "untested",
+      "nfc": "untested"
+    },
+    "profiles": [
+      "server",
+      "agent-host"
+    ],
+    "flash": "fastboot",
+    "image": "images/xiaomi-laurel",
+    "upstream_os": {
+      "ut": {
+        "key": "laurel_sprout",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 94.7,
+        "note": "Observed on our unit: not installable on Android 11 firmware; Android 9 firmware required, rollback flagged as dangerous by the UBports installer",
+        "url": "https://devices.ubuntu-touch.io/device/laurel-sprout",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "self-built",
+        "image": "none",
+        "note": "self-built edge image verified: boot, USB-SSH, WLAN, DRM display, Adreno 610, Phosh without lockscreen; no release image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-merlin",
+    "codename": "xiaomi-merlin",
+    "aliases": [
+      "merlin"
+    ],
+    "name": "Xiaomi Redmi Note 9",
+    "vendor": "Xiaomi",
+    "soc_name": "MediaTek Helio G85",
+    "stock_android": "Android 11 (MIUI 12.5.4.0)",
+    "upstream_os": {
+      "ut": {
+        "key": "merlin",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 94.0,
+        "url": "https://devices.ubuntu-touch.io/device/merlin",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "not in release images; edge APKINDEX shows no unambiguous package",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-mido",
+    "codename": "xiaomi-mido",
+    "aliases": [
+      "mido"
+    ],
+    "name": "Xiaomi Redmi Note 4X",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 625 (MSM8953)",
+    "ram_gb": [
+      3,
+      4
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "mido",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-msm8953",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-surya",
+    "codename": "xiaomi-surya",
+    "aliases": [
+      "surya"
+    ],
+    "name": "Xiaomi Poco X3 NFC / X3",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 732G",
+    "ram_gb": [
+      6
+    ],
+    "storage_gb": [
+      64,
+      128
+    ],
+    "nfc": true,
+    "stock_android": "Android 10 (MIUI)",
+    "upstream_os": {
+      "ut": {
+        "key": "surya",
+        "listed": true,
+        "supported": true,
+        "installer": true,
+        "release": "noble",
+        "progress_pct": 97.4,
+        "url": "https://devices.ubuntu-touch.io/device/surya",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-sm7150",
+        "note": "device DTB and firmware in the community image; firmware-xiaomi-surya in pmaports",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-sweet",
+    "codename": "xiaomi-sweet",
+    "aliases": [
+      "sweet"
+    ],
+    "name": "Xiaomi Redmi Note 10 Pro",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 732G (SM7150)",
+    "ram_gb": [
+      6,
+      8
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "sweet",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-sm7150",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-tissot",
+    "codename": "xiaomi-tissot",
+    "aliases": [
+      "tissot"
+    ],
+    "name": "Xiaomi Mi A1",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 625 (MSM8953)",
+    "ram_gb": [
+      4
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tissot",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-msm8953",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-toco",
+    "codename": "xiaomi-toco",
+    "aliases": [
+      "toco"
+    ],
+    "name": "Xiaomi Mi Note 10 Lite",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 730G (SM7150)",
+    "ram_gb": [
+      6
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "toco",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "generic-sm7150",
+        "note": "device DTB in release kernel; device-specific firmware not evidenced",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-tucana",
+    "codename": "xiaomi-tucana",
+    "aliases": [
+      "tucana"
+    ],
+    "name": "Xiaomi Mi Note 10 / Mi CC9 Pro",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 730G (SM7150)",
+    "ram_gb": [
+      6
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tucana",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-sm7150",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-vince",
+    "codename": "xiaomi-vince",
+    "aliases": [
+      "vince"
+    ],
+    "name": "Xiaomi Redmi 5 Plus",
+    "vendor": "Xiaomi",
+    "soc_name": "Snapdragon 625 (MSM8953)",
+    "ram_gb": [
+      3,
+      4
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "vince",
+        "listed": true,
+        "supported": true,
+        "installer": false,
+        "release": "xenial",
+        "progress_pct": 34.6,
+        "url": "https://devices.ubuntu-touch.io/device/vince",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "community",
+        "image": "generic-msm8953",
+        "note": "device DTB and firmware in the community image",
+        "source": "nura.eco/install",
+        "url": "https://nura.eco/install/",
+        "checked": "2026-10-17"
+      }
+    }
+  }
+]

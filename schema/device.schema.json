@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Omnipha device.yaml",
+  "description": "One file per device in devices/<id>/device.yaml. Hardware facts and OS support only. No prices, no availability, no market data.",
+  "type": "object",
+  "required": ["codename", "name", "vendor", "upstream_os"],
+  "properties": {
+    "codename": {"type": "string", "description": "Device id, equals the folder name, e.g. xiaomi-laurel"},
+    "aliases": {"type": "array", "items": {"type": "string"}, "description": "Other codenames used by upstream projects or downstream tools"},
+    "name": {"type": "string"},
+    "vendor": {"type": "string"},
+    "soc": {"type": "string", "description": "Platform id used in kernel/packaging, e.g. sm6125"},
+    "soc_name": {"type": ["string", "null"], "description": "Marketing name, e.g. Snapdragon 732G"},
+    "ram_gb": {"type": "array", "items": {"type": "number"}},
+    "storage_gb": {"type": "array", "items": {"type": "number"}},
+    "nfc": {"type": ["boolean", "null"]},
+    "stock_android": {"type": ["string", "null"]},
+    "upstream_os": {
+      "type": "object",
+      "description": "Support status reported by upstream projects. ut is refreshed by tools/harvest.py, nura is curated by hand.",
+      "required": ["ut", "nura"],
+      "properties": {
+        "ut": {
+          "type": "object",
+          "required": ["key", "listed", "source", "checked"],
+          "properties": {
+            "key": {"type": "string", "description": "Codename on devices.ubuntu-touch.io"},
+            "listed": {"type": "boolean"},
+            "supported": {"type": ["boolean", "null"]},
+            "installer": {"type": ["boolean", "null"]},
+            "release": {"type": ["string", "null"]},
+            "progress_pct": {"type": ["number", "null"]},
+            "note": {"type": ["string", "null"]},
+            "url": {"type": ["string", "null"]},
+            "source": {"type": "string"},
+            "checked": {"type": "string"}
+          }
+        },
+        "nura": {
+          "type": "object",
+          "required": ["status", "image", "source", "checked"],
+          "properties": {
+            "status": {"enum": ["community", "testing", "packaged-edge", "self-built", "unverified", "not-checked"]},
+            "image": {"enum": ["own", "generic-sm7150", "generic-msm8953", "none"]},
+            "release": {"type": ["string", "null"]},
+            "note": {"type": ["string", "null"]},
+            "url": {"type": ["string", "null"]},
+            "source": {"type": "string"},
+            "checked": {"type": "string"}
+          }
+        }
+      }
+    },
+    "status": {"type": "object", "description": "Hardware status measured on our own units: works | partial | untested | broken"}
+  },
+  "not": {"anyOf": [{"required": ["used_price_eur"]}, {"required": ["ebay"]}, {"required": ["price"]}]}
+}

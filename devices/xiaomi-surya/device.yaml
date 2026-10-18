@@ -1,0 +1,32 @@
+codename: xiaomi-surya
+aliases:
+- surya
+name: Xiaomi Poco X3 NFC / X3
+vendor: Xiaomi
+soc_name: Snapdragon 732G
+ram_gb:
+- 6
+storage_gb:
+- 64
+- 128
+nfc: true
+stock_android: Android 10 (MIUI)
+
+upstream_os:
+  ut:
+    key: surya
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 97.4
+    url: https://devices.ubuntu-touch.io/device/surya
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: generic-sm7150
+    note: device DTB and firmware in the community image; firmware-xiaomi-surya in pmaports
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

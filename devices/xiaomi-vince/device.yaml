@@ -1,0 +1,28 @@
+codename: xiaomi-vince
+aliases:
+- vince
+name: Xiaomi Redmi 5 Plus
+vendor: Xiaomi
+soc_name: Snapdragon 625 (MSM8953)
+ram_gb:
+- 3
+- 4
+
+upstream_os:
+  ut:
+    key: vince
+    listed: true
+    supported: true
+    installer: false
+    release: xenial
+    progress_pct: 34.6
+    url: https://devices.ubuntu-touch.io/device/vince
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: generic-msm8953
+    note: device DTB and firmware in the community image
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

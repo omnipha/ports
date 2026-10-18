@@ -1,0 +1,22 @@
+codename: xiaomi-tucana
+aliases:
+- tucana
+name: Xiaomi Mi Note 10 / Mi CC9 Pro
+vendor: Xiaomi
+soc_name: Snapdragon 730G (SM7150)
+ram_gb:
+- 6
+
+upstream_os:
+  ut:
+    key: tucana
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: generic-sm7150
+    note: device DTB and firmware in the community image
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

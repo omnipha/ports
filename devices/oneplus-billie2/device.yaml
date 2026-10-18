@@ -1,0 +1,31 @@
+codename: oneplus-billie2
+aliases:
+- billie2
+name: OnePlus Nord N100
+vendor: OnePlus
+ram_gb:
+- 4
+storage_gb:
+- 64
+nfc: false
+stock_android: OxygenOS
+
+upstream_os:
+  ut:
+    key: billie2
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 97.3
+    note: single maintainer
+    url: https://devices.ubuntu-touch.io/device/billie2
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: packaged-edge
+    image: none
+    note: package in pmaports edge, not in release images
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

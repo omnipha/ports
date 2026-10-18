@@ -1,0 +1,25 @@
+codename: xiaomi-joyeuse
+aliases:
+- joyeuse
+name: Xiaomi Redmi Note 9 Pro (Global)
+vendor: Xiaomi
+
+upstream_os:
+  ut:
+    key: joyeuse
+    listed: true
+    supported: true
+    installer: true
+    release: noble
+    progress_pct: 97.4
+    note: known hotspot bug
+    url: https://devices.ubuntu-touch.io/device/joyeuse
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: not-checked
+    image: none
+    note: miatoll family has packages in pmaports edge; this device not checked
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'

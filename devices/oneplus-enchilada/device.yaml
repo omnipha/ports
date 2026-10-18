@@ -1,0 +1,27 @@
+codename: oneplus-enchilada
+aliases:
+- enchilada
+name: OnePlus 6
+vendor: OnePlus
+ram_gb:
+- 6
+- 8
+
+upstream_os:
+  ut:
+    key: enchilada
+    listed: true
+    supported: true
+    installer: true
+    release: focal
+    progress_pct: 93.8
+    url: https://devices.ubuntu-touch.io/device/enchilada
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: community
+    image: own
+    release: v26.06
+    source: nura.eco/install
+    url: https://nura.eco/install/
+    checked: '2026-10-17'
