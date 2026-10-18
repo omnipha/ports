@@ -33,9 +33,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-sdm845",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -918,9 +918,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-sdm845",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1002,7 +1002,7 @@
       "nura": {
         "status": "generic-image",
         "image": "generic-exynos9820",
-        "note": "boots from the shared SoC image; no own device package",
+        "note": "listed in provides= of device-samsung-exynos9820; Exynos models only (SM-G97xF/N), not the US Snapdragon variants; flash method none, TWRP needed",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1045,7 +1045,7 @@
       "nura": {
         "status": "generic-image",
         "image": "generic-exynos9820",
-        "note": "boots from the shared SoC image; no own device package",
+        "note": "listed in provides= of device-samsung-exynos9820; Exynos models only (SM-G97xF/N), not the US Snapdragon variants; flash method none, TWRP needed",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1078,9 +1078,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-exynos9820",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1109,9 +1109,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-exynos9820",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1144,9 +1144,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-exynos9820",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
@@ -1824,9 +1824,9 @@
         "checked": "2026-10-18"
       },
       "nura": {
-        "status": "generic-image",
-        "image": "generic-sdm845",
-        "note": "boots from the shared SoC image; no own device package",
+        "status": "unverified",
+        "image": "none",
+        "note": "SoC family has a generic package, but this model is not listed in it; not verified",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
