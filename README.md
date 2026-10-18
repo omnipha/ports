@@ -13,10 +13,10 @@ device database for Omnipha. This is where new device support lands.
 - `firmware/` — firmware extraction policy and helpers
 
 The database answers "which phones run full Linux and how well": hardware
-facts and upstream OS support (`upstream_os.ut`, `upstream_os.nura`), each with
-`source` and `checked`. Market data (used prices, eBay availability) is
-curated privately and must never appear in this repo; the schema rejects
-price keys.
+facts, sold `variants` (one ram/storage combination each), and upstream OS
+support (`upstream_os.ut`, `upstream_os.nura`), each with `source` and
+`checked`. Used-price estimates live in omnipha/market. This repo stays
+price-free; the schema rejects price keys.
 
 ## Device lifecycle
 `new` → `boot` → `ssh+network` → `usable-server` (profile: server) → `daily-phone`.

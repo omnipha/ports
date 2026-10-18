@@ -12,7 +12,8 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 ## Data rules
 - `upstream_os.ut` is refreshed by `tools/harvest.py ut` from devices.ubuntu-touch.io; do not hand-edit its numbers.
 - `upstream_os.nura` is curated by hand (the Nura wiki is not machine-readable). Keep `source` and `checked` on every claim.
-- Never add prices, market data, or eBay availability. That lives in the private purchasing stack, not here.
+- `variants` lists sold ram/storage combinations. Do not store ram and storage as independent lists.
+- Never add prices. Used-price estimates go to omnipha/market.
 
 ## Commands
 No build here directly; images are built from omnipha/images (which references this repo).
