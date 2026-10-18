@@ -5,8 +5,6 @@ vendor: Xiaomi
 year: 2019
 soc: sm6125
 arch: aarch64
-ram_gb: [4]
-storage_gb: [64, 128]
 kernel:
   repo: omnipha/linux-sm61x5
   branch: omnipha
@@ -29,6 +27,12 @@ status:
 profiles: [server, agent-host]
 flash: fastboot
 image: images/xiaomi-laurel
+
+variants:
+- ram_gb: 4
+  storage_gb: 64
+- ram_gb: 4
+  storage_gb: 128
 
 upstream_os:
   ut:

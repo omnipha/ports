@@ -4,8 +4,10 @@ aliases:
 name: Xiaomi Mi 9T / Redmi K20
 vendor: Xiaomi
 soc_name: Snapdragon 730 (SM7150)
-ram_gb:
-- 6
+
+variants:
+- ram_gb: 6
+  storage_gb: null
 
 upstream_os:
   ut:

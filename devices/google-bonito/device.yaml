@@ -3,8 +3,10 @@ aliases:
 - bonito
 name: Google Pixel 3a XL
 vendor: Google
-ram_gb:
-- 4
+
+variants:
+- ram_gb: 4
+  storage_gb: null
 
 upstream_os:
   ut:

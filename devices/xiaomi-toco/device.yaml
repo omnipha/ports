@@ -4,8 +4,10 @@ aliases:
 name: Xiaomi Mi Note 10 Lite
 vendor: Xiaomi
 soc_name: Snapdragon 730G (SM7150)
-ram_gb:
-- 6
+
+variants:
+- ram_gb: 6
+  storage_gb: null
 
 upstream_os:
   ut:

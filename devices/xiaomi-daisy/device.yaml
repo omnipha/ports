@@ -4,9 +4,12 @@ aliases:
 name: Xiaomi Mi A2 Lite
 vendor: Xiaomi
 soc_name: Snapdragon 625 (MSM8953)
-ram_gb:
-- 3
-- 4
+
+variants:
+- ram_gb: 3
+  storage_gb: null
+- ram_gb: 4
+  storage_gb: null
 
 upstream_os:
   ut:

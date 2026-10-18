@@ -3,10 +3,10 @@ aliases:
 - fp3
 name: Fairphone 3 / 3+
 vendor: Fairphone
-ram_gb:
-- 4
-storage_gb:
-- 64
+
+variants:
+- ram_gb: 4
+  storage_gb: 64
 
 upstream_os:
   ut:

@@ -5,8 +5,6 @@ vendor: Google
 year: 2019
 soc: sdm670
 arch: aarch64
-ram_gb: [4]
-storage_gb: [64]
 kernel:
   repo: sdm670-mainline/linux  # mirror: omnipha/linux-sdm670 (planned)
   branch: omnipha
@@ -37,6 +35,10 @@ notes: >
   maps the unprogrammed EEPROM to world regdomain 0x64 (same state as
   xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes
   wlan firmware (halphy_caldb.c assertion), unpatched.
+
+variants:
+- ram_gb: 4
+  storage_gb: 64
 
 upstream_os:
   ut:

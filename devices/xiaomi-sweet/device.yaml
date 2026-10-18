@@ -4,9 +4,12 @@ aliases:
 name: Xiaomi Redmi Note 10 Pro
 vendor: Xiaomi
 soc_name: Snapdragon 732G (SM7150)
-ram_gb:
-- 6
-- 8
+
+variants:
+- ram_gb: 6
+  storage_gb: null
+- ram_gb: 8
+  storage_gb: null
 
 upstream_os:
   ut:

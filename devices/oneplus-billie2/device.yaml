@@ -3,12 +3,12 @@ aliases:
 - billie2
 name: OnePlus Nord N100
 vendor: OnePlus
-ram_gb:
-- 4
-storage_gb:
-- 64
 nfc: false
 stock_android: OxygenOS
+
+variants:
+- ram_gb: 4
+  storage_gb: 64
 
 upstream_os:
   ut:

@@ -7,11 +7,11 @@
     ],
     "name": "Fairphone 3 / 3+",
     "vendor": "Fairphone",
-    "ram_gb": [
-      4
-    ],
-    "storage_gb": [
-      64
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": 64
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -43,15 +43,25 @@
     ],
     "name": "Fairphone 4",
     "vendor": "Fairphone",
-    "ram_gb": [
-      6,
-      8
-    ],
-    "storage_gb": [
-      128,
-      256
-    ],
     "stock_android": "Android 11 (Fairphone OS)",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "FP4",
@@ -82,11 +92,11 @@
     ],
     "name": "Fairphone 5",
     "vendor": "Fairphone",
-    "ram_gb": [
-      8
-    ],
-    "storage_gb": [
-      256
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -119,8 +129,11 @@
     ],
     "name": "Google Pixel 3a XL",
     "vendor": "Google",
-    "ram_gb": [
-      4
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -155,12 +168,6 @@
     "year": 2019,
     "soc": "sdm670",
     "arch": "aarch64",
-    "ram_gb": [
-      4
-    ],
-    "storage_gb": [
-      64
-    ],
     "kernel": {
       "repo": "sdm670-mainline/linux",
       "branch": "omnipha",
@@ -189,6 +196,12 @@
     "flash": "fastboot",
     "image": "images/google-sargo",
     "notes": "wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. The AP uses ch 13. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch maps the unprogrammed EEPROM to world regdomain 0x64 (same state as xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes wlan firmware (halphy_caldb.c assertion), unpatched.\n",
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": 64
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "sargo",
@@ -220,8 +233,11 @@
     "name": "Google Pixel 4a",
     "vendor": "Google",
     "soc_name": "Snapdragon 730G (SM7150)",
-    "ram_gb": [
-      6
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -248,14 +264,14 @@
     ],
     "name": "OnePlus Nord N10 5G",
     "vendor": "OnePlus",
-    "ram_gb": [
-      6
-    ],
-    "storage_gb": [
-      128
-    ],
     "nfc": true,
     "stock_android": "OxygenOS",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "billie",
@@ -286,14 +302,14 @@
     ],
     "name": "OnePlus Nord N100",
     "vendor": "OnePlus",
-    "ram_gb": [
-      4
-    ],
-    "storage_gb": [
-      64
-    ],
     "nfc": false,
     "stock_android": "OxygenOS",
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": 64
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "billie2",
@@ -325,9 +341,15 @@
     ],
     "name": "OnePlus 6",
     "vendor": "OnePlus",
-    "ram_gb": [
-      6,
-      8
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -359,9 +381,15 @@
     ],
     "name": "OnePlus 6T",
     "vendor": "OnePlus",
-    "ram_gb": [
-      6,
-      8
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -393,9 +421,15 @@
     ],
     "name": "Xiaomi Pocophone F1",
     "vendor": "Xiaomi",
-    "ram_gb": [
-      6,
-      8
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -428,9 +462,15 @@
     "name": "Xiaomi Mi A2 Lite",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 625 (MSM8953)",
-    "ram_gb": [
-      3,
-      4
+    "variants": [
+      {
+        "ram_gb": 3,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 4,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -458,8 +498,11 @@
     "name": "Xiaomi Mi 9T / Redmi K20",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 730 (SM7150)",
-    "ram_gb": [
-      6
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -521,13 +564,6 @@
     "year": 2019,
     "soc": "sm6125",
     "arch": "aarch64",
-    "ram_gb": [
-      4
-    ],
-    "storage_gb": [
-      64,
-      128
-    ],
     "kernel": {
       "repo": "omnipha/linux-sm61x5",
       "branch": "omnipha",
@@ -555,6 +591,16 @@
     ],
     "flash": "fastboot",
     "image": "images/xiaomi-laurel",
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 4,
+        "storage_gb": 128
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "laurel_sprout",
@@ -619,9 +665,15 @@
     "name": "Xiaomi Redmi Note 4X",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 625 (MSM8953)",
-    "ram_gb": [
-      3,
-      4
+    "variants": [
+      {
+        "ram_gb": 3,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 4,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -649,15 +701,18 @@
     "name": "Xiaomi Poco X3 NFC / X3",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 732G",
-    "ram_gb": [
-      6
-    ],
-    "storage_gb": [
-      64,
-      128
-    ],
     "nfc": true,
     "stock_android": "Android 10 (MIUI)",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      }
+    ],
     "upstream_os": {
       "ut": {
         "key": "surya",
@@ -689,9 +744,15 @@
     "name": "Xiaomi Redmi Note 10 Pro",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 732G (SM7150)",
-    "ram_gb": [
-      6,
-      8
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -719,8 +780,11 @@
     "name": "Xiaomi Mi A1",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 625 (MSM8953)",
-    "ram_gb": [
-      4
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -748,8 +812,11 @@
     "name": "Xiaomi Mi Note 10 Lite",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 730G (SM7150)",
-    "ram_gb": [
-      6
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -777,8 +844,11 @@
     "name": "Xiaomi Mi Note 10 / Mi CC9 Pro",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 730G (SM7150)",
-    "ram_gb": [
-      6
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {
@@ -806,9 +876,15 @@
     "name": "Xiaomi Redmi 5 Plus",
     "vendor": "Xiaomi",
     "soc_name": "Snapdragon 625 (MSM8953)",
-    "ram_gb": [
-      3,
-      4
+    "variants": [
+      {
+        "ram_gb": 3,
+        "storage_gb": null
+      },
+      {
+        "ram_gb": 4,
+        "storage_gb": null
+      }
     ],
     "upstream_os": {
       "ut": {

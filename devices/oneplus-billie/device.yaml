@@ -3,12 +3,12 @@ aliases:
 - billie
 name: OnePlus Nord N10 5G
 vendor: OnePlus
-ram_gb:
-- 6
-storage_gb:
-- 128
 nfc: true
 stock_android: OxygenOS
+
+variants:
+- ram_gb: 6
+  storage_gb: 128
 
 upstream_os:
   ut:
