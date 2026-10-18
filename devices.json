@@ -1362,82 +1362,6 @@
     }
   },
   {
-    "id": "oneplus-pgp110",
-    "codename": "oneplus-pgp110",
-    "name": "OnePlus Ace 2",
-    "vendor": "OnePlus",
-    "year": 2023,
-    "soc": "sm8475",
-    "soc_name": "Snapdragon 8+ Gen 1",
-    "variants": [
-      {
-        "ram_gb": 12,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 512
-      }
-    ],
-    "upstream_os": {
-      "ut": {
-        "key": "pgp110",
-        "listed": false,
-        "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
-      },
-      "nura": {
-        "status": "unverified",
-        "image": "none",
-        "note": "unlock OK: standard fastboot unlock (initial ColorOS 13, carve-out); kernel source OnePlusOSS android_kernel_oneplus_sm8475; XDA convert guides exist; caveat: ColorOS 16 update may require deep testing (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
-        "source": "vendor spec pages + user shortlist",
-        "checked": "2026-10-19"
-      }
-    }
-  },
-  {
-    "id": "oneplus-phk110",
-    "codename": "oneplus-phk110",
-    "name": "OnePlus Ace 2V",
-    "vendor": "OnePlus",
-    "year": 2023,
-    "soc": "mt6985",
-    "soc_name": "Dimensity 9000",
-    "variants": [
-      {
-        "ram_gb": 12,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 512
-      }
-    ],
-    "upstream_os": {
-      "ut": {
-        "key": "phk110",
-        "listed": false,
-        "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
-      },
-      "nura": {
-        "status": "unverified",
-        "image": "none",
-        "note": "unlock OK on initial ColorOS<=15/OxygenOS<=15: standard fastboot unlock; Dimensity 9000 (MT6983); kernel source OnePlusOSS android_kernel_5.10_oneplus_mt6983; caveats: Aug 2024 batch bootloader bug, Jun 2026 update broke BL entry (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
-        "source": "vendor spec pages + user shortlist",
-        "checked": "2026-10-19"
-      }
-    }
-  },
-  {
     "id": "oneplus-salami",
     "codename": "oneplus-salami",
     "name": "OnePlus 11 5G",
@@ -1707,10 +1631,6 @@
       },
       {
         "ram_gb": 16,
-        "storage_gb": 512
-      },
-      {
-        "ram_gb": 16,
         "storage_gb": 1024
       }
     ],
@@ -1724,7 +1644,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock conditional: Deep Testing app, model allowlist + CN/IN region; conflicting 2024-25 user reports; kernel sources under realme-kernel-opensource (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "unlock conditional: Deep Testing allowlist CN/IN. 150W model (RMX3706): 8/256, 12/256, 16/256; 240W model (RMX3708): 16/256, 16/1024. No 16/512 SKU at launch.",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1749,14 +1669,6 @@
       },
       {
         "ram_gb": 12,
-        "storage_gb": 512
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
         "storage_gb": 512
       },
       {
@@ -3241,6 +3153,10 @@
       },
       {
         "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
         "storage_gb": 256
       },
       {
