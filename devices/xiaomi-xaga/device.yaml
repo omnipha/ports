@@ -1,0 +1,25 @@
+codename: xiaomi-xaga
+name: POCO X4 GT / Redmi Note 11T Pro / K50i
+vendor: Xiaomi
+year: 2022
+soc: mt6893
+soc_name: Dimensity 8100
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: xaga
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'official LineageOS support (xaga family: X4 GT, Note 11T Pro/+, K50i); MediaTek, no mainline
+      DT; top self-porting candidate via Lineage kernel sources'
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'
