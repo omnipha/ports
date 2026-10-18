@@ -1,0 +1,27 @@
+codename: nothing-spacewar
+name: Nothing Phone (1)
+vendor: Nothing
+year: 2022
+soc: sm7325
+soc_name: Snapdragon 778G+
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: spacewar
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: packaged-edge
+    image: none
+    note: device package in pmaports testing; no release image
+    source: pmaports-mirror
+    url: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing
+    checked: '2026-10-18'

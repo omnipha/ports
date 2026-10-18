@@ -122,6 +122,37 @@
     }
   },
   {
+    "id": "fairphone-fp6",
+    "codename": "fairphone-fp6",
+    "name": "Fairphone 6",
+    "vendor": "Fairphone",
+    "year": 2025,
+    "soc": "qcm6490",
+    "soc_name": "Snapdragon 7s Gen 3 (QCM6490)",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "fp6",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "google-bonito",
     "codename": "google-bonito",
     "aliases": [
@@ -327,6 +358,123 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "motorola-dubai",
+    "codename": "motorola-dubai",
+    "name": "Motorola Edge 30",
+    "vendor": "Motorola",
+    "year": 2022,
+    "soc": "sm7325",
+    "soc_name": "Snapdragon 778G+",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "dubai",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "nothing-spacewar",
+    "codename": "nothing-spacewar",
+    "name": "Nothing Phone (1)",
+    "vendor": "Nothing",
+    "year": 2022,
+    "soc": "sm7325",
+    "soc_name": "Snapdragon 778G+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "spacewar",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "nothing-tetris",
+    "codename": "nothing-tetris",
+    "name": "CMF Phone 1",
+    "vendor": "Nothing",
+    "year": 2024,
+    "soc": "mt6878",
+    "soc_name": "Dimensity 7300",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tetris",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
@@ -586,6 +734,84 @@
     "upstream_os": {
       "ut": {
         "key": "kebab",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "samsung-a72q",
+    "codename": "samsung-a72q",
+    "name": "Galaxy A72 (4G)",
+    "vendor": "Samsung",
+    "year": 2021,
+    "soc": "sm7125",
+    "soc_name": "Snapdragon 720G",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "a72q",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "sony-pdx215",
+    "codename": "sony-pdx215",
+    "name": "Xperia 1 III",
+    "vendor": "Sony",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pdx215",
         "listed": false,
         "source": "devices.ubuntu-touch.io",
         "checked": "2026-10-18"
@@ -1051,6 +1277,41 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-vayu",
+    "codename": "xiaomi-vayu",
+    "name": "Poco X3 Pro",
+    "vendor": "Xiaomi",
+    "year": 2021,
+    "soc": "sm8150",
+    "soc_name": "Snapdragon 860",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "vayu",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
