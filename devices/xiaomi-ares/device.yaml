@@ -1,0 +1,28 @@
+codename: xiaomi-ares
+name: Redmi K40 Gaming / Poco F3 GT
+vendor: Xiaomi
+year: 2021
+soc: mt6893
+soc_name: Dimensity 1200
+variants:
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 128
+
+upstream_os:
+  ut:
+    key: ares
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'port candidate added 2026-10-19: no mainline device tree yet, see note'
+    source: pmaports-mirror
+    checked: '2026-10-19'

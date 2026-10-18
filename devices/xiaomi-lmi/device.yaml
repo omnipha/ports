@@ -1,0 +1,24 @@
+codename: xiaomi-lmi
+name: Poco F2 Pro / Redmi K30 Pro
+vendor: Xiaomi
+year: 2020
+soc: sm8250
+soc_name: Snapdragon 865
+variants:
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: lmi
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'port candidate added 2026-10-19: no mainline device tree yet, see note'
+    source: pmaports-mirror
+    checked: '2026-10-19'
