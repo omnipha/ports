@@ -1,0 +1,30 @@
+codename: xiaomi-laurel
+name: Xiaomi Mi A3
+year: 2019
+soc: sm6125
+arch: aarch64
+ram: "4 GB"
+storage: "64/128 GB"
+used_price_eur: "70-110"
+kernel:
+  repo: omnipha/linux-sm61x5
+  branch: omnipha
+  base_tag: v7.2.3-r0
+status:
+  boot: works
+  ssh: works
+  wifi: works        # WCN3990 via MPSS remoteproc, patch on omnipha branch, verified 2026-10-18
+  display: works     # DSI, needs deviceinfo_drm="true"
+  gpu: works         # Adreno 610, gpu-initialized: 1
+  ui: partial        # Weston ok, Phosh boots without lockscreen; touch untested in Phosh
+  touchscreen: untested
+  audio: untested
+  bluetooth: untested
+  cameras: broken    # bring-up open
+  modem: partial     # MPSS remoteproc running; calls/data untested
+  sensors: untested
+  gps: untested
+  nfc: untested
+profiles: [server, agent-host]
+flash: fastboot
+image: images/xiaomi-laurel
