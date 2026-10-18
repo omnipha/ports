@@ -1,0 +1,24 @@
+codename: vivo-v2302a
+name: iQOO Neo 8 Pro
+vendor: Vivo
+year: 2023
+soc: mt6985
+soc_name: Dimensity 9200+
+variants:
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: v2302a
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: China only; vivo bootloader unlock generally blocked; pending unlock verification
+    source: vendor spec pages + user shortlist
+    checked: '2026-10-19'

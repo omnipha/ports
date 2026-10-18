@@ -776,6 +776,48 @@
     }
   },
   {
+    "id": "oneplus-audi",
+    "codename": "oneplus-audi",
+    "name": "OnePlus Ace 3V",
+    "vendor": "OnePlus",
+    "year": 2024,
+    "soc": "sm7675",
+    "soc_name": "Snapdragon 7+ Gen 3",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "audi",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 23.2 (audi); deep testing unlock; same platform as Nord 4 (avalon); port candidate",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-avalon",
     "codename": "oneplus-avalon",
     "name": "OnePlus Nord 4",
@@ -1320,6 +1362,82 @@
     }
   },
   {
+    "id": "oneplus-pgp110",
+    "codename": "oneplus-pgp110",
+    "name": "OnePlus Ace 2",
+    "vendor": "OnePlus",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pgp110",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; OnePlus deep testing unlock; port candidate",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-phk110",
+    "codename": "oneplus-phk110",
+    "name": "OnePlus Ace 2V",
+    "vendor": "OnePlus",
+    "year": 2023,
+    "soc": "mt6985",
+    "soc_name": "Dimensity 9000",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "phk110",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; deep testing unlock; MediaTek; port candidate",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-salami",
     "codename": "oneplus-salami",
     "name": "OnePlus 11 5G",
@@ -1449,6 +1567,140 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "realme-neo7se",
+    "codename": "realme-neo7se",
+    "name": "Realme Neo 7 SE",
+    "vendor": "Realme",
+    "year": 2025,
+    "soc": "mt6897",
+    "soc_name": "Dimensity 8400-Max",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "neo7se",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; new (2025); unlock status unverified; port candidate (long term)",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "realme-pgkm10",
+    "codename": "realme-pgkm10",
+    "name": "Realme GT Neo 5 / GT 3",
+    "vendor": "Realme",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pgkm10",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "16GB real (16/256..16/1TB 240W); unlock via patched DeepTesting (Android 12 era firmware); port candidate",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "realme-pgz110",
+    "codename": "realme-pgz110",
+    "name": "Realme GT Neo 5 SE",
+    "vendor": "Realme",
+    "year": 2023,
+    "soc": "sm7475",
+    "soc_name": "Snapdragon 7+ Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pgz110",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; same SD 7+ Gen 2 as Redmi Note 12 Turbo; unlock via patched DeepTesting; port candidate",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -1833,6 +2085,116 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "vivo-i2302",
+    "codename": "vivo-i2302",
+    "name": "iQOO Z9 Turbo",
+    "vendor": "Vivo",
+    "year": 2024,
+    "soc": "sm8635",
+    "soc_name": "Snapdragon 8s Gen 3",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "i2302",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "vivo-v2302a",
+    "codename": "vivo-v2302a",
+    "name": "iQOO Neo 8 Pro",
+    "vendor": "Vivo",
+    "year": 2023,
+    "soc": "mt6985",
+    "soc_name": "Dimensity 9200+",
+    "variants": [
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "v2302a",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "vivo-v2304a",
+    "codename": "vivo-v2304a",
+    "name": "iQOO Neo 8",
+    "vendor": "Vivo",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "v2304a",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification; kernel sources published per GPL",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
       }
     }
   },

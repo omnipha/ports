@@ -1,0 +1,32 @@
+codename: realme-pgz110
+name: Realme GT Neo 5 SE
+vendor: Realme
+year: 2023
+soc: sm7475
+soc_name: Snapdragon 7+ Gen 2
+variants:
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 1024
+
+upstream_os:
+  ut:
+    key: pgz110
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: China only; same SD 7+ Gen 2 as Redmi Note 12 Turbo; unlock via patched DeepTesting; port candidate
+    source: vendor spec pages + user shortlist
+    checked: '2026-10-19'

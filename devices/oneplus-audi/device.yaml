@@ -1,0 +1,29 @@
+codename: oneplus-audi
+name: OnePlus Ace 3V
+vendor: OnePlus
+year: 2024
+soc: sm7675
+soc_name: Snapdragon 7+ Gen 3
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: audi
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS 23.2 (audi); deep testing unlock; same platform as Nord 4 (avalon); port
+      candidate
+    source: vendor spec pages + user shortlist
+    checked: '2026-10-19'

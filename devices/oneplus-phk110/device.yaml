@@ -1,0 +1,26 @@
+codename: oneplus-phk110
+name: OnePlus Ace 2V
+vendor: OnePlus
+year: 2023
+soc: mt6985
+soc_name: Dimensity 9000
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: phk110
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: China only; deep testing unlock; MediaTek; port candidate
+    source: vendor spec pages + user shortlist
+    checked: '2026-10-19'
