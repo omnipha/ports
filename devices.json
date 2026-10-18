@@ -50,14 +50,6 @@
         "storage_gb": 128
       },
       {
-        "ram_gb": 6,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 8,
-        "storage_gb": 128
-      },
-      {
         "ram_gb": 8,
         "storage_gb": 256
       }
@@ -93,6 +85,10 @@
     "name": "Fairphone 5",
     "vendor": "Fairphone",
     "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
       {
         "ram_gb": 8,
         "storage_gb": 256
@@ -663,11 +659,15 @@
     "variants": [
       {
         "ram_gb": 6,
-        "storage_gb": null
+        "storage_gb": 64
       },
       {
         "ram_gb": 8,
-        "storage_gb": null
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
       }
     ],
     "upstream_os": {
@@ -703,11 +703,15 @@
     "variants": [
       {
         "ram_gb": 6,
-        "storage_gb": null
+        "storage_gb": 128
       },
       {
         "ram_gb": 8,
-        "storage_gb": null
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
       }
     ],
     "upstream_os": {
@@ -785,10 +789,6 @@
         "storage_gb": 128
       },
       {
-        "ram_gb": 8,
-        "storage_gb": 256
-      },
-      {
         "ram_gb": 12,
         "storage_gb": 256
       }
@@ -822,6 +822,10 @@
       {
         "ram_gb": 8,
         "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
       },
       {
         "ram_gb": 12,
@@ -972,6 +976,14 @@
     "soc_name": "Helio G90T",
     "variants": [
       {
+        "ram_gb": 4,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 4,
+        "storage_gb": 128
+      },
+      {
         "ram_gb": 6,
         "storage_gb": 64
       },
@@ -982,6 +994,10 @@
       {
         "ram_gb": 8,
         "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
       }
     ],
     "upstream_os": {
@@ -1406,6 +1422,10 @@
     "soc_name": "Snapdragon 720G",
     "variants": [
       {
+        "ram_gb": 4,
+        "storage_gb": 128
+      },
+      {
         "ram_gb": 6,
         "storage_gb": 64
       },
@@ -1562,6 +1582,10 @@
       },
       {
         "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
         "storage_gb": 128
       }
     ],
@@ -1730,6 +1754,14 @@
     "variants": [
       {
         "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
         "storage_gb": 128
       },
       {

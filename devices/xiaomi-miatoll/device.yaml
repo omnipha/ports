@@ -5,13 +5,14 @@ year: 2020
 soc: sm7125
 soc_name: Snapdragon 720G
 variants:
+- ram_gb: 4
+  storage_gb: 128
 - ram_gb: 6
   storage_gb: 64
 - ram_gb: 6
   storage_gb: 128
 - ram_gb: 8
   storage_gb: 128
-
 upstream_os:
   ut:
     key: miatoll

@@ -3,13 +3,13 @@ aliases:
 - enchilada
 name: OnePlus 6
 vendor: OnePlus
-
 variants:
 - ram_gb: 6
-  storage_gb: null
+  storage_gb: 64
 - ram_gb: 8
-  storage_gb: null
-
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
 upstream_os:
   ut:
     key: enchilada
