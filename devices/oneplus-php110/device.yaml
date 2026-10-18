@@ -1,0 +1,29 @@
+codename: oneplus-php110
+name: OnePlus Ace 2V
+vendor: OnePlus
+year: 2023
+soc: mt6985
+soc_name: Dimensity 9000
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 1024
+
+upstream_os:
+  ut:
+    key: php110
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'unlock OK on ColorOS<=15: standard fastboot unlock; kernel OnePlusOSS android_kernel_5.10_oneplus_mt6983;
+      Aug 2024 batch bootloader bug; Jun 2026 update broke BL entry. Model PHP110; 16/1024 Top Edition.'
+    source: GSMArena/phonedb/androidcentral audit 2026-10-19
+    checked: '2026-10-19'

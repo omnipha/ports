@@ -7,8 +7,6 @@ soc_name: Snapdragon 7+ Gen 3
 variants:
 - ram_gb: 12
   storage_gb: 256
-- ram_gb: 12
-  storage_gb: 512
 - ram_gb: 16
   storage_gb: 256
 - ram_gb: 16
@@ -22,8 +20,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: 'unlock OK: standard fastboot unlock (XDA guide 2024-07); kernel OnePlusOSS android_kernel_oneplus_sm7675;
-      Aug 2024 units need EDL roll-forward to 14.0.1.820; official LineageOS 23.2 (verified 2026-10-19,
-      zenfyrdev wall-of-shame + XDA)'
+    note: 'Official spec page: 12/16 GB x 256/512 GB; launch prices only for 12/256, 16/256, 16/512; 12/512
+      dropped as unverified. Unlock OK: standard fastboot (XDA 2024-07); official LineageOS 23.2.'
     source: vendor spec pages + user shortlist
     checked: '2026-10-19'

@@ -1,0 +1,27 @@
+codename: oneplus-phk110
+name: OnePlus Ace 2
+vendor: OnePlus
+year: 2023
+soc: sm8475
+soc_name: Snapdragon 8+ Gen 1
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: phk110
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'unlock OK: standard fastboot unlock (initial ColorOS 13); kernel OnePlusOSS android_kernel_oneplus_sm8475;
+      18/512 Red Edition limited. Model PHK110 (GSMArena).'
+    source: GSMArena/phonedb audit 2026-10-19
+    checked: '2026-10-19'

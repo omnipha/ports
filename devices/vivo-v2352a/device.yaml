@@ -1,4 +1,4 @@
-codename: vivo-i2302
+codename: vivo-v2352a
 name: iQOO Z9 Turbo
 vendor: Vivo
 year: 2024
@@ -7,20 +7,22 @@ soc_name: Snapdragon 8s Gen 3
 variants:
 - ram_gb: 12
   storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
 - ram_gb: 16
   storage_gb: 256
 - ram_gb: 16
   storage_gb: 512
 upstream_os:
   ut:
-    key: i2302
+    key: v2352a
     listed: false
     source: devices.ubuntu-touch.io
     checked: '2026-10-19'
   nura:
     status: unverified
     image: none
-    note: 'unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target (verified
-      2026-10-19, zenfyrdev wall-of-shame + XDA)'
+    note: 'Z9 Turbo = V2352A (I2302 is the global Z9, Dimensity 7200). Launch: 12/256, 16/256, 12/512,
+      16/512. Unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target.'
     source: vendor spec pages + user shortlist
     checked: '2026-10-19'

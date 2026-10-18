@@ -789,10 +789,6 @@
         "storage_gb": 256
       },
       {
-        "ram_gb": 12,
-        "storage_gb": 512
-      },
-      {
         "ram_gb": 16,
         "storage_gb": 256
       },
@@ -811,7 +807,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock OK: standard fastboot unlock (XDA guide 2024-07); kernel OnePlusOSS android_kernel_oneplus_sm7675; Aug 2024 units need EDL roll-forward to 14.0.1.820; official LineageOS 23.2 (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "Official spec page: 12/16 GB x 256/512 GB; launch prices only for 12/256, 16/256, 16/512; 12/512 dropped as unverified. Unlock OK: standard fastboot (XDA 2024-07); official LineageOS 23.2.",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1362,6 +1358,86 @@
     }
   },
   {
+    "id": "oneplus-phk110",
+    "codename": "oneplus-phk110",
+    "name": "OnePlus Ace 2",
+    "vendor": "OnePlus",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "phk110",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "unlock OK: standard fastboot unlock (initial ColorOS 13); kernel OnePlusOSS android_kernel_oneplus_sm8475; 18/512 Red Edition limited. Model PHK110 (GSMArena).",
+        "source": "GSMArena/phonedb audit 2026-10-19",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-php110",
+    "codename": "oneplus-php110",
+    "name": "OnePlus Ace 2V",
+    "vendor": "OnePlus",
+    "year": 2023,
+    "soc": "mt6985",
+    "soc_name": "Dimensity 9000",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "php110",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "unlock OK on ColorOS<=15: standard fastboot unlock; kernel OnePlusOSS android_kernel_5.10_oneplus_mt6983; Aug 2024 batch bootloader bug; Jun 2026 update broke BL entry. Model PHP110; 16/1024 Top Edition.",
+        "source": "GSMArena/phonedb/androidcentral audit 2026-10-19",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-salami",
     "codename": "oneplus-salami",
     "name": "OnePlus 11 5G",
@@ -1580,12 +1656,16 @@
     "soc_name": "Dimensity 8400-Max",
     "variants": [
       {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
         "ram_gb": 12,
         "storage_gb": 256
       },
       {
-        "ram_gb": 16,
-        "storage_gb": 256
+        "ram_gb": 12,
+        "storage_gb": 512
       },
       {
         "ram_gb": 16,
@@ -1602,7 +1682,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock not verified (2025 device, thin evidence); do not assume Deep Testing works (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "Launch 8/256, 12/256, 12/512, 16/512 (Fonearena 2025-02); no 1TB sold. Unlock not verified (2025 device, thin evidence).",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1834,10 +1914,6 @@
       {
         "ram_gb": 16,
         "storage_gb": 512
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 1024
       }
     ],
     "upstream_os": {
@@ -1850,7 +1926,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock conditional: Deep Testing allowlist, 2024 success and failure reports both exist; kernel sources not yet located (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "Launch 8/256, 12/256, 16/256, 16/512; no 1TB SKU (Gizmochina). Unlock conditional: Deep Testing allowlist, 2024 mixed reports; kernel sources not yet located.",
         "source": "realme.com spec page",
         "checked": "2026-10-19"
       }
@@ -2199,44 +2275,6 @@
     }
   },
   {
-    "id": "vivo-i2302",
-    "codename": "vivo-i2302",
-    "name": "iQOO Z9 Turbo",
-    "vendor": "Vivo",
-    "year": 2024,
-    "soc": "sm8635",
-    "soc_name": "Snapdragon 8s Gen 3",
-    "variants": [
-      {
-        "ram_gb": 12,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 512
-      }
-    ],
-    "upstream_os": {
-      "ut": {
-        "key": "i2302",
-        "listed": false,
-        "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
-      },
-      "nura": {
-        "status": "unverified",
-        "image": "none",
-        "note": "unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
-        "source": "vendor spec pages + user shortlist",
-        "checked": "2026-10-19"
-      }
-    }
-  },
-  {
     "id": "vivo-v2302a",
     "codename": "vivo-v2302a",
     "name": "iQOO Neo 8 Pro",
@@ -2252,6 +2290,10 @@
       {
         "ram_gb": 16,
         "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
       }
     ],
     "upstream_os": {
@@ -2264,7 +2306,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "Launch 16/256, 16/512, 16/1TB. Unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target.",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -2284,12 +2326,16 @@
         "storage_gb": 256
       },
       {
-        "ram_gb": 16,
-        "storage_gb": 256
+        "ram_gb": 12,
+        "storage_gb": 512
       },
       {
         "ram_gb": 16,
         "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
       }
     ],
     "upstream_os": {
@@ -2302,7 +2348,49 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock officially impossible: Vivo blocks, no public exploit for OriginOS 2023+; NO kernel sources released - not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
+        "note": "Launch SKUs 12/256, 12/512, 16/512, 16/1TB (vivo.com.cn); 16/256 not in launch lists; 18/512 Super Cup limited. Unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target.",
+        "source": "vendor spec pages + user shortlist",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "vivo-v2352a",
+    "codename": "vivo-v2352a",
+    "name": "iQOO Z9 Turbo",
+    "vendor": "Vivo",
+    "year": 2024,
+    "soc": "sm8635",
+    "soc_name": "Snapdragon 8s Gen 3",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "v2352a",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Z9 Turbo = V2352A (I2302 is the global Z9, Dimensity 7200). Launch: 12/256, 16/256, 12/512, 16/512. Unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target.",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
