@@ -928,6 +928,48 @@
     }
   },
   {
+    "id": "samsung-a52q",
+    "codename": "samsung-a52q",
+    "name": "Galaxy A52 (4G)",
+    "vendor": "Samsung",
+    "year": 2021,
+    "soc": "sm7125",
+    "soc_name": "Snapdragon 720G",
+    "variants": [
+      {
+        "ram_gb": 4,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "a52q",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "generic-sm7125",
+        "note": "device tree sm7125-samsung-a52q exists in sm7125-mainline kernel, so the generic sm7125 image can boot it; not verified by boot log",
+        "source": "https://github.com/sm7125-mainline/linux",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "samsung-a72q",
     "codename": "samsung-a72q",
     "name": "Galaxy A72 (4G)",
