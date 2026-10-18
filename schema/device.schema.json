@@ -130,19 +130,23 @@
             "status": {
               "enum": [
                 "community",
-                "testing",
+                "generic-image",
+                "not-checked",
                 "packaged-edge",
                 "self-built",
-                "unverified",
-                "not-checked"
+                "testing",
+                "unverified"
               ]
             },
             "image": {
               "enum": [
-                "own",
-                "generic-sm7150",
+                "generic-exynos9820",
                 "generic-msm8953",
-                "none"
+                "generic-sdm845",
+                "generic-sm7125",
+                "generic-sm7150",
+                "none",
+                "own"
               ]
             },
             "release": {
