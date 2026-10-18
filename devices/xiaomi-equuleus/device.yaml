@@ -5,6 +5,8 @@ year: 2018
 soc: sdm845
 soc_name: Snapdragon 845
 variants:
+- ram_gb: 6
+  storage_gb: 128
 - ram_gb: 8
   storage_gb: 128
 upstream_os:
