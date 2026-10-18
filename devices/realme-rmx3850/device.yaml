@@ -1,0 +1,31 @@
+codename: realme-rmx3850
+name: Realme GT Neo 6 SE
+vendor: Realme
+year: 2024
+soc: sm7675
+soc_name: Snapdragon 7+ Gen 3
+variants:
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 1024
+
+upstream_os:
+  ut:
+    key: rmx3850
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 16GB real (China); unlock status unverified; port candidate; SKU list from vendor page, needs
+      verification
+    source: realme.com spec page
+    checked: '2026-10-19'
