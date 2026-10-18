@@ -6,20 +6,17 @@ soc: sm8475
 soc_name: Snapdragon 8+ Gen 1
 variants:
 - ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 512
-- ram_gb: 16
-  storage_gb: 128
-- ram_gb: 16
-  storage_gb: 256
 - ram_gb: 16
   storage_gb: 512
 - ram_gb: 16
   storage_gb: 1024
-
 upstream_os:
   ut:
     key: mondrian
@@ -29,6 +26,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: official LineageOS 24.0; port candidate; F5 Pro global 8/12GB only, 16GB is K60 CN
+    note: 'LineageOS 24.0. Poco F5 Pro (DE): 8/256, 12/256, 12/512 only. Redmi K60 (CN): 8/128, 8/256,
+      12/256, 12/512, 16/512, 16/1024. No 16/128 or 16/256.'
     source: https://wiki.lineageos.org/devices/
     checked: '2026-10-19'

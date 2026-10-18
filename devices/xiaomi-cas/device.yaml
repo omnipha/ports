@@ -11,11 +11,8 @@ variants:
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 256
-- ram_gb: 12
-  storage_gb: 512
 - ram_gb: 16
   storage_gb: 512
-
 upstream_os:
   ut:
     key: cas
@@ -25,6 +22,6 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: official LineageOS; China only; 8/128 seen at 261 EUR; port candidate
+    note: LineageOS 24.0. China only. Sold 8/128, 8/256, 12/256, 16/512. No 12/512.
     source: https://wiki.lineageos.org/devices/
     checked: '2026-10-19'

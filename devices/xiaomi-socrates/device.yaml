@@ -14,12 +14,7 @@ variants:
 - ram_gb: 12
   storage_gb: 512
 - ram_gb: 16
-  storage_gb: 256
-- ram_gb: 16
   storage_gb: 512
-- ram_gb: 16
-  storage_gb: 1024
-
 upstream_os:
   ut:
     key: socrates
@@ -29,6 +24,6 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: official LineageOS; China only; port candidate
+    note: 'LineageOS 24.0. China only. Sold: 8/128, 8/256, 12/256, 12/512, 16/512. No 16/256 or 16/1024.'
     source: https://wiki.lineageos.org/devices/
     checked: '2026-10-19'

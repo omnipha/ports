@@ -11,7 +11,6 @@ variants:
   storage_gb: 256
 - ram_gb: 16
   storage_gb: 512
-
 upstream_os:
   ut:
     key: obiwan
@@ -21,6 +20,6 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: official LineageOS; gaming phone; port candidate
+    note: LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020).
     source: https://wiki.lineageos.org/devices/
     checked: '2026-10-19'

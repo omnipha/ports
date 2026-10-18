@@ -11,15 +11,8 @@ variants:
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 512
-- ram_gb: 12
-  storage_gb: 1024
-- ram_gb: 16
-  storage_gb: 256
-- ram_gb: 16
-  storage_gb: 512
 - ram_gb: 16
   storage_gb: 1024
-
 upstream_os:
   ut:
     key: marble
@@ -29,6 +22,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: official LineageOS; 16GB is Note 12 Turbo CN only; port candidate; budget tier
+    note: 'LineageOS current. Poco F5 (DE): 8/256 and 12/256 only. Redmi Note 12 Turbo (CN) adds 12/512
+      and 16/1024. No 16/256 or 16/512.'
     source: https://wiki.lineageos.org/devices/
     checked: '2026-10-19'

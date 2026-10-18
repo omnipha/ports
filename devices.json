@@ -31,7 +31,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; gaming phone; port candidate",
+        "note": "LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020).",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -713,10 +713,6 @@
         "storage_gb": 128
       },
       {
-        "ram_gb": 8,
-        "storage_gb": 256
-      },
-      {
         "ram_gb": 12,
         "storage_gb": 256
       },
@@ -735,7 +731,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; gaming phone; port candidate",
+        "note": "LineageOS wiki exists; current build status not confirmed. Sold 8/128, 12/256, 16/256. No official DE retail.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -802,10 +798,6 @@
       },
       {
         "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
         "storage_gb": 512
       }
     ],
@@ -819,7 +811,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; port candidate",
+        "note": "LineageOS 23.2. EU: 8/128, 12/256, 16/512. India adds 8/256. No 16/256.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -1126,6 +1118,10 @@
       },
       {
         "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
         "storage_gb": 512
       }
     ],
@@ -1139,7 +1135,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; port candidate",
+        "note": "LineageOS 24.0. EU sold 8/128 and 16/256. 12/256 and 16/512 mainly CN/India.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -1855,10 +1851,6 @@
         "storage_gb": 256
       },
       {
-        "ram_gb": 12,
-        "storage_gb": 512
-      },
-      {
         "ram_gb": 16,
         "storage_gb": 512
       }
@@ -1873,7 +1865,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; China only; 8/128 seen at 261 EUR; port candidate",
+        "note": "LineageOS 24.0. China only. Sold 8/128, 8/256, 12/256, 16/512. No 12/512.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -2362,18 +2354,6 @@
         "storage_gb": 512
       },
       {
-        "ram_gb": 12,
-        "storage_gb": 1024
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 512
-      },
-      {
         "ram_gb": 16,
         "storage_gb": 1024
       }
@@ -2388,7 +2368,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; 16GB is Note 12 Turbo CN only; port candidate; budget tier",
+        "note": "LineageOS current. Poco F5 (DE): 8/256 and 12/256 only. Redmi Note 12 Turbo (CN) adds 12/512 and 16/1024. No 16/256 or 16/512.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -2516,6 +2496,10 @@
     "variants": [
       {
         "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
         "storage_gb": 256
       },
       {
@@ -2525,14 +2509,6 @@
       {
         "ram_gb": 12,
         "storage_gb": 512
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 128
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
       },
       {
         "ram_gb": 16,
@@ -2553,7 +2529,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS 24.0; port candidate; F5 Pro global 8/12GB only, 16GB is K60 CN",
+        "note": "LineageOS 24.0. Poco F5 Pro (DE): 8/256, 12/256, 12/512 only. Redmi K60 (CN): 8/128, 8/256, 12/256, 12/512, 16/512, 16/1024. No 16/128 or 16/256.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -2736,15 +2712,7 @@
       },
       {
         "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 16,
         "storage_gb": 512
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 1024
       }
     ],
     "upstream_os": {
@@ -2757,7 +2725,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; China only; port candidate",
+        "note": "LineageOS 24.0. China only. Sold: 8/128, 8/256, 12/256, 12/512, 16/512. No 16/256 or 16/1024.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
@@ -3033,14 +3001,6 @@
         "storage_gb": 512
       },
       {
-        "ram_gb": 12,
-        "storage_gb": 1024
-      },
-      {
-        "ram_gb": 16,
-        "storage_gb": 256
-      },
-      {
         "ram_gb": 16,
         "storage_gb": 512
       },
@@ -3059,7 +3019,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; 16GB on both F6 Pro and K70; port candidate",
+        "note": "LineageOS current. Poco F6 Pro (DE): 12/256, 12/512, 16/1024 only. Redmi K70 (CN): 12/256, 12/512, 16/512, 16/1024. No 16/256.",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
