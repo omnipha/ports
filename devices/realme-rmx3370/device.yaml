@@ -1,0 +1,27 @@
+codename: realme-rmx3370
+name: Realme GT Neo 2
+vendor: Realme
+year: 2021
+soc: sm8250
+soc_name: Snapdragon 870
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: rmx3370
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: unlock via patched DeepTesting APK (A11/12; A13 needs rollback); kernel sources public; XDA
+      community; port candidate
+    source: XDA/realme-kernel-opensource/GSMArena research 2026-10-19
+    checked: '2026-10-19'

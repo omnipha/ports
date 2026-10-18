@@ -1,0 +1,27 @@
+codename: oppo-cph2173
+name: Oppo Find X3 Pro
+vendor: Oppo
+year: 2021
+soc: sm8350
+soc_name: Snapdragon 888
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: cph2173
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: 'EU models: no official unlock app; EDL/firehose workaround only; port candidate with unlock
+      risk'
+    source: XDA/realme-kernel-opensource/GSMArena research 2026-10-19
+    checked: '2026-10-19'

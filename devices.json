@@ -1540,6 +1540,82 @@
     }
   },
   {
+    "id": "oppo-cph2173",
+    "codename": "oppo-cph2173",
+    "name": "Oppo Find X3 Pro",
+    "vendor": "Oppo",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cph2173",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "EU models: no official unlock app; EDL/firehose workaround only; port candidate with unlock risk",
+        "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oppo-cph2305",
+    "codename": "oppo-cph2305",
+    "name": "Oppo Find X5 Pro",
+    "vendor": "Oppo",
+    "year": 2022,
+    "soc": "sm8450",
+    "soc_name": "Snapdragon 8 Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cph2305",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "EU models: no official unlock app; hard unlock; port candidate with unlock risk",
+        "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "razer-aura",
     "codename": "razer-aura",
     "name": "Razer Phone 2",
@@ -1705,6 +1781,44 @@
     }
   },
   {
+    "id": "realme-rmx2202",
+    "codename": "realme-rmx2202",
+    "name": "Realme GT 5G",
+    "vendor": "Realme",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "rmx2202",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "unlock via patched DeepTesting APK; kernel sources on realme-kernel-opensource; port candidate; DE sold",
+        "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "realme-rmx3301",
     "codename": "realme-rmx3301",
     "name": "Realme GT 2 Pro",
@@ -1742,6 +1856,44 @@
         "image": "none",
         "note": "port candidate added 2026-10-19: no mainline device tree yet, see note",
         "source": "pmaports-mirror",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "realme-rmx3370",
+    "codename": "realme-rmx3370",
+    "name": "Realme GT Neo 2",
+    "vendor": "Realme",
+    "year": 2021,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 870",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "rmx3370",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "unlock via patched DeepTesting APK (A11/12; A13 needs rollback); kernel sources public; XDA community; port candidate",
+        "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
         "checked": "2026-10-19"
       }
     }
