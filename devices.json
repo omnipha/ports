@@ -2451,7 +2451,7 @@
     "name": "POCO X4 GT / Redmi Note 11T Pro / K50i",
     "vendor": "Xiaomi",
     "year": 2022,
-    "soc": "mt6893",
+    "soc": "mt6895",
     "soc_name": "Dimensity 8100",
     "variants": [
       {
