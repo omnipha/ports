@@ -1,0 +1,28 @@
+codename: xiaomi-haydn
+name: Redmi K40 Pro / Mi 11i
+vendor: Xiaomi
+year: 2021
+soc: sm8350
+soc_name: Snapdragon 888
+variants:
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: haydn
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: port candidate; Mi 11i (EU) sold as 8/256 only; K40 Pro+ (haydnpro) separate model
+    source: pmaports-mirror
+    checked: '2026-10-19'

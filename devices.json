@@ -999,6 +999,10 @@
     "variants": [
       {
         "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
         "storage_gb": 256
       },
       {
@@ -1411,6 +1415,40 @@
     }
   },
   {
+    "id": "xiaomi-apollo",
+    "codename": "xiaomi-apollo",
+    "name": "Mi 10T / Redmi K30S Ultra",
+    "vendor": "Xiaomi",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "apollo",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "port candidate; sm8250 family; sold in DE; Mi 10T Pro (apollopro) separate model",
+        "source": "pmaports-mirror",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-ares",
     "codename": "xiaomi-ares",
     "name": "Redmi K40 Gaming / Poco F3 GT",
@@ -1729,6 +1767,48 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-haydn",
+    "codename": "xiaomi-haydn",
+    "name": "Redmi K40 Pro / Mi 11i",
+    "vendor": "Xiaomi",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "haydn",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "port candidate; Mi 11i (EU) sold as 8/256 only; K40 Pro+ (haydnpro) separate model",
+        "source": "pmaports-mirror",
+        "checked": "2026-10-19"
       }
     }
   },
