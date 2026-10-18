@@ -362,6 +362,37 @@
     }
   },
   {
+    "id": "jolla-c2",
+    "codename": "jolla-c2",
+    "name": "Jolla C2",
+    "vendor": "Jolla",
+    "year": 2024,
+    "soc": "ums9230",
+    "soc_name": "Unisoc T612",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "c2",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "motorola-dubai",
     "codename": "motorola-dubai",
     "name": "Motorola Edge 30",
@@ -792,6 +823,45 @@
     }
   },
   {
+    "id": "shift-otter",
+    "codename": "shift-otter",
+    "name": "SHIFTphone 8",
+    "vendor": "SHIFT",
+    "year": 2024,
+    "soc": "sc7280",
+    "soc_name": "Snapdragon 7s Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "otter",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "sony-pdx215",
     "codename": "sony-pdx215",
     "name": "Xperia 1 III",
@@ -812,6 +882,45 @@
     "upstream_os": {
       "ut": {
         "key": "pdx215",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-begonia",
+    "codename": "xiaomi-begonia",
+    "name": "Redmi Note 8 Pro",
+    "vendor": "Xiaomi",
+    "year": 2019,
+    "soc": "mt6785",
+    "soc_name": "Helio G90T",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "begonia",
         "listed": false,
         "source": "devices.ubuntu-touch.io",
         "checked": "2026-10-18"
@@ -863,6 +972,53 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-cepheus",
+    "codename": "xiaomi-cepheus",
+    "name": "Mi 9",
+    "vendor": "Xiaomi",
+    "year": 2019,
+    "soc": "sm8150",
+    "soc_name": "Snapdragon 855",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cepheus",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
@@ -931,6 +1087,37 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-equuleus",
+    "codename": "xiaomi-equuleus",
+    "name": "Mi 8 Pro",
+    "vendor": "Xiaomi",
+    "year": 2018,
+    "soc": "sdm845",
+    "soc_name": "Snapdragon 845",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "equuleus",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
@@ -1070,6 +1257,45 @@
     }
   },
   {
+    "id": "xiaomi-miatoll",
+    "codename": "xiaomi-miatoll",
+    "name": "Redmi Note 9 Pro / 9S",
+    "vendor": "Xiaomi",
+    "year": 2020,
+    "soc": "sm7125",
+    "soc_name": "Snapdragon 720G",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 64
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "miatoll",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "xiaomi-mido",
     "codename": "xiaomi-mido",
     "aliases": [
@@ -1102,6 +1328,44 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-pipa",
+    "codename": "xiaomi-pipa",
+    "name": "Pad 6",
+    "vendor": "Xiaomi",
+    "year": 2023,
+    "soc_name": "Snapdragon 870",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pipa",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
