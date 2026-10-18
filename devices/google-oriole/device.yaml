@@ -1,0 +1,25 @@
+codename: google-oriole
+name: Pixel 6
+vendor: Google
+year: 2021
+soc: gs101
+soc_name: Google Tensor
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: oriole
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-18'
+  nura:
+    status: packaged-edge
+    image: none
+    note: device package in pmaports testing; no release image
+    source: pmaports-mirror
+    url: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing
+    checked: '2026-10-18'

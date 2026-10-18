@@ -158,6 +158,80 @@
     }
   },
   {
+    "id": "google-oriole",
+    "codename": "google-oriole",
+    "name": "Pixel 6",
+    "vendor": "Google",
+    "year": 2021,
+    "soc": "gs101",
+    "soc_name": "Google Tensor",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "oriole",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "google-raven",
+    "codename": "google-raven",
+    "name": "Pixel 6 Pro",
+    "vendor": "Google",
+    "year": 2021,
+    "soc": "gs101",
+    "soc_name": "Google Tensor",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "raven",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
     "id": "google-sargo",
     "codename": "google-sargo",
     "aliases": [
@@ -176,10 +250,10 @@
     "status": {
       "boot": "works",
       "ssh": "works",
-      "wifi": "partial",
+      "wifi": "works",
       "display": "works",
       "gpu": "works",
-      "ui": "partial",
+      "ui": "works",
       "touchscreen": "untested",
       "audio": "untested",
       "bluetooth": "untested",
@@ -195,7 +269,7 @@
     ],
     "flash": "fastboot",
     "image": "images/google-sargo",
-    "notes": "wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. The AP uses ch 13. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch maps the unprogrammed EEPROM to world regdomain 0x64 (same state as xiaomi-laurel, verified working there). 5 GHz (DFS ch 116) currently crashes wlan firmware (halphy_caldb.c assertion), unpatched.\n",
+    "notes": "wlan0 ath10k_snoc comes up with EEPROM regdomain 0x0, which the ath driver maps to CTRY_UNITED_STATES, hard-disabling ch 12/13 in 2.4 GHz. Patch 0001-ath-regd-default-to-world-regdomain-instead-of-US.patch maps the unprogrammed EEPROM to world regdomain 0x64 (same state as xiaomi-laurel). Applied and verified 2026-10-18: MINDSTORMS (ch 13) connects, host is resolvable via Fritzbox DNS. 5 GHz (DFS ch 116) still crashes wlan firmware (halphy_caldb.c assertion) — separate issue, not fixed by the regdom patch.\n",
     "variants": [
       {
         "ram_gb": 4,
@@ -410,6 +484,119 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "oneplus-guacamole",
+    "codename": "oneplus-guacamole",
+    "name": "OnePlus 7 Pro",
+    "vendor": "OnePlus",
+    "year": 2019,
+    "soc": "sm8150",
+    "soc_name": "Snapdragon 855",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "guacamole",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oneplus-instantnoodlep",
+    "codename": "oneplus-instantnoodlep",
+    "name": "OnePlus 8 Pro",
+    "vendor": "OnePlus",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "instantnoodlep",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oneplus-kebab",
+    "codename": "oneplus-kebab",
+    "name": "OnePlus 8T",
+    "vendor": "OnePlus",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "kebab",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-18"
+      },
+      "nura": {
+        "status": "packaged-edge",
+        "image": "none",
+        "note": "device package in pmaports testing; no release image",
+        "source": "pmaports-mirror",
+        "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
+        "checked": "2026-10-18"
       }
     }
   },
