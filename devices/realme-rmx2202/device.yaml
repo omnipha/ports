@@ -11,7 +11,6 @@ variants:
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 256
-
 upstream_os:
   ut:
     key: rmx2202
@@ -21,7 +20,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: unlock via patched DeepTesting APK; kernel sources on realme-kernel-opensource; port candidate;
-      DE sold
+    note: 'unlock OK-ish: Deep Testing works on allowlisted GT 5G (official tutorial live); patched-APK
+      path is fallback (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)'
     source: XDA/realme-kernel-opensource/GSMArena research 2026-10-19
     checked: '2026-10-19'

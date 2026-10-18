@@ -11,7 +11,6 @@ variants:
   storage_gb: 256
 - ram_gb: 16
   storage_gb: 512
-
 upstream_os:
   ut:
     key: neo7se
@@ -21,6 +20,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: China only; new (2025); unlock status unverified; port candidate (long term)
+    note: unlock not verified (2025 device, thin evidence); do not assume Deep Testing works (verified
+      2026-10-19, zenfyrdev wall-of-shame + XDA)
     source: vendor spec pages + user shortlist
     checked: '2026-10-19'

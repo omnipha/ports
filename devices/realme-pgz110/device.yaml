@@ -17,7 +17,6 @@ variants:
   storage_gb: 512
 - ram_gb: 16
   storage_gb: 1024
-
 upstream_os:
   ut:
     key: pgz110
@@ -27,6 +26,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: China only; same SD 7+ Gen 2 as Redmi Note 12 Turbo; unlock via patched DeepTesting; port candidate
+    note: 'unlock conditional: Deep Testing allowlist (CN/IN); kernel source realme_GTneo5SE_5G-AndroidU-kernel-source
+      exists (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)'
     source: vendor spec pages + user shortlist
     checked: '2026-10-19'

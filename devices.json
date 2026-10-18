@@ -811,7 +811,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS 23.2 (audi); deep testing unlock; same platform as Nord 4 (avalon); port candidate",
+        "note": "unlock OK: standard fastboot unlock (XDA guide 2024-07); kernel OnePlusOSS android_kernel_oneplus_sm7675; Aug 2024 units need EDL roll-forward to 14.0.1.820; official LineageOS 23.2 (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1393,7 +1393,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; OnePlus deep testing unlock; port candidate",
+        "note": "unlock OK: standard fastboot unlock (initial ColorOS 13, carve-out); kernel source OnePlusOSS android_kernel_oneplus_sm8475; XDA convert guides exist; caveat: ColorOS 16 update may require deep testing (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1431,7 +1431,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; deep testing unlock; MediaTek; port candidate",
+        "note": "unlock OK on initial ColorOS<=15/OxygenOS<=15: standard fastboot unlock; Dimensity 9000 (MT6983); kernel source OnePlusOSS android_kernel_5.10_oneplus_mt6983; caveats: Aug 2024 batch bootloader bug, Jun 2026 update broke BL entry (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1678,7 +1678,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; new (2025); unlock status unverified; port candidate (long term)",
+        "note": "unlock not verified (2025 device, thin evidence); do not assume Deep Testing works (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1724,7 +1724,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "16GB real (16/256..16/1TB 240W); unlock via patched DeepTesting (Android 12 era firmware); port candidate",
+        "note": "unlock conditional: Deep Testing app, model allowlist + CN/IN region; conflicting 2024-25 user reports; kernel sources under realme-kernel-opensource (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1774,7 +1774,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; same SD 7+ Gen 2 as Redmi Note 12 Turbo; unlock via patched DeepTesting; port candidate",
+        "note": "unlock conditional: Deep Testing allowlist (CN/IN); kernel source realme_GTneo5SE_5G-AndroidU-kernel-source exists (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -1812,7 +1812,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock via patched DeepTesting APK; kernel sources on realme-kernel-opensource; port candidate; DE sold",
+        "note": "unlock OK-ish: Deep Testing works on allowlisted GT 5G (official tutorial live); patched-APK path is fallback (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
         "checked": "2026-10-19"
       }
@@ -1892,7 +1892,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "unlock via patched DeepTesting APK (A11/12; A13 needs rollback); kernel sources public; XDA community; port candidate",
+        "note": "unlock conditional: Deep Testing works on A11/12 era firmware, A13 needs rollback; allowlist per model (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "XDA/realme-kernel-opensource/GSMArena research 2026-10-19",
         "checked": "2026-10-19"
       }
@@ -1938,7 +1938,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "16GB real (China); unlock status unverified; port candidate; SKU list from vendor page, needs verification",
+        "note": "unlock conditional: Deep Testing allowlist, 2024 success and failure reports both exist; kernel sources not yet located (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "realme.com spec page",
         "checked": "2026-10-19"
       }
@@ -2318,7 +2318,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification",
+        "note": "unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -2352,7 +2352,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification",
+        "note": "unlock officially impossible: Vivo blocks; no kernel sources; not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }
@@ -2390,7 +2390,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "China only; vivo bootloader unlock generally blocked; pending unlock verification; kernel sources published per GPL",
+        "note": "unlock officially impossible: Vivo blocks, no public exploit for OriginOS 2023+; NO kernel sources released - not a viable port target (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)",
         "source": "vendor spec pages + user shortlist",
         "checked": "2026-10-19"
       }

@@ -11,7 +11,6 @@ variants:
   storage_gb: 256
 - ram_gb: 12
   storage_gb: 256
-
 upstream_os:
   ut:
     key: rmx3370
@@ -21,7 +20,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: unlock via patched DeepTesting APK (A11/12; A13 needs rollback); kernel sources public; XDA
-      community; port candidate
+    note: 'unlock conditional: Deep Testing works on A11/12 era firmware, A13 needs rollback; allowlist
+      per model (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)'
     source: XDA/realme-kernel-opensource/GSMArena research 2026-10-19
     checked: '2026-10-19'

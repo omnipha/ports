@@ -15,7 +15,6 @@ variants:
   storage_gb: 512
 - ram_gb: 16
   storage_gb: 1024
-
 upstream_os:
   ut:
     key: rmx3850
@@ -25,7 +24,7 @@ upstream_os:
   nura:
     status: unverified
     image: none
-    note: 16GB real (China); unlock status unverified; port candidate; SKU list from vendor page, needs
-      verification
+    note: 'unlock conditional: Deep Testing allowlist, 2024 success and failure reports both exist; kernel
+      sources not yet located (verified 2026-10-19, zenfyrdev wall-of-shame + XDA)'
     source: realme.com spec page
     checked: '2026-10-19'
