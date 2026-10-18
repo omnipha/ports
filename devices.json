@@ -2553,12 +2553,20 @@
   {
     "id": "xiaomi-xaga",
     "codename": "xiaomi-xaga",
-    "name": "POCO X4 GT / Redmi Note 11T Pro / K50i",
+    "name": "POCO X4 GT / Redmi Note 11T Pro / 11T Pro+ / K50i",
     "vendor": "Xiaomi",
     "year": 2022,
     "soc": "mt6895",
     "soc_name": "Dimensity 8100",
     "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 6,
+        "storage_gb": 256
+      },
       {
         "ram_gb": 8,
         "storage_gb": 128
@@ -2566,6 +2574,18 @@
       {
         "ram_gb": 8,
         "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
       }
     ],
     "upstream_os": {
@@ -2578,7 +2598,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS support (xaga family: X4 GT, Note 11T Pro/+, K50i); MediaTek, no mainline DT; top self-porting candidate via Lineage kernel sources",
+        "note": "official LineageOS 24.0 (xaga); family variants per LineageOS wiki: X4 GT 8/128+8/256, Note 11T Pro 6/8/12 GB up to 512, Pro+ 8 GB up to 512, K50i 6/8; MediaTek MT6895, no mainline DT; top self-porting candidate",
         "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
