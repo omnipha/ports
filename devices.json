@@ -1757,14 +1757,6 @@
         "storage_gb": 128
       },
       {
-        "ram_gb": 6,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 8,
-        "storage_gb": 128
-      },
-      {
         "ram_gb": 8,
         "storage_gb": 256
       }
