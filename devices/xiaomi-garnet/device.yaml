@@ -1,0 +1,32 @@
+codename: xiaomi-garnet
+name: Redmi Note 13 Pro 5G / Poco X6
+vendor: Xiaomi
+year: 2023
+soc: sm7435
+soc_name: Snapdragon 7s Gen 2
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 8
+  storage_gb: 512
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: garnet
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS; 16GB is China Note 13 Pro only; port candidate; budget tier
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

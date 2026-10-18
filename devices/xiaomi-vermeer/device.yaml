@@ -1,0 +1,32 @@
+codename: xiaomi-vermeer
+name: Poco F6 Pro / Redmi K70
+vendor: Xiaomi
+year: 2023
+soc: sm8550
+soc_name: Snapdragon 8 Gen 2
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 12
+  storage_gb: 1024
+- ram_gb: 16
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 1024
+
+upstream_os:
+  ut:
+    key: vermeer
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS; 16GB on both F6 Pro and K70; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'

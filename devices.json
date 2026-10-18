@@ -1,5 +1,89 @@
 [
   {
+    "id": "asus-obiwan",
+    "codename": "asus-obiwan",
+    "name": "ROG Phone 3",
+    "vendor": "Asus",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "obiwan",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; gaming phone; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "asus-sake",
+    "codename": "asus-sake",
+    "name": "ZenFone 8",
+    "vendor": "Asus",
+    "year": 2021,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "sake",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; 16GB rare top SKU; compact flagship; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "asus-zs620kl",
     "codename": "asus-zs620kl",
     "name": "ZenFone 5z",
@@ -616,6 +700,132 @@
     }
   },
   {
+    "id": "nubia-nx659j",
+    "codename": "nubia-nx659j",
+    "name": "Red Magic 5G / 5S",
+    "vendor": "Nubia",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "nx659j",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; gaming phone; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-aston",
+    "codename": "oneplus-aston",
+    "name": "OnePlus 12R",
+    "vendor": "OnePlus",
+    "year": 2024,
+    "soc": "sm8550",
+    "soc_name": "Snapdragon 8 Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "aston",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; 16/256 seen at 270 EUR; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "oneplus-avalon",
+    "codename": "oneplus-avalon",
+    "name": "OnePlus Nord 4",
+    "vendor": "OnePlus",
+    "year": 2024,
+    "soc": "sm7675",
+    "soc_name": "Snapdragon 7+ Gen 3",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "avalon",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "oneplus-billie",
     "codename": "oneplus-billie",
     "aliases": [
@@ -894,6 +1104,44 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "oneplus-salami",
+    "codename": "oneplus-salami",
+    "name": "OnePlus 11 5G",
+    "vendor": "OnePlus",
+    "year": 2023,
+    "soc": "sm8550",
+    "soc_name": "Snapdragon 8 Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "salami",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -1586,6 +1834,52 @@
     }
   },
   {
+    "id": "xiaomi-cas",
+    "codename": "xiaomi-cas",
+    "name": "Mi 10 Ultra",
+    "vendor": "Xiaomi",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cas",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; China only; 8/128 seen at 261 EUR; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-cepheus",
     "codename": "xiaomi-cepheus",
     "name": "Mi 9",
@@ -1732,6 +2026,56 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-garnet",
+    "codename": "xiaomi-garnet",
+    "name": "Redmi Note 13 Pro 5G / Poco X6",
+    "vendor": "Xiaomi",
+    "year": 2023,
+    "soc": "sm7435",
+    "soc_name": "Snapdragon 7s Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "garnet",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; 16GB is China Note 13 Pro only; port candidate; budget tier",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -1997,6 +2341,60 @@
     }
   },
   {
+    "id": "xiaomi-marble",
+    "codename": "xiaomi-marble",
+    "name": "Poco F5 / Redmi Note 12 Turbo",
+    "vendor": "Xiaomi",
+    "year": 2023,
+    "soc": "sm7475",
+    "soc_name": "Snapdragon 7+ Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "marble",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; 16GB is Note 12 Turbo CN only; port candidate; budget tier",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
     "id": "xiaomi-merlin",
     "codename": "xiaomi-merlin",
     "aliases": [
@@ -2104,6 +2502,60 @@
         "source": "nura.eco/install",
         "url": "https://nura.eco/install/",
         "checked": "2026-10-17"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-mondrian",
+    "codename": "xiaomi-mondrian",
+    "name": "Poco F5 Pro / Redmi K60",
+    "vendor": "Xiaomi",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "mondrian",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS 24.0; port candidate; F5 Pro global 8/12GB only, 16GB is K60 CN",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },
@@ -2253,6 +2705,60 @@
         "image": "none",
         "note": "port candidate; K20 Pro Premium (CN) adds 12/512 with SD855+ as separate model",
         "source": "pmaports-mirror",
+        "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-socrates",
+    "codename": "xiaomi-socrates",
+    "name": "Redmi K60 Pro",
+    "vendor": "Xiaomi",
+    "year": 2022,
+    "soc": "sm8550",
+    "soc_name": "Snapdragon 8 Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "socrates",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; China only; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
         "checked": "2026-10-19"
       }
     }
@@ -2506,6 +3012,56 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "xiaomi-vermeer",
+    "codename": "xiaomi-vermeer",
+    "name": "Poco F6 Pro / Redmi K70",
+    "vendor": "Xiaomi",
+    "year": 2023,
+    "soc": "sm8550",
+    "soc_name": "Snapdragon 8 Gen 2",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "vermeer",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-19"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "official LineageOS; 16GB on both F6 Pro and K70; port candidate",
+        "source": "https://wiki.lineageos.org/devices/",
+        "checked": "2026-10-19"
       }
     }
   },

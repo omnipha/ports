@@ -1,0 +1,26 @@
+codename: asus-obiwan
+name: ROG Phone 3
+vendor: Asus
+year: 2020
+soc: sm8250
+soc_name: Snapdragon 865+
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: obiwan
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: official LineageOS; gaming phone; port candidate
+    source: https://wiki.lineageos.org/devices/
+    checked: '2026-10-19'
