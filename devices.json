@@ -3220,6 +3220,17 @@
     ],
     "flash": "fastboot",
     "image": "images/xiaomi-laurel",
+    "device_repo": "https://github.com/omnipha/device-xiaomi-laurel",
+    "maintainers": [
+      {
+        "id": "sprintberlin",
+        "role": "hardware-tester"
+      }
+    ],
+    "release": {
+      "status": "unreleased",
+      "maintenance": "unowned"
+    },
     "variants": [
       {
         "ram_gb": 4,
