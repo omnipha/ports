@@ -27,13 +27,17 @@ Verified 2026-10-18: channel 13 (2472 MHz) WPA2 connects with
 regdomain; on this unit starting a vdev there crashes the ath10k_snoc firmware
 (`halphy_caldb.c` assertion). Treat 5 GHz DFS as broken until proven otherwise.
 
-## USB host
+## USB host and runtime role switching
 
-The USB-C controller has no runtime role switch. Changing only `dr_mode` from
-`peripheral` to `host` in the boot DTB enables xHCI host mode. Verified
-2026-10-19 through a powered hub: USB Ethernet (RTL8152), a card reader and a
-video adapter enumerate. Gadget networking is unavailable while host mode is
-active, and VBUS output without external hub power is untested.
+No kernel driver needed. The stock kernel already supports runtime role
+switching; a boot-DTB-only change (`dr_mode = "otg"`, `usb-role-switch`,
+`role-switch-default-mode = "host"`) exposes
+`/sys/class/usb_role/a600000.usb-role-switch/role`, which switches live
+between host and device without rebooting. Verified 2026-10-19: host mode
+enumerates a powered hub, USB Ethernet (RTL8152), a card reader and a video
+adapter (/dev/sda); device mode releases the port and the gadget UDC returns.
+Boot default after reboot is device. VBUS output without external hub power
+is untested. A PM660 CC-autodetect typec driver port is not required for this.
 
 ## Build your own image (generic, no private data)
 

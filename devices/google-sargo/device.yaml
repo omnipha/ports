@@ -24,7 +24,7 @@ status:
   sensors: partial # tilt, light, proximity, temperature and battery measured
   gps: untested
   nfc: partial # NXP controller detects a MIFARE Type 2 tag; NDEF payload not read
-  usb_host: works # dr_mode=host; powered hub, Ethernet, card reader and video adapter detected
+  usb_host: works # runtime role switch via DT (dr_mode=otg + usb-role-switch); powered hub, Ethernet, card reader and video adapter detected
 profiles: [server, agent-host]
 flash: fastboot
 image: images/google-sargo
@@ -37,10 +37,13 @@ notes: >
   Verified 2026-10-18: a WPA2 network on channel 13 (2472 MHz) connects with
   options cfg80211 ieee80211_regdom=DE. 5 GHz (DFS ch 116) crashes wlan firmware
   (halphy_caldb.c assertion) — separate issue, not fixed by the regdom patch.
-  USB-C has no runtime role switch on this port. Setting dr_mode to host in the
-  boot DTB enables xHCI host mode: a powered hub exposed a USB Ethernet adapter,
-  card reader and video adapter. Gadget mode and its 172.16.42.1 interface are
-  unavailable in that boot. VBUS without an externally powered hub is untested.
+  Runtime USB role switching works with the stock kernel: a boot-DTB-only
+  change (dr_mode=otg, usb-role-switch, role-switch-default-mode=host) exposes
+  /sys/class/usb_role/a600000.usb-role-switch/role which switches live between
+  host and device without reboot. Verified 2026-10-19: host mode enumerates a
+  powered hub, RTL8152 Ethernet, video adapter and card reader (/dev/sda);
+  device mode releases the port and the UDC returns. Boot default is device.
+  VBUS without an externally powered hub is untested.
 
 variants:
 - ram_gb: 4
