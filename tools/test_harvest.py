@@ -6,7 +6,6 @@ import sys
 from pathlib import Path
 
 import jsonschema
-import pytest
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent

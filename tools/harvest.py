@@ -29,7 +29,6 @@ INDEX = ROOT / "devices.json"
 SCHEMA = ROOT / "schema" / "device.schema.json"
 UT_INDEX_URL = "https://devices.ubuntu-touch.io/"
 UT_SOURCE = "devices.ubuntu-touch.io"
-DEVICE_REPO_RE = re.compile(r"^https://github\.com/omnipha/device-[a-z0-9]+(?:-[a-z0-9]+)*$")
 
 
 def device_files():
