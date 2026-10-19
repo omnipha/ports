@@ -1,0 +1,25 @@
+codename: nothing-asteroids
+name: Nothing Phone (3a) Pro
+vendor: Nothing
+year: 2025
+soc: sm7755
+soc_name: Snapdragon 7s Gen 3
+variants:
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: asteroids
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-19'
+  nura:
+    status: unverified
+    image: none
+    note: codename asteroids, model A059P; DE sold; bootloader unlockable via Nothing fastboot; no official
+      Lineage yet (XDA device effort, /e/ request 2026-06); port candidate
+    source: e.foundation device request + XDA 2026-03, nothing.tech
+    checked: '2026-10-19'
