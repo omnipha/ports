@@ -12,6 +12,10 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 ## Data rules
 - `upstream_os.ut` is refreshed by `tools/harvest.py ut` from devices.ubuntu-touch.io; do not hand-edit its numbers.
 - `upstream_os.nura` is curated by hand (the Nura wiki is not machine-readable). Keep `source` and `checked` on every claim.
+- `upstream_os` describes upstream projects only; it never implies an Omnipha release. Omnipha image status lives in `release`.
+- `device_repo` must be the canonical URL `https://github.com/omnipha/device-<codename>`; having a repo never implies `official`.
+- `maintainers` lists public identities and roles (`hardware-tester` | `maintainer` | `release-owner`); never host details or secrets.
+- `release.status: official` requires the gate in README.md ("Official images"): reproducible CI build, flashing/rollback docs, physical boot/network/SSH test (`release.evidence`), named `release-owner`, and `maintenance: maintained`. Enforced by `tools/harvest.py check` and tests (`python3 -m pytest tools/`).
 - `variants` lists sold ram/storage combinations. Do not store ram and storage as independent lists.
 - Never add prices. Used-price estimates go to omnipha/market.
 

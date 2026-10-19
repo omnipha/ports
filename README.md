@@ -18,6 +18,20 @@ support (`upstream_os.ut`, `upstream_os.nura`), each with `source` and
 `checked`. Used-price estimates live in omnipha/market. This repo stays
 price-free; the schema rejects price keys.
 
+## Official images
+`upstream_os` records what upstream projects (Ubuntu Touch, Nura) report — it
+never implies an Omnipha release. Omnipha's own image status is the separate
+`release` block:
+
+- `device_repo` — canonical device repository `https://github.com/omnipha/device-<codename>`.
+  Its presence does not make a release official.
+- `maintainers` — public identities with roles (`hardware-tester`,
+  `maintainer`, `release-owner`). Hardware-test responsibility is explicit.
+- `release.status: official` requires the full gate, enforced by schema and
+  tests: reproducible CI build, documented flashing/rollback, physical
+  boot/network/SSH test on real hardware (`release.evidence`), and a named
+  `release-owner` plus `maintenance: maintained`.
+
 ## Device lifecycle
 `new` → `boot` → `ssh+network` → `usable-server` (profile: server) → `daily-phone`.
 

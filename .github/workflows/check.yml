@@ -16,6 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml jsonschema
+      - run: pip install pyyaml jsonschema pytest
       - run: python3 tools/harvest.py index
       - run: python3 tools/harvest.py check
+      - run: python3 -m pytest tools/

@@ -107,6 +107,34 @@ def cmd_ut(args):
     return 0
 
 
+def validate_consistency(path, data):
+    """Return cross-field violations that JSON Schema cannot express alone."""
+    messages = []
+    repo = data.get("device_repo")
+    codename = data.get("codename")
+    if isinstance(repo, str) and isinstance(codename, str) and repo != f"https://github.com/omnipha/device-{codename}":
+        messages.append(f"{path}: device_repo must be https://github.com/omnipha/device-{codename}")
+    release = data.get("release") or {}
+    maintainers = data.get("maintainers") or []
+    roles = {
+        item.get("role")
+        for item in maintainers
+        if isinstance(item, dict)
+    }
+    if release.get("maintenance") == "maintained" and "maintainer" not in roles:
+        messages.append(f"{path}: maintained status requires a maintainer")
+    if release.get("status") == "official" and "release-owner" not in roles:
+        messages.append(f"{path}: official status requires a release-owner")
+    evidence = release.get("evidence") or {}
+    test = evidence.get("physical_test") or {}
+    tester = test.get("tester")
+    if tester and tester not in {
+        item.get("id") for item in maintainers if isinstance(item, dict) and item.get("role") == "hardware-tester"
+    }:
+        messages.append(f"{path}: physical_test.tester must be a listed hardware-tester")
+    return messages
+
+
 def build_index():
     entries = []
     for path in device_files():
@@ -130,6 +158,9 @@ def cmd_check(_args):
         data = json.loads(json.dumps(load(path), default=str))
         if data.get("codename") != path.parent.name:
             print(f"{path}: codename must equal folder name", file=sys.stderr)
+            errors += 1
+        for message in validate_consistency(path, data):
+            print(message, file=sys.stderr)
             errors += 1
         for err in jsonschema.Draft202012Validator(schema).iter_errors(data):
             print(f"{path}: {'/'.join(map(str, err.path))}: {err.message}", file=sys.stderr)
