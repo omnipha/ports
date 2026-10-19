@@ -1,0 +1,1805 @@
+--- a/kernel/sched/walt/preemptirq_long.h
++++ b/kernel/sched/walt/preemptirq_long.h
+@@ -7,7 +7,7 @@
+ #define TRACE_SYSTEM preemptirq_long
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../kernel/sched/walt
+
+ #if !defined(_TRACE_PREEMPTIRQ_LONG_H) || defined(TRACE_HEADER_MULTI_READ)
+ #define _TRACE_PREEMPTIRQ_LONG_H
+--- a/kernel/trace/trace_events_filter_test.h
++++ b/kernel/trace/trace_events_filter_test.h
+@@ -44,7 +44,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../kernel/trace
+ #define TRACE_INCLUDE_FILE trace_events_filter_test
+
+ /* This part must be outside protection */
+--- a/kernel/trace/bpf_trace.h
++++ b/kernel/trace/bpf_trace.h
+@@ -28,7 +28,7 @@
+ #endif /* _TRACE_BPF_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../kernel/trace
+ #define TRACE_INCLUDE_FILE bpf_trace
+
+ #include <trace/define_trace.h>
+--- a/kernel/trace/trace_benchmark.h
++++ b/kernel/trace/trace_benchmark.h
+@@ -37,7 +37,7 @@
+
+ #undef TRACE_INCLUDE_FILE
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../kernel/trace
+ #define TRACE_INCLUDE_FILE trace_benchmark
+
+ /* This part must be outside protection */
+--- a/drivers/i3c/master/i3c-qup-trace.h
++++ b/drivers/i3c/master/i3c-qup-trace.h
+@@ -40,7 +40,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/i3c/master
+ #define TRACE_INCLUDE_FILE i3c-qup-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/ufs/host/ufs-mediatek-trace.h
++++ b/drivers/ufs/host/ufs-mediatek-trace.h
+@@ -54,6 +54,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../drivers/ufs/host
++#define TRACE_INCLUDE_PATH ../../drivers/ufs/host./../drivers/ufs/host
+ #define TRACE_INCLUDE_FILE ufs-mediatek-trace
+ #include <trace/define_trace.h>
+--- a/drivers/clk/qcom/trace.h
++++ b/drivers/clk/qcom/trace.h
+@@ -80,7 +80,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/clk/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/clk/qcom/trace-gdsc.h
++++ b/drivers/clk/qcom/trace-gdsc.h
+@@ -41,7 +41,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/clk/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-gdsc
+--- a/drivers/mtd/devices/docg3.h
++++ b/drivers/mtd/devices/docg3.h
+@@ -338,6 +338,6 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/mtd/devices
+ #define TRACE_INCLUDE_FILE docg3
+ #include <trace/define_trace.h>
+--- a/drivers/greybus/greybus_trace.h
++++ b/drivers/greybus/greybus_trace.h
+@@ -491,7 +491,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/greybus
+
+ /*
+  * TRACE_INCLUDE_FILE is not needed if the filename and TRACE_SYSTEM are equal
+--- a/drivers/scsi/pm8001/pm80xx_tracepoints.h
++++ b/drivers/scsi/pm8001/pm80xx_tracepoints.h
+@@ -107,7 +107,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/scsi/pm8001
+ #define TRACE_INCLUDE_FILE pm80xx_tracepoints
+
+ #include <trace/define_trace.h>
+--- a/drivers/i2c/busses/i2c-qup-trace.h
++++ b/drivers/i2c/busses/i2c-qup-trace.h
+@@ -39,7 +39,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/i2c/busses
+ #define TRACE_INCLUDE_FILE i2c-qup-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/tty/serial/serial_trace.h
++++ b/drivers/tty/serial/serial_trace.h
+@@ -35,7 +35,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/tty/serial
+ #define TRACE_INCLUDE_FILE serial_trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/misc/cxl/trace.h
++++ b/drivers/misc/cxl/trace.h
+@@ -686,6 +686,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/misc/cxl
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/misc/ocxl/trace.h
++++ b/drivers/misc/ocxl/trace.h
+@@ -237,6 +237,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/misc/ocxl
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/misc/mei/mei-trace.h
++++ b/drivers/misc/mei/mei-trace.h
+@@ -78,6 +78,6 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/misc/mei
+ #define TRACE_INCLUDE_FILE mei-trace
+ #include <trace/define_trace.h>
+--- a/drivers/vfio/pci/trace.h
++++ b/drivers/vfio/pci/trace.h
+@@ -90,7 +90,7 @@
+ #endif /* _TRACE_VFIO_PCI_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/vfio/pci
++#define TRACE_INCLUDE_PATH ../../drivers/vfio/pci./../drivers/vfio/pci
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/dma-buf/sync_trace.h
++++ b/drivers/dma-buf/sync_trace.h
+@@ -1,6 +1,6 @@
+ /* SPDX-License-Identifier: GPL-2.0 */
+ #undef TRACE_SYSTEM
+-#define TRACE_INCLUDE_PATH ../../drivers/dma-buf
++#define TRACE_INCLUDE_PATH ../../drivers/dma-buf./../drivers/dma-buf
+ #define TRACE_SYSTEM sync_trace
+
+ #if !defined(_TRACE_SYNC_H) || defined(TRACE_HEADER_MULTI_READ)
+--- a/drivers/s390/cio/vfio_ccw_trace.h
++++ b/drivers/s390/cio/vfio_ccw_trace.h
+@@ -139,7 +139,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/s390/cio
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE vfio_ccw_trace
+
+--- a/drivers/s390/cio/trace.h
++++ b/drivers/s390/cio/trace.h
+@@ -393,7 +393,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/s390/cio
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/infiniband/sw/rdmavt/trace_mr.h
++++ b/drivers/infiniband/sw/rdmavt/trace_mr.h
+@@ -177,6 +177,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_mr
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/sw/rdmavt/trace_qp.h
++++ b/drivers/infiniband/sw/rdmavt/trace_qp.h
+@@ -90,7 +90,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_qp
+ #include <trace/define_trace.h>
+
+--- a/drivers/infiniband/sw/rdmavt/trace_tx.h
++++ b/drivers/infiniband/sw/rdmavt/trace_tx.h
+@@ -157,7 +157,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_tx
+ #include <trace/define_trace.h>
+
+--- a/drivers/infiniband/sw/rdmavt/trace_rvt.h
++++ b/drivers/infiniband/sw/rdmavt/trace_rvt.h
+@@ -33,7 +33,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_rvt
+ #include <trace/define_trace.h>
+
+--- a/drivers/infiniband/sw/rdmavt/trace_rc.h
++++ b/drivers/infiniband/sw/rdmavt/trace_rc.h
+@@ -62,6 +62,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_rc
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/sw/rdmavt/trace_cq.h
++++ b/drivers/infiniband/sw/rdmavt/trace_cq.h
+@@ -119,6 +119,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/sw/rdmavt
+ #define TRACE_INCLUDE_FILE trace_cq
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/irdma/trace_cm.h
++++ b/drivers/infiniband/hw/irdma/trace_cm.h
+@@ -455,6 +455,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/irdma
+ #define TRACE_INCLUDE_FILE trace_cm
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_tid.h
++++ b/drivers/infiniband/hw/hfi1/trace_tid.h
+@@ -1637,6 +1637,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_tid
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_misc.h
++++ b/drivers/infiniband/hw/hfi1/trace_misc.h
+@@ -103,6 +103,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_misc
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_iowait.h
++++ b/drivers/infiniband/hw/hfi1/trace_iowait.h
+@@ -49,6 +49,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_iowait
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_tx.h
++++ b/drivers/infiniband/hw/hfi1/trace_tx.h
+@@ -1060,6 +1060,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_tx
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_mmu.h
++++ b/drivers/infiniband/hw/hfi1/trace_mmu.h
+@@ -45,6 +45,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_mmu
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_ibhdrs.h
++++ b/drivers/infiniband/hw/hfi1/trace_ibhdrs.h
+@@ -450,6 +450,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_ibhdrs
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_rx.h
++++ b/drivers/infiniband/hw/hfi1/trace_rx.h
+@@ -107,6 +107,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_rx
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_rc.h
++++ b/drivers/infiniband/hw/hfi1/trace_rc.h
+@@ -120,6 +120,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_rc
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_ctxts.h
++++ b/drivers/infiniband/hw/hfi1/trace_ctxts.h
+@@ -110,6 +110,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_ctxts
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/hw/hfi1/trace_dbg.h
++++ b/drivers/infiniband/hw/hfi1/trace_dbg.h
+@@ -106,6 +106,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/hw/hfi1
+ #define TRACE_INCLUDE_FILE trace_dbg
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/core/cm_trace.h
++++ b/drivers/infiniband/core/cm_trace.h
+@@ -408,7 +408,7 @@
+ #endif /* _TRACE_IB_CMA_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/infiniband/core
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/core./../drivers/infiniband/core
+ #define TRACE_INCLUDE_FILE cm_trace
+
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/core/cma_trace.h
++++ b/drivers/infiniband/core/cma_trace.h
+@@ -355,7 +355,7 @@
+ #endif /* _TRACE_RDMA_CMA_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/core
+ #define TRACE_INCLUDE_FILE cma_trace
+
+ #include <trace/define_trace.h>
+--- a/drivers/infiniband/ulp/rtrs/rtrs-clt-trace.h
++++ b/drivers/infiniband/ulp/rtrs/rtrs-clt-trace.h
+@@ -80,7 +80,7 @@
+ #endif /* _TRACE_RTRS_CLT_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/ulp/rtrs
+ #define TRACE_INCLUDE_FILE rtrs-clt-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/infiniband/ulp/rtrs/rtrs-srv-trace.h
++++ b/drivers/infiniband/ulp/rtrs/rtrs-srv-trace.h
+@@ -82,7 +82,7 @@
+ #endif /* _TRACE_RTRS_SRV_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/infiniband/ulp/rtrs
+ #define TRACE_INCLUDE_FILE rtrs-srv-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/spi/q2spi-trace.h
++++ b/drivers/spi/q2spi-trace.h
+@@ -29,7 +29,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/spi
+ #define TRACE_INCLUDE_FILE q2spi-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/spi/spi-qup-trace.h
++++ b/drivers/spi/spi-qup-trace.h
+@@ -39,7 +39,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/spi
+ #define TRACE_INCLUDE_FILE spi-qup-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/android/binder_trace.h
++++ b/drivers/android/binder_trace.h
+@@ -451,6 +451,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/android
+ #define TRACE_INCLUDE_FILE binder_trace
+ #include <trace/define_trace.h>
+--- a/drivers/media/platform/nvidia/tegra-vde/trace.h
++++ b/drivers/media/platform/nvidia/tegra-vde/trace.h
+@@ -90,6 +90,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/media/platform/nvidia/tegra-vde
++#define TRACE_INCLUDE_PATH ../../drivers/media/platform/nvidia/tegra-vde./../drivers/media/platform/nvidia/tegra-vde
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/media/platform/chips-media/trace.h
++++ b/drivers/media/platform/chips-media/trace.h
+@@ -167,7 +167,7 @@
+ #endif /* __CODA_TRACE_H__ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/media/platform/chips-media
++#define TRACE_INCLUDE_PATH ../../drivers/media/platform/chips-media./../drivers/media/platform/chips-media
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/interconnect/trace.h
++++ b/drivers/interconnect/trace.h
+@@ -80,7 +80,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/interconnect
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/interconnect/qcom/trace.h
++++ b/drivers/interconnect/qcom/trace.h
+@@ -44,7 +44,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/interconnect/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/base/regmap/trace.h
++++ b/drivers/base/regmap/trace.h
+@@ -275,7 +275,7 @@
+ #endif /* _TRACE_REGMAP_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/base/regmap
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/base/trace.h
++++ b/drivers/base/trace.h
+@@ -48,7 +48,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/base
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/tee/optee/optee_trace.h
++++ b/drivers/tee/optee/optee_trace.h
+@@ -59,7 +59,7 @@
+ #endif /* _TRACE_OPTEE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/tee/optee
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE optee_trace
+
+--- a/drivers/platform/chrome/cros_ec_trace.h
++++ b/drivers/platform/chrome/cros_ec_trace.h
+@@ -75,7 +75,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/platform/chrome
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE cros_ec_trace
+--- a/drivers/platform/chrome/cros_ec_sensorhub_trace.h
++++ b/drivers/platform/chrome/cros_ec_sensorhub_trace.h
+@@ -115,7 +115,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/platform/chrome
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE cros_ec_sensorhub_trace
+--- a/drivers/platform/surface/aggregator/trace.h
++++ b/drivers/platform/surface/aggregator/trace.h
+@@ -636,7 +636,7 @@
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/platform/surface/aggregator
+ #define TRACE_INCLUDE_FILE trace
+
+ #include <trace/define_trace.h>
+--- a/drivers/hv/hv_trace_balloon.h
++++ b/drivers/hv/hv_trace_balloon.h
+@@ -39,7 +39,7 @@
+	);
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/hv
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hv_trace_balloon
+ #endif /* _HV_TRACE_BALLOON_H */
+--- a/drivers/hv/hv_trace.h
++++ b/drivers/hv/hv_trace.h
+@@ -352,7 +352,7 @@
+ );
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/hv
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hv_trace
+ #endif /* _HV_TRACE_H */
+--- a/drivers/block/null_blk/trace.h
++++ b/drivers/block/null_blk/trace.h
+@@ -71,7 +71,7 @@
+ #endif /* _TRACE_NULLB_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/block/null_blk
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/block/rnbd/rnbd-srv-trace.h
++++ b/drivers/block/rnbd/rnbd-srv-trace.h
+@@ -201,7 +201,7 @@
+ #endif /* _TRACE_RNBD_SRV_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/block/rnbd
+ #define TRACE_INCLUDE_FILE rnbd-srv-trace
+ #include <trace/define_trace.h>
+
+--- a/drivers/net/fjes/fjes_trace.h
++++ b/drivers/net/fjes/fjes_trace.h
+@@ -358,7 +358,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../../drivers/net/fjes
++#define TRACE_INCLUDE_PATH ../../drivers/net/fjes./../../drivers/net/fjes
+ #define TRACE_INCLUDE_FILE fjes_trace
+
+ /* This part must be outside protection */
+--- a/drivers/net/wireless/silabs/wfx/traces.h
++++ b/drivers/net/wireless/silabs/wfx/traces.h
+@@ -489,7 +489,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/silabs/wfx
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE traces
+
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac.h
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac.h
+@@ -94,7 +94,7 @@
+ #ifdef CONFIG_BRCM_TRACING
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/broadcom/brcm80211/brcmsmac
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE brcms_trace_brcmsmac
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac_tx.h
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac_tx.h
+@@ -102,7 +102,7 @@
+ #ifdef CONFIG_BRCM_TRACING
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/broadcom/brcm80211/brcmsmac
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE brcms_trace_brcmsmac_tx
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac_msg.h
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmsmac/brcms_trace_brcmsmac_msg.h
+@@ -76,7 +76,7 @@
+ #ifdef CONFIG_BRCM_TRACING
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/broadcom/brcm80211/brcmsmac
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE brcms_trace_brcmsmac_msg
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/broadcom/brcm80211/brcmfmac/tracepoint.h
++++ b/drivers/net/wireless/broadcom/brcm80211/brcmfmac/tracepoint.h
+@@ -126,7 +126,7 @@
+ #ifdef CONFIG_BRCM_TRACING
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/broadcom/brcm80211/brcmfmac
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE tracepoint
+
+--- a/drivers/net/wireless/ath/ath11k/trace.h
++++ b/drivers/net/wireless/ath/ath11k/trace.h
+@@ -337,7 +337,7 @@
+
+ /* we don't want to use include/trace/events */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath/ath11k
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/ath/ath6kl/trace.h
++++ b/drivers/net/wireless/ath/ath6kl/trace.h
+@@ -319,7 +319,7 @@
+
+ /* we don't want to use include/trace/events */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath/ath6kl
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/ath/ath10k/trace.h
++++ b/drivers/net/wireless/ath/ath10k/trace.h
+@@ -523,7 +523,7 @@
+
+ /* we don't want to use include/trace/events */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath/ath10k
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/ath/trace.h
++++ b/drivers/net/wireless/ath/trace.h
+@@ -60,7 +60,7 @@
+ #endif /* _TRACE_H || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/ath/ath5k/trace.h
++++ b/drivers/net/wireless/ath/ath5k/trace.h
+@@ -98,7 +98,7 @@
+ #if defined(CONFIG_ATH5K_TRACER) && !defined(__CHECKER__)
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath/ath5k
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/ath/wil6210/trace.h
++++ b/drivers/net/wireless/ath/wil6210/trace.h
+@@ -277,7 +277,7 @@
+ #if defined(CONFIG_WIL6210_TRACING) && !defined(__CHECKER__)
+ /* we don't want to use include/trace/events */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/ath/wil6210
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-msg.h
++++ b/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-msg.h
+@@ -65,7 +65,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_MSG */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iwl-devtrace-msg
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-ucode.h
++++ b/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-ucode.h
+@@ -55,7 +55,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_UCODE */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iwl-devtrace-ucode
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-data.h
++++ b/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-data.h
+@@ -56,7 +56,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_DATA */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iwl-devtrace-data
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-io.h
++++ b/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-io.h
+@@ -188,7 +188,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_IO */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iwl-devtrace-io
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-iwlwifi.h
++++ b/drivers/net/wireless/intel/iwlwifi/iwl-devtrace-iwlwifi.h
+@@ -134,7 +134,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_IWLWIFI */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iwl-devtrace-iwlwifi
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/mei/trace.h
++++ b/drivers/net/wireless/intel/iwlwifi/mei/trace.h
+@@ -68,7 +68,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_IWLWIFI_SAP_CMD */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi/mei
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/intel/iwlwifi/mei/trace-data.h
++++ b/drivers/net/wireless/intel/iwlwifi/mei/trace-data.h
+@@ -74,7 +74,7 @@
+ #endif /* __IWLWIFI_DEVICE_TRACE_IWLWIFI_SAP_DATA */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/intel/iwlwifi/mei
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-data
+ #include <trace/define_trace.h>
+--- a/drivers/net/wireless/mediatek/mt76/mt7615/mt7615_trace.h
++++ b/drivers/net/wireless/mediatek/mt76/mt7615/mt7615_trace.h
+@@ -49,7 +49,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt76/mt7615
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE mt7615_trace
+
+--- a/drivers/net/wireless/mediatek/mt76/trace.h
++++ b/drivers/net/wireless/mediatek/mt76/trace.h
+@@ -104,7 +104,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt76
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/wireless/mediatek/mt76/mt7921/mt7921_trace.h
++++ b/drivers/net/wireless/mediatek/mt76/mt7921/mt7921_trace.h
+@@ -44,7 +44,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt76/mt7921
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE mt7921_trace
+
+--- a/drivers/net/wireless/mediatek/mt76/usb_trace.h
++++ b/drivers/net/wireless/mediatek/mt76/usb_trace.h
+@@ -79,7 +79,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt76
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE usb_trace
+
+--- a/drivers/net/wireless/mediatek/mt76/mt76x02_trace.h
++++ b/drivers/net/wireless/mediatek/mt76/mt76x02_trace.h
+@@ -80,7 +80,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt76
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE mt76x02_trace
+
+--- a/drivers/net/wireless/mediatek/mt7601u/trace.h
++++ b/drivers/net/wireless/mediatek/mt7601u/trace.h
+@@ -385,7 +385,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/wireless/mediatek/mt7601u
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/net/ethernet/marvell/octeontx2/af/rvu_trace.h
++++ b/drivers/net/ethernet/marvell/octeontx2/af/rvu_trace.h
+@@ -98,7 +98,7 @@
+ #endif /* __RVU_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/marvell/octeontx2/af
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE rvu_trace
+--- a/drivers/net/ethernet/hisilicon/hns3/hns3pf/hclge_trace.h
++++ b/drivers/net/ethernet/hisilicon/hns3/hns3pf/hclge_trace.h
+@@ -81,7 +81,7 @@
+
+ /* This must be outside ifdef _HCLGE_TRACE_H */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/hisilicon/hns3/hns3pf
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hclge_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/hisilicon/hns3/hns3_trace.h
++++ b/drivers/net/ethernet/hisilicon/hns3/hns3_trace.h
+@@ -132,7 +132,7 @@
+
+ /* This must be outside ifdef _HNS3_TRACE_H */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/hisilicon/hns3
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hns3_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/hisilicon/hns3/hns3vf/hclgevf_trace.h
++++ b/drivers/net/ethernet/hisilicon/hns3/hns3vf/hclgevf_trace.h
+@@ -81,7 +81,7 @@
+
+ /* This must be outside ifdef _HCLGEVF_TRACE_H */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/hisilicon/hns3/hns3vf
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hclgevf_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/fungible/funeth/funeth_trace.h
++++ b/drivers/net/ethernet/fungible/funeth/funeth_trace.h
+@@ -110,7 +110,7 @@
+
+ /* Below must be outside protection. */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/fungible/funeth
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE funeth_trace
+
+--- a/drivers/net/ethernet/intel/ice/ice_trace.h
++++ b/drivers/net/ethernet/intel/ice/ice_trace.h
+@@ -250,7 +250,7 @@
+  * module.
+  */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/intel/ice
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE ../../drivers/net/ethernet/intel/ice/ice_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/intel/iavf/iavf_trace.h
++++ b/drivers/net/ethernet/intel/iavf/iavf_trace.h
+@@ -203,7 +203,7 @@
+  * module.
+  */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/intel/iavf
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE iavf_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/intel/i40e/i40e_trace.h
++++ b/drivers/net/ethernet/intel/i40e/i40e_trace.h
+@@ -203,7 +203,7 @@
+  * module.
+  */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/intel/i40e
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE i40e_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/freescale/dpaa2/dpaa2-eth-trace.h
++++ b/drivers/net/ethernet/freescale/dpaa2/dpaa2-eth-trace.h
+@@ -151,7 +151,7 @@
+
+ /* This must be outside ifdef _DPAA2_ETH_TRACE_H */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/freescale/dpaa2
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE	dpaa2-eth-trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/freescale/dpaa/dpaa_eth_trace.h
++++ b/drivers/net/ethernet/freescale/dpaa/dpaa_eth_trace.h
+@@ -109,7 +109,7 @@
+
+ /* This must be outside ifdef _DPAA_ETH_TRACE_H */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/freescale/dpaa
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE	dpaa_eth_trace
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/mellanox/mlx5/core/diag/fs_tracepoint.h
++++ b/drivers/net/ethernet/mellanox/mlx5/core/diag/fs_tracepoint.h
+@@ -317,7 +317,7 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ./diag
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/mellanox/mlx5/core/diag/diag
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE fs_tracepoint
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/mellanox/mlx5/core/diag/en_rep_tracepoint.h
++++ b/drivers/net/ethernet/mellanox/mlx5/core/diag/en_rep_tracepoint.h
+@@ -48,7 +48,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ./diag
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/mellanox/mlx5/core/diag/diag
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE en_rep_tracepoint
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/mellanox/mlx5/core/diag/fw_tracer_tracepoint.h
++++ b/drivers/net/ethernet/mellanox/mlx5/core/diag/fw_tracer_tracepoint.h
+@@ -74,6 +74,6 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ./diag
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/mellanox/mlx5/core/diag/diag
+ #define TRACE_INCLUDE_FILE fw_tracer_tracepoint
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/mellanox/mlx5/core/diag/en_tc_tracepoint.h
++++ b/drivers/net/ethernet/mellanox/mlx5/core/diag/en_tc_tracepoint.h
+@@ -108,7 +108,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ./diag
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/mellanox/mlx5/core/diag/diag
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE en_tc_tracepoint
+ #include <trace/define_trace.h>
+--- a/drivers/net/ethernet/mellanox/mlx5/core/diag/cmd_tracepoint.h
++++ b/drivers/net/ethernet/mellanox/mlx5/core/diag/cmd_tracepoint.h
+@@ -39,7 +39,7 @@
+ #endif /* _MLX5_CMD_TP_H_ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ./diag
++#define TRACE_INCLUDE_PATH ../../drivers/net/ethernet/mellanox/mlx5/core/diag/diag
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE cmd_tracepoint
+ #include <trace/define_trace.h>
+--- a/drivers/net/hyperv/netvsc_trace.h
++++ b/drivers/net/hyperv/netvsc_trace.h
+@@ -178,5 +178,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/net/hyperv
++#define TRACE_INCLUDE_PATH ../../drivers/net/hyperv./../drivers/net/hyperv
+ #include <trace/define_trace.h>
+--- a/drivers/net/dsa/mv88e6xxx/trace.h
++++ b/drivers/net/dsa/mv88e6xxx/trace.h
+@@ -89,7 +89,7 @@
+
+ /* We don't want to use include/trace/events */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/net/dsa/mv88e6xxx
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE	trace
+ /* This part must be outside protection */
+--- a/drivers/slimbus/trace.h
++++ b/drivers/slimbus/trace.h
+@@ -39,7 +39,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/slimbus
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/usb/mtu3/mtu3_trace.h
++++ b/drivers/usb/mtu3/mtu3_trace.h
+@@ -269,7 +269,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/mtu3
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE mtu3_trace
+--- a/drivers/usb/gadget/udc/trace.h
++++ b/drivers/usb/gadget/udc/trace.h
+@@ -281,7 +281,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/gadget/udc
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/usb/host/xhci-trace.h
++++ b/drivers/usb/host/xhci-trace.h
+@@ -623,7 +623,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/host
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE xhci-trace
+--- a/drivers/usb/musb/musb_trace.h
++++ b/drivers/usb/musb/musb_trace.h
+@@ -381,7 +381,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/musb
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE musb_trace
+--- a/drivers/usb/cdns3/cdnsp-trace.h
++++ b/drivers/usb/cdns3/cdnsp-trace.h
+@@ -822,7 +822,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/cdns3
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE cdnsp-trace
+--- a/drivers/usb/cdns3/cdns3-trace.h
++++ b/drivers/usb/cdns3/cdns3-trace.h
+@@ -559,7 +559,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/cdns3
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE cdns3-trace
+--- a/drivers/usb/typec/tipd/trace.h
++++ b/drivers/usb/typec/tipd/trace.h
+@@ -302,5 +302,5 @@
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/typec/tipd
+ #include <trace/define_trace.h>
+--- a/drivers/usb/typec/ucsi/trace.h
++++ b/drivers/usb/typec/ucsi/trace.h
+@@ -112,7 +112,7 @@
+ /* This part must be outside protection */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/typec/ucsi
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/usb/chipidea/trace.h
++++ b/drivers/usb/chipidea/trace.h
+@@ -84,7 +84,7 @@
+ /* this part must be outside header guard */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/chipidea
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/usb/dwc3/trace.h
++++ b/drivers/usb/dwc3/trace.h
+@@ -342,7 +342,7 @@
+ /* this part has to be here */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/usb/dwc3
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+--- a/drivers/dma/qcom/bam_dma_trace.h
++++ b/drivers/dma/qcom/bam_dma_trace.h
+@@ -33,6 +33,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/dma/qcom
+ #define TRACE_INCLUDE_FILE bam_dma_trace
+ #include <trace/define_trace.h>
+--- a/drivers/staging/media/atomisp/pci/atomisp_trace_event.h
++++ b/drivers/staging/media/atomisp/pci/atomisp_trace_event.h
+@@ -122,7 +122,7 @@
+
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/staging/media/atomisp/pci
+ #define TRACE_INCLUDE_FILE   atomisp_trace_event
+ /* This part must be outside protection */
+ #include <trace/define_trace.h>
+--- a/drivers/cpufreq/amd-pstate-trace.h
++++ b/drivers/cpufreq/amd-pstate-trace.h
+@@ -92,6 +92,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/cpufreq
+
+ #include <trace/define_trace.h>
+--- a/drivers/soc/qcom/trace-rpmh.h
++++ b/drivers/soc/qcom/trace-rpmh.h
+@@ -135,7 +135,7 @@
+ #endif /* _TRACE_RPMH_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-rpmh
+--- a/drivers/soc/qcom/trace_cpucp.h
++++ b/drivers/soc/qcom/trace_cpucp.h
+@@ -32,7 +32,7 @@
+ #endif /* _TRACE_CPUCP_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace_cpucp
+--- a/drivers/soc/qcom/hab/hab_trace_os.h
++++ b/drivers/soc/qcom/hab/hab_trace_os.h
+@@ -386,7 +386,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom/hab
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE hab_trace_os
+
+--- a/drivers/soc/qcom/mem_buf/trace-mem-buf.h
++++ b/drivers/soc/qcom/mem_buf/trace-mem-buf.h
+@@ -327,7 +327,7 @@
+ #endif /* _TRACE_MEM_BUF_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../../drivers/soc/qcom/mem_buf/
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom/mem_buf
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-mem-buf
+--- a/drivers/soc/qcom/trace_secure_buffer.h
++++ b/drivers/soc/qcom/trace_secure_buffer.h
+@@ -131,7 +131,7 @@
+ #endif /* _TRACE_SECURE_BUFFER_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom/
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace_secure_buffer
+--- a/drivers/soc/qcom/trace-crm.h
++++ b/drivers/soc/qcom/trace-crm.h
+@@ -103,7 +103,7 @@
+ #endif /* _TRACE_CRM_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-crm
+--- a/drivers/soc/qcom/dcvs/trace-dcvs.h
++++ b/drivers/soc/qcom/dcvs/trace-dcvs.h
+@@ -298,7 +298,7 @@
+ #endif /* _TRACE_DCVS_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/soc/qcom/dcvs
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-dcvs
+--- a/drivers/gpu/drm/v3d/v3d_trace.h
++++ b/drivers/gpu/drm/v3d/v3d_trace.h
+@@ -293,5 +293,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/v3d
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/lima/lima_trace.h
++++ b/drivers/gpu/drm/lima/lima_trace.h
+@@ -46,5 +46,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/lima
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/lima./../drivers/gpu/drm/lima
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/tegra/trace.h
++++ b/drivers/gpu/drm/tegra/trace.h
+@@ -63,6 +63,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/tegra
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/tegra./../drivers/gpu/drm/tegra
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/msm/msm_gpu_trace.h
++++ b/drivers/gpu/drm/msm/msm_gpu_trace.h
+@@ -180,5 +180,5 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/msm
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/msm./../drivers/gpu/drm/msm
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/msm/msm_atomic_trace.h
++++ b/drivers/gpu/drm/msm/msm_atomic_trace.h
+@@ -106,5 +106,5 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/msm
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/msm./../drivers/gpu/drm/msm
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/msm/disp/dpu1/dpu_trace.h
++++ b/drivers/gpu/drm/msm/disp/dpu1/dpu_trace.h
+@@ -974,5 +974,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/msm/disp/dpu1
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm_trace.h
++++ b/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm_trace.h
+@@ -665,6 +665,6 @@
+ #endif /* _AMDGPU_DM_TRACE_H_ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/amd/display/amdgpu_dm
+ #define TRACE_INCLUDE_FILE amdgpu_dm_trace
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/amd/amdgpu/amdgpu_trace.h
++++ b/drivers/gpu/drm/amd/amdgpu/amdgpu_trace.h
+@@ -559,5 +559,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/amd/amdgpu
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/amd/amdgpu./../drivers/gpu/drm/amd/amdgpu
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/vc4/vc4_trace.h
++++ b/drivers/gpu/drm/vc4/vc4_trace.h
+@@ -151,5 +151,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/vc4
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/vc4./../drivers/gpu/drm/vc4
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/armada/armada_trace.h
++++ b/drivers/gpu/drm/armada/armada_trace.h
+@@ -86,5 +86,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/armada
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/armada./../drivers/gpu/drm/armada
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/virtio/virtgpu_trace.h
++++ b/drivers/gpu/drm/virtio/virtgpu_trace.h
+@@ -48,5 +48,5 @@
+ #endif
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/virtio
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/virtio./../drivers/gpu/drm/virtio
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/radeon/radeon_trace.h
++++ b/drivers/gpu/drm/radeon/radeon_trace.h
+@@ -205,5 +205,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/radeon
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/radeon./../drivers/gpu/drm/radeon
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/i915/display/intel_display_trace.h
++++ b/drivers/gpu/drm/i915/display/intel_display_trace.h
+@@ -584,6 +584,6 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915/display
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915/display./../drivers/gpu/drm/i915/display
+ #define TRACE_INCLUDE_FILE intel_display_trace
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/i915/i915_trace.h
++++ b/drivers/gpu/drm/i915/i915_trace.h
+@@ -765,6 +765,6 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915./../drivers/gpu/drm/i915
+ #define TRACE_INCLUDE_FILE i915_trace
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/i915/gvt/trace.h
++++ b/drivers/gpu/drm/i915/gvt/trace.h
+@@ -378,6 +378,6 @@
+ /* This part must be out of protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915/gvt
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/i915/gvt./../drivers/gpu/drm/i915/gvt
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/gpu/drm/scheduler/gpu_scheduler_trace.h
++++ b/drivers/gpu/drm/scheduler/gpu_scheduler_trace.h
+@@ -110,5 +110,5 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/scheduler
++#define TRACE_INCLUDE_PATH ../../drivers/gpu/drm/scheduler./../drivers/gpu/drm/scheduler
+ #include <trace/define_trace.h>
+--- a/drivers/input/keyboard/applespi_trace.h
++++ b/drivers/input/keyboard/applespi_trace.h
+@@ -88,6 +88,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH ../../drivers/input/keyboard
++#define TRACE_INCLUDE_PATH ../../drivers/input/keyboard./../drivers/input/keyboard
+ #define TRACE_INCLUDE_FILE applespi_trace
+ #include <trace/define_trace.h>
+--- a/drivers/cpuidle/governors/trace-qcom-lpm.h
++++ b/drivers/cpuidle/governors/trace-qcom-lpm.h
+@@ -81,7 +81,7 @@
+ #endif /* _TRACE_QCOM_LPM_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/cpuidle/governors
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-qcom-lpm
+--- a/drivers/cpuidle/governors/trace-cluster-lpm.h
++++ b/drivers/cpuidle/governors/trace-cluster-lpm.h
+@@ -111,7 +111,7 @@
+ #endif /* _TRACE_QCOM_LPM_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/cpuidle/governors
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace-cluster-lpm
+--- a/drivers/iommu/intel/trace.h
++++ b/drivers/iommu/intel/trace.h
+@@ -94,6 +94,6 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH ../../drivers/iommu/intel/
++#define TRACE_INCLUDE_PATH ../../drivers/iommu/intel./../drivers/iommu/intel/
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/drivers/virt/gunyah/gh_proxy_sched_trace.h
++++ b/drivers/virt/gunyah/gh_proxy_sched_trace.h
+@@ -6,7 +6,7 @@
+ #undef TRACE_SYSTEM
+ #define TRACE_SYSTEM gh_proxy_sched
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/virt/gunyah
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE gh_proxy_sched_trace
+
+--- a/drivers/nvme/target/trace.h
++++ b/drivers/nvme/target/trace.h
+@@ -156,7 +156,7 @@
+ #endif /* _TRACE_NVMET_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/nvme/target
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/nvme/host/trace.h
++++ b/drivers/nvme/host/trace.h
+@@ -164,7 +164,7 @@
+ #endif /* _TRACE_NVME_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/nvme/host
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/drivers/iio/imu/bno055/bno055_ser_trace.h
++++ b/drivers/iio/imu/bno055/bno055_ser_trace.h
+@@ -96,7 +96,7 @@
+ #endif /* __BNO055_SERDEV_TRACE_H__ || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../drivers/iio/imu/bno055
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE bno055_ser_trace
+
+--- a/fs/iomap/trace.h
++++ b/fs/iomap/trace.h
+@@ -186,6 +186,6 @@
+ #endif /* _IOMAP_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/iomap
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/fs/nfsd/trace.h
++++ b/fs/nfsd/trace.h
+@@ -1478,6 +1478,6 @@
+ #endif /* _NFSD_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/nfsd
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/fs/gfs2/trace_gfs2.h
++++ b/fs/gfs2/trace_gfs2.h
+@@ -636,7 +636,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/gfs2
+ #define TRACE_INCLUDE_FILE trace_gfs2
+ #include <trace/define_trace.h>
+
+--- a/fs/nfs/nfs4trace.h
++++ b/fs/nfs/nfs4trace.h
+@@ -2553,7 +2553,7 @@
+ #endif /* _TRACE_NFS4_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/nfs
+ #define TRACE_INCLUDE_FILE nfs4trace
+ /* This part must be outside protection */
+ #include <trace/define_trace.h>
+--- a/fs/nfs/nfstrace.h
++++ b/fs/nfs/nfstrace.h
+@@ -1793,7 +1793,7 @@
+ #endif /* _TRACE_NFS_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/nfs
+ #define TRACE_INCLUDE_FILE nfstrace
+ /* This part must be outside protection */
+ #include <trace/define_trace.h>
+--- a/fs/smb/client/trace.h
++++ b/fs/smb/client/trace.h
+@@ -1065,6 +1065,6 @@
+ #endif /* _CIFS_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/smb/client
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/fs/zonefs/trace.h
++++ b/fs/zonefs/trace.h
+@@ -98,7 +98,7 @@
+ #endif /* _TRACE_ZONEFS_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/zonefs
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/fs/ocfs2/ocfs2_trace.h
++++ b/fs/ocfs2/ocfs2_trace.h
+@@ -2762,6 +2762,6 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/ocfs2
+ #define TRACE_INCLUDE_FILE ocfs2_trace
+ #include <trace/define_trace.h>
+--- a/fs/xfs/scrub/trace.h
++++ b/fs/xfs/scrub/trace.h
+@@ -915,6 +915,6 @@
+ #endif /* _TRACE_XFS_SCRUB_TRACE_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/xfs/scrub
+ #define TRACE_INCLUDE_FILE scrub/trace
+ #include <trace/define_trace.h>
+--- a/fs/xfs/xfs_trace.h
++++ b/fs/xfs/xfs_trace.h
+@@ -4241,6 +4241,6 @@
+ #endif /* _TRACE_XFS_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../fs/xfs
+ #define TRACE_INCLUDE_FILE xfs_trace
+ #include <trace/define_trace.h>
+--- a/net/tls/trace.h
++++ b/net/tls/trace.h
+@@ -195,7 +195,7 @@
+ #endif /* _TLS_TRACE_H_ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/tls
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/net/wireless/trace.h
++++ b/net/wireless/trace.h
+@@ -3924,7 +3924,7 @@
+ #endif /* !__RDEV_OPS_TRACE || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/wireless
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/ieee802154/trace.h
++++ b/net/ieee802154/trace.h
+@@ -313,7 +313,7 @@
+ #endif /* !__RDEV_CFG802154_OPS_TRACE || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/ieee802154
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/tipc/trace.h
++++ b/net/tipc/trace.h
+@@ -428,7 +428,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/tipc
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/mac802154/trace.h
++++ b/net/mac802154/trace.h
+@@ -267,7 +267,7 @@
+ #endif /* !__MAC802154_DRIVER_TRACE || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/mac802154
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/l2tp/trace.h
++++ b/net/l2tp/trace.h
+@@ -205,7 +205,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/l2tp
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/smc/smc_tracepoint.h
++++ b/net/smc/smc_tracepoint.h
+@@ -117,7 +117,7 @@
+ #endif /* _TRACE_SMC_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/smc
+
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE smc_tracepoint
+--- a/net/batman-adv/trace.h
++++ b/net/batman-adv/trace.h
+@@ -56,7 +56,7 @@
+ #endif /* _NET_BATMAN_ADV_TRACE_H_ || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/batman-adv
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+
+--- a/net/dccp/trace.h
++++ b/net/dccp/trace.h
+@@ -76,7 +76,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/dccp
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/openvswitch/openvswitch_trace.h
++++ b/net/openvswitch/openvswitch_trace.h
+@@ -152,7 +152,7 @@
+
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/openvswitch
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE openvswitch_trace
+ #include <trace/define_trace.h>
+--- a/net/mac80211/trace.h
++++ b/net/mac80211/trace.h
+@@ -3029,7 +3029,7 @@
+ #endif /* !__MAC80211_DRIVER_TRACE || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/mac80211
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace
+ #include <trace/define_trace.h>
+--- a/net/mac80211/trace_msg.h
++++ b/net/mac80211/trace_msg.h
+@@ -49,7 +49,7 @@
+ #endif /* !__MAC80211_MSG_DRIVER_TRACE || TRACE_HEADER_MULTI_READ */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../net/mac80211
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace_msg
+ #include <trace/define_trace.h>
+--- a/arch/arm64/kernel/trace-events-emulation.h
++++ b/arch/arm64/kernel/trace-events-emulation.h
+@@ -30,7 +30,7 @@
+ /* This part must be outside protection */
+ #undef TRACE_INCLUDE_PATH
+ #undef TRACE_INCLUDE_FILE
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../arch/arm64/kernel
+
+ #define TRACE_INCLUDE_FILE trace-events-emulation
+ #include <trace/define_trace.h>
+--- a/arch/arm64/kvm/trace_handle_exit.h
++++ b/arch/arm64/kvm/trace_handle_exit.h
+@@ -211,7 +211,7 @@
+ #endif /* _TRACE_HANDLE_EXIT_ARM64_KVM_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../arch/arm64/kvm
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace_handle_exit
+
+--- a/arch/arm64/kvm/trace_arm.h
++++ b/arch/arm64/kvm/trace_arm.h
+@@ -304,7 +304,7 @@
+ #endif /* _TRACE_ARM_ARM64_KVM_H */
+
+ #undef TRACE_INCLUDE_PATH
+-#define TRACE_INCLUDE_PATH .
++#define TRACE_INCLUDE_PATH ../../arch/arm64/kvm
+ #undef TRACE_INCLUDE_FILE
+ #define TRACE_INCLUDE_FILE trace_arm

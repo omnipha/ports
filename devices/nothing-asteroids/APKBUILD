@@ -1,0 +1,38 @@
+# Reference: <https://postmarketos.org/devicepkg>
+# Modeled on devices/xiaomi-laurel, adapted to the A/B header-v4
+# layout verified on the stock partitions (see firmware/README.md and
+# linux-sm7635 UPSTREAM.md; stock fstab reference: modem ->
+# /vendor/firmware_mnt, dsp -> /vendor/dsp, bluetooth ->
+# /vendor/bt_firmware, persist -> /mnt/vendor/persist).
+maintainer="Gregor Sprint <gregor@sprintcx.de>"
+pkgname=device-nothing-asteroids
+pkgdesc="Nothing Phone (3a) Pro"
+pkgver=1
+pkgrel=0
+url="https://nura.eco"
+license="MIT"
+arch="aarch64"
+options="!check !archcheck"
+depends="
+	android-tools-mkbootimg
+	linux-omnipha-nothing-sm7635
+	postmarketos-base
+"
+makedepends="devicepkg-dev"
+source="
+	deviceinfo
+	modules-initfs
+"
+
+build() {
+	devicepkg_build $startdir $pkgname
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+}
+
+sha512sums="
+3b799f1a6d580ab833c5c858b706ad810ea379f15ae49ee0cc8fb1ed6c3e9bffee31499c1ee630d660ba85cbc2705367ca6319ac3c906171df7ec8d9c71e0305  deviceinfo
+f7a82dae406a1e0567deb1b6f89a8adbca6f8025e7c561684ac4db78ef9ea59e84da5e493f550c54f284a7d33373769e0b3cc09c48137ee94ddc4e3451bd91a3  modules-initfs
+"

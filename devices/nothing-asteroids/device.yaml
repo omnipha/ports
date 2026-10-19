@@ -26,7 +26,10 @@ upstream_os:
       NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and
       volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact
       250112 build was not found in the published V3.1 history (earliest
-      observed release 250302). No pmaports device or volcano kernel package;
-      no mainline DT in the inspected upstream tree. Downstream port needed.
+      observed release 250302). Device package is in this tree
+      (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to
+      commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in
+      the inspected upstream tree; no Omnipha image and no physical boot
+      yet.
     source: mb003 ADB + github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635 + postmarketOS/pmaports
     checked: '2026-10-19'

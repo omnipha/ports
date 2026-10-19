@@ -1,0 +1,111 @@
+# Kernel package for Nothing Phone (3a) Pro (SM7635/volcano).
+# Reference: <https://postmarketos.org/devicepkg>
+#
+# Vendor kernel pinned per omnipha/linux-sm7635 source policy
+# (README.md "Source policy", UPSTREAM.md):
+#   repo    NothingOSS/android_kernel_msm-6.1_nothing_sm7635
+#   branch  sm7635/v/mr (Nothing OS 3.x, Android kernel 6.1)
+#   commit  d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7 (kernel 6.1.78,
+#           observed 2026-10-19)
+# The pin is the immutable commit recorded as the reproducible baseline
+# in omnipha/linux-sm7635 (merge e487ff033e4b1c0f805677c90edcd84aa58dfb11,
+# build hash of Image b289b9f19171db2b110c51e98f883cf1c824c8374983c9e95e51d9194df7140f).
+# Do not track a branch head; bump this pin only via a linux-sm7635
+# baseline change.
+maintainer="Gregor Sprint <gregor@sprintcx.de>"
+_flavor="omnipha-nothing-sm7635"
+pkgname=linux-$_flavor
+pkgver=6.1.78
+pkgrel=0
+pkgdesc="NothingOSS vendor kernel 6.1 for Qualcomm SM7635 (volcano)"
+arch="aarch64"
+_carch="arm64"
+url="https://github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635"
+license="GPL-2.0-only"
+options="!strip !check !tracedeps
+	pmb:cross-native
+"
+
+_vendor_commit="d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7"
+
+makedepends="
+	bison
+	clang
+	elfutils-dev
+	findutils
+	flex
+	installkernel
+	linux-headers
+	lld
+	llvm
+	openssl-dev
+	pahole
+	perl
+	python3
+	zstd
+"
+
+_config="config-$_flavor.$arch"
+
+# The kernel tree is fetched as a tarball of the pinned commit from the
+# NothingOSS repository (not mirrored into omnipha/linux-sm7635, per its
+# source policy). Build reproducibility with Ubuntu clang 17.0.6 is
+# documented in omnipha/linux-sm7635/UPSTREAM.md.
+source="
+	$pkgname-$_vendor_commit.tar.gz::https://github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635/archive/$_vendor_commit.tar.gz
+	$_config
+	0001-build-libbpf-cast-fix-for-host-gcc-15-clang-17.patch
+	0002-build-fix-trace-include-paths.patch
+	0003-build-quote-local-includes.patch
+"
+builddir="$srcdir/android_kernel_msm-6.1_nothing_sm7635-$_vendor_commit"
+
+prepare() {
+	default_prepare
+	# Same GKI + pineapple consolidate config merge as the verified
+	# baseline build (omnipha/linux-sm7635 scripts/build-baseline.sh).
+	scripts/kconfig/merge_config.sh -m -r -y \
+		arch/arm64/configs/gki_defconfig \
+		arch/arm64/configs/vendor/pineapple_GKI.config \
+		arch/arm64/configs/consolidate.fragment \
+		arch/arm64/configs/vendor/pineapple_consolidate.config
+	cp "$srcdir/$_config" .config
+}
+
+build() {
+	unset LDFLAGS
+	make ARCH="$_carch" LLVM=1 \
+		KBUILD_BUILD_VERSION="$((pkgrel + 1))-$_flavor"
+}
+
+package() {
+	# Uncompressed kernel image for the header-v4 boot.img
+	install -Dm644 "$builddir/arch/$_carch/boot/Image" \
+		"$pkgdir"/boot/vmlinuz
+
+	make modules_install \
+		ARCH="$_carch" \
+		LLVM=1 \
+		INSTALL_MOD_PATH="$pkgdir"/usr \
+		INSTALL_MOD_STRIP=1
+	rm -f "$pkgdir"/usr/lib/modules/*/build "$pkgdir"/usr/lib/modules/*/source
+
+	# The vendor kernel's dtbs_install only installs the combined
+	# base+overlay DTB when DTB_TYPES is unset; the QRD Pro board
+	# overlay itself is installed explicitly for the dtbo partition.
+	make dtbs_install \
+		ARCH="$_carch" \
+		LLVM=1 \
+		DTB_TYPES="pineapple-overlays-" \
+		INSTALL_DTBS_PATH="$pkgdir"/boot/dtbs
+
+	install -D "$builddir"/include/config/kernel.release \
+		"$pkgdir"/usr/share/kernel/$_flavor/kernel.release
+}
+sha512sums="
+3cd1de3947fae1d43a63094995fb5670f0d3b0a830dd46d19703e36c2f348647b71e71936ae375d58bcb81fd4b6f6cabb091890b1dc88da7afa18087109e8e36  linux-omnipha-nothing-sm7635-d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7.tar.gz
+37fb1cff9c5edeb26d15598dab13faf4e462be27ee9a01183a2923bacf2f8300d0a2e0351d43505f9c856c065a822d6d1658a79d163c117413a3f4b5c7ecdf3d  config-omnipha-nothing-sm7635.aarch64
+3e31d2682aaa5043d3398a7ccf6ec107d895e8b3bdc275d4fe04a970edb919edbb87877bbb1ed08d53e9f6e44064e75efff3ef7a6960786afa79cf65cdf87142  0001-build-libbpf-cast-fix-for-host-gcc-15-clang-17.patch
+9e510be186ab8206b281d0fdae80c137d9f5e3c27e58e1566cbb2e456330ed16d7e7e5d4fb2c0007821437d439ab85b40a07d03225b49b432a4f6bade4fd4658  0002-build-fix-trace-include-paths.patch
+153a6df221dad62ff63e7fbf7ae6b726dcfe2c5b60f4c657fbf517c696c5bdb3c2ea5c5ca8dad074477e63d400d6d8ad5cbd040d3085a4854e0026c40390aeb2  0003-build-quote-local-includes.patch
+"
