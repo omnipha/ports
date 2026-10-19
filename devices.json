@@ -627,7 +627,7 @@
     "name": "Nothing Phone (3a) Pro",
     "vendor": "Nothing",
     "year": 2025,
-    "soc": "sm7755",
+    "soc": "sm7635",
     "soc_name": "Snapdragon 7s Gen 3",
     "variants": [
       {
@@ -649,8 +649,8 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "codename asteroids, model A059P; DE sold; bootloader unlockable via Nothing fastboot; no official Lineage yet (XDA device effort, /e/ request 2026-06); port candidate",
-        "source": "e.foundation device request + XDA 2026-03, nothing.tech",
+        "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). No pmaports device or volcano kernel package; no mainline DT in the inspected upstream tree. Downstream port needed.",
+        "source": "mb003 ADB + github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635 + postmarketOS/pmaports",
         "checked": "2026-10-19"
       }
     }
