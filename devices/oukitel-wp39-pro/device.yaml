@@ -1,0 +1,23 @@
+codename: oukitel-wp39-pro
+name: Oukitel WP39 Pro
+vendor: Oukitel
+year: 2025
+soc_name: Dimensity 6300
+variants:
+- ram_gb: 12
+  storage_gb: 512
+hardware_source: https://www.devicespecifications.com/en/model/ac3963f2
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: wp39-pro
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Independent specs; manufacturer model page has no readable specification
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'

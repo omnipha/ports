@@ -1,0 +1,23 @@
+codename: oukitel-wp200-pro
+name: Oukitel WP200 Pro
+vendor: Oukitel
+year: 2025
+soc_name: Dimensity 8200
+variants:
+- ram_gb: 24
+  storage_gb: 1024
+hardware_source: https://oukitel.com/pages/oukitel-wp200-pro-specs
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: wp200-pro
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Physical RAM variants from linked manufacturer specification.
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'

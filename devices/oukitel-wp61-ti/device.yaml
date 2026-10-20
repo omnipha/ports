@@ -1,0 +1,24 @@
+codename: oukitel-wp61-ti
+name: Oukitel WP61 Ti
+vendor: Oukitel
+year: 2026
+soc_name: Dimensity 7025
+variants:
+- ram_gb: 12
+  storage_gb: 512
+hardware_source: https://www.devicespecifications.com/en/model/2c2166c6
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: wp61-ti
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Independent physical RAM and SoC specification; manufacturer navigation names WP61
+      Ti but dedicated specs page unavailable
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'

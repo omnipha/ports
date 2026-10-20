@@ -1,0 +1,26 @@
+codename: oukitel-wp23-plus
+name: Oukitel WP23 Plus
+vendor: Oukitel
+year: 2025
+soc_name: Unisoc T606
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+hardware_source: https://oukitel.com/products/oukitel-wp23plus-4g-rugged-phone
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: wp23-plus
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Manufacturer body states 8/128; product title states 8/256. Both reported, verify
+      exact storage before purchase
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'

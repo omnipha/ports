@@ -1,0 +1,23 @@
+codename: oukitel-c32
+name: Oukitel C32
+vendor: Oukitel
+year: 2023
+soc_name: Unisoc T606
+variants:
+- ram_gb: 8
+  storage_gb: 128
+hardware_source: https://www.devicespecifications.com/en/model/e1965b9f
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: c32
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Independent physical RAM and SoC specification, corroborated by https://es.oukitel.com/en/collections/smart-phones?page=2
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'

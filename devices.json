@@ -1650,6 +1650,2175 @@
     }
   },
   {
+    "id": "oukitel-c32",
+    "codename": "oukitel-c32",
+    "name": "Oukitel C32",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/e1965b9f",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c32",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent physical RAM and SoC specification, corroborated by https://es.oukitel.com/en/collections/smart-phones?page=2",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c32-pro",
+    "codename": "oukitel-c32-pro",
+    "name": "Oukitel C32 Pro",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://www.neoteo.com/en/oukitel/c32-pro",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c32-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent specification and sold global SKU; Oukitel UK PSTI list confirms distinct C32 Pro model https://oukitel.com/pages/uk-psti-compliance",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c33",
+    "codename": "oukitel-c33",
+    "name": "Oukitel C33",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/95075cb5",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c33",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent physical RAM and SoC specification, corroborated by https://es.oukitel.com/en/collections/smart-phones?page=2",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c35",
+    "codename": "oukitel-c35",
+    "name": "Oukitel C35",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T616",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c35-specs-text",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c35",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c50",
+    "codename": "oukitel-c50",
+    "name": "Oukitel C50",
+    "vendor": "Oukitel",
+    "year": 2024,
+    "soc_name": "Dimensity 6100+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c50-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c50",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c59-pro",
+    "codename": "oukitel-c59-pro",
+    "name": "Oukitel C59 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-c59pro",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c59-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer product title 8/256",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c6",
+    "codename": "oukitel-c6",
+    "name": "Oukitel C6",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 6300",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c6-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c6",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c60-pro",
+    "codename": "oukitel-c60-pro",
+    "name": "Oukitel C60 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/97cd63e5",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c60-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent specs; manufacturer model page has no readable specification",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c61-gt",
+    "codename": "oukitel-c61-gt",
+    "name": "Oukitel C61 GT",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://de.oukitel.com/products/oukitel-c61-gt-smartphone",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c61-gt",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. German manufacturer page gives 8/256 in physical-memory spec; 4/128 variant excluded",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c61-pro",
+    "codename": "oukitel-c61-pro",
+    "name": "Oukitel C61 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-c61-pro-smartphone",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c61-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer product title 8/256",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c62-pro",
+    "codename": "oukitel-c62-pro",
+    "name": "Oukitel C62 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://es.oukitel.com/products/oukitel-c62-pro-smartphone",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c62-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer ES product title states 8/256; SoC independently cross-checked via GSMArena.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c65-pro",
+    "codename": "oukitel-c65-pro",
+    "name": "Oukitel C65 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/d35063e1",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c65-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent specs; manufacturer model page has no readable specification",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c66",
+    "codename": "oukitel-c66",
+    "name": "Oukitel C66",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c66-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c66",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c68",
+    "codename": "oukitel-c68",
+    "name": "Oukitel C68",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c68-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c68",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c68-plus",
+    "codename": "oukitel-c68-plus",
+    "name": "Oukitel C68 Plus",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-c68-plus-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c68-plus",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-c69",
+    "codename": "oukitel-c69",
+    "name": "Oukitel C69",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-c69",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "c69",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer product title 8/512, chip cross-checked GSMArena",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-g6-ev",
+    "codename": "oukitel-g6-ev",
+    "name": "Oukitel G6-EV",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-g6-ev-5g-rugged-phone-6-52-hd-display-10-600mah-big-battery-64mp-camera-android-168gb-256gb",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "g6-ev",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Exact G6-EV 8/256 SKU verified on manufacturer page; do not infer from other G6 versions.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-g7",
+    "codename": "oukitel-g7",
+    "name": "Oukitel G7",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-g7-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "g7",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-k16",
+    "codename": "oukitel-k16",
+    "name": "Oukitel K16",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": null,
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-k16",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "k16",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Compact 3.5-inch smartphone; CPU unspecified in manufacturer source",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-p1",
+    "codename": "oukitel-p1",
+    "name": "Oukitel P1",
+    "vendor": "Oukitel",
+    "year": 2024,
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-p1-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "p1",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Also a 4/256 SKU, excluded",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-p1-pro",
+    "codename": "oukitel-p1-pro",
+    "name": "Oukitel P1 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-p1-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "p1-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-p2-plus",
+    "codename": "oukitel-p2-plus",
+    "name": "Oukitel P2 Plus",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7100",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-p2-plus-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "p2-plus",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp10",
+    "codename": "oukitel-wp10",
+    "name": "Oukitel WP10",
+    "vendor": "Oukitel",
+    "year": 2020,
+    "soc_name": "Dimensity 800",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp10-specs-mobile",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp10",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp100-plus",
+    "codename": "oukitel-wp100-plus",
+    "name": "Oukitel WP100 Plus",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp100-plus-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp100-plus",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp100-titan",
+    "codename": "oukitel-wp100-titan",
+    "name": "Oukitel WP100 Titan",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-wp100-5g",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp100-titan",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer product variants include both 12/512 and 16/512",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp13",
+    "codename": "oukitel-wp13",
+    "name": "Oukitel WP13",
+    "vendor": "Oukitel",
+    "year": 2021,
+    "soc_name": "Dimensity 700",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/a56756dc",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp13",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer page lacks machine-readable RAM; corroborated by DeviceSpecifications",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp15",
+    "codename": "oukitel-wp15",
+    "name": "Oukitel WP15",
+    "vendor": "Oukitel",
+    "year": 2021,
+    "soc_name": "Dimensity 700",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp15-overview",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp15",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp16",
+    "codename": "oukitel-wp16",
+    "name": "Oukitel WP16",
+    "vendor": "Oukitel",
+    "year": 2022,
+    "soc_name": "Helio P60",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp16-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp16",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer page meta-description documents SKU",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp17",
+    "codename": "oukitel-wp17",
+    "name": "Oukitel WP17",
+    "vendor": "Oukitel",
+    "year": 2021,
+    "soc_name": "Helio G95",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp17-overview",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp17",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp19",
+    "codename": "oukitel-wp19",
+    "name": "Oukitel WP19",
+    "vendor": "Oukitel",
+    "year": 2022,
+    "soc_name": "Helio G95",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/blogs/news/oukitel-wp19-biggest-battery-rugged-phone-global-premiere-time-discount-and-specs-released",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp19",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp19-pro",
+    "codename": "oukitel-wp19-pro",
+    "name": "Oukitel WP19 Pro",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp19-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp19-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp200-pro",
+    "codename": "oukitel-wp200-pro",
+    "name": "Oukitel WP200 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 24,
+        "storage_gb": 1024
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp200-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp200-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp21",
+    "codename": "oukitel-wp21",
+    "name": "Oukitel WP21",
+    "vendor": "Oukitel",
+    "year": 2022,
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp21",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp21",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp21-ultra",
+    "codename": "oukitel-wp21-ultra",
+    "name": "Oukitel WP21 Ultra",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/wp21-ultra",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp21-ultra",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp210",
+    "codename": "oukitel-wp210",
+    "name": "Oukitel WP210",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp210-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp210",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp22",
+    "codename": "oukitel-wp22",
+    "name": "Oukitel WP22",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Helio P90",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp22-1",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp22",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp23-plus",
+    "codename": "oukitel-wp23-plus",
+    "name": "Oukitel WP23 Plus",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/products/oukitel-wp23plus-4g-rugged-phone",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp23-plus",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer body states 8/128; product title states 8/256. Both reported, verify exact storage before purchase",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp23-pro",
+    "codename": "oukitel-wp23-pro",
+    "name": "Oukitel WP23 Pro",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp23-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp23-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp26",
+    "codename": "oukitel-wp26",
+    "name": "Oukitel WP26",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Helio P90",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp26-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp26",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp27",
+    "codename": "oukitel-wp27",
+    "name": "Oukitel WP27",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp27-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp27",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp28",
+    "codename": "oukitel-wp28",
+    "name": "Oukitel WP28",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Unisoc T606",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp28-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp28",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. 15GB advertisement is 8GB physical plus 7GB virtual",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp30-pro",
+    "codename": "oukitel-wp30-pro",
+    "name": "Oukitel WP30 Pro",
+    "vendor": "Oukitel",
+    "year": 2023,
+    "soc_name": "Dimensity 8050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp30-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp30-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp300",
+    "codename": "oukitel-wp300",
+    "name": "Oukitel WP300",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp300-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp300",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp33-pro",
+    "codename": "oukitel-wp33-pro",
+    "name": "Oukitel WP33 Pro",
+    "vendor": "Oukitel",
+    "year": 2024,
+    "soc_name": "Dimensity 6100+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp33-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp33-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. 24GB advertised is 8GB physical plus 16GB virtual",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp35",
+    "codename": "oukitel-wp35",
+    "name": "Oukitel WP35",
+    "vendor": "Oukitel",
+    "year": 2024,
+    "soc_name": "Dimensity 6100+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp35-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp35",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp35-pro",
+    "codename": "oukitel-wp35-pro",
+    "name": "Oukitel WP35 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 6300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp35-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp35-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp36",
+    "codename": "oukitel-wp36",
+    "name": "Oukitel WP36",
+    "vendor": "Oukitel",
+    "year": 2024,
+    "soc_name": "MT8788",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp36-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp36",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    },
+    "soc": "mt8788"
+  },
+  {
+    "id": "oukitel-wp39-pro",
+    "codename": "oukitel-wp39-pro",
+    "name": "Oukitel WP39 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 6300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/ac3963f2",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp39-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent specs; manufacturer model page has no readable specification",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp500",
+    "codename": "oukitel-wp500",
+    "name": "Oukitel WP500",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 8300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp500-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp500",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp500-ultra",
+    "codename": "oukitel-wp500-ultra",
+    "name": "Oukitel WP500 Ultra",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 8300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp500-ultra-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp500-ultra",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp53",
+    "codename": "oukitel-wp53",
+    "name": "Oukitel WP53",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp53-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp53",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp53-pro",
+    "codename": "oukitel-wp53-pro",
+    "name": "Oukitel WP53 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T615",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp53-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp53-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Manufacturer specs 8/256; manufacturer current product title 8/512. Verify exact SKU before purchase",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp55",
+    "codename": "oukitel-wp55",
+    "name": "Oukitel WP55",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp55-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp55",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp55-pro",
+    "codename": "oukitel-wp55-pro",
+    "name": "Oukitel WP55 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp55-pro-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp55-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp55-s",
+    "codename": "oukitel-wp55-s",
+    "name": "Oukitel WP55 S",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp55s-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp55-s",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp55-ultra",
+    "codename": "oukitel-wp55-ultra",
+    "name": "Oukitel WP55 Ultra",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp55-ultra-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp55-ultra",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence. Manufacturer spec lists 16/512; second official shop lists 12/512; confirm exact SKU before purchase. https://oukitel.store/products/oukitel-wp55-ultra",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp56",
+    "codename": "oukitel-wp56",
+    "name": "Oukitel WP56",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp56-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp56",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp58-pro",
+    "codename": "oukitel-wp58-pro",
+    "name": "Oukitel WP58 Pro",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Unisoc T8200",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp58-pro-specs-1",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp58-pro",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp60",
+    "codename": "oukitel-wp60",
+    "name": "Oukitel WP60",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp60-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp60",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp61",
+    "codename": "oukitel-wp61",
+    "name": "Oukitel WP61",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp61-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp61",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp61-plus",
+    "codename": "oukitel-wp61-plus",
+    "name": "Oukitel WP61 Plus",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp61-plus-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp61-plus",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp61-ti",
+    "codename": "oukitel-wp61-ti",
+    "name": "Oukitel WP61 Ti",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://www.devicespecifications.com/en/model/2c2166c6",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp61-ti",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Independent physical RAM and SoC specification; manufacturer navigation names WP61 Ti but dedicated specs page unavailable",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp61-ultra",
+    "codename": "oukitel-wp61-ultra",
+    "name": "Oukitel WP61 Ultra",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp61-ultra-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp61-ultra",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp62",
+    "codename": "oukitel-wp62",
+    "name": "Oukitel WP62",
+    "vendor": "Oukitel",
+    "year": 2025,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp62-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp62",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp63",
+    "codename": "oukitel-wp63",
+    "name": "Oukitel WP63",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Unisoc T8200",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp63-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp63",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp66",
+    "codename": "oukitel-wp66",
+    "name": "Oukitel WP66",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp66-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp66",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp68-air",
+    "codename": "oukitel-wp68-air",
+    "name": "Oukitel WP68 Air",
+    "vendor": "Oukitel",
+    "year": 2026,
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/oukitel-wp68-air-specs",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp68-air",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
+    "id": "oukitel-wp7",
+    "codename": "oukitel-wp7",
+    "name": "Oukitel WP7",
+    "vendor": "Oukitel",
+    "year": 2020,
+    "soc_name": "Helio P90",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      }
+    ],
+    "hardware_source": "https://oukitel.com/pages/wp7",
+    "hardware_checked": "2026-10-20",
+    "upstream_os": {
+      "ut": {
+        "key": "wp7",
+        "listed": false,
+        "source": "https://devices.ubuntu-touch.io/",
+        "checked": "2026-10-20"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked pmaports mirror. Physical RAM variants from linked manufacturer specification.",
+        "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
+        "checked": "2026-10-20"
+      }
+    }
+  },
+  {
     "id": "razer-aura",
     "codename": "razer-aura",
     "name": "Razer Phone 2",

@@ -1,0 +1,24 @@
+codename: oukitel-c62-pro
+name: Oukitel C62 Pro
+vendor: Oukitel
+year: 2025
+soc_name: Unisoc T606
+variants:
+- ram_gb: 8
+  storage_gb: 256
+hardware_source: https://es.oukitel.com/products/oukitel-c62-pro-smartphone
+hardware_checked: '2026-10-20'
+upstream_os:
+  ut:
+    key: c62-pro
+    listed: false
+    source: https://devices.ubuntu-touch.io/
+    checked: '2026-10-20'
+  nura:
+    status: not-checked
+    image: none
+    note: No per-model Nura boot verification or bootloader-unlock evidence; no Oukitel package in checked
+      pmaports mirror. Manufacturer ES product title states 8/256; SoC independently cross-checked via
+      GSMArena.
+    source: https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756
+    checked: '2026-10-20'
