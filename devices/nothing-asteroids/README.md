@@ -4,8 +4,9 @@ SM7635/volcano device, A/B slots, Android boot header v4. No **successful Omniph
 attempts returned to fastboot with no observed USB network or SSH. These are
 not an installable server image and do not prove that the test kernel ran.
 This packaging is based on stock partition layout and read-only firmware
-references from a test unit. See [the bring-up mission](https://github.com/omnipha/ports/issues/3)
-and [first-boot issue](https://github.com/omnipha/ports/issues/6). Physical
+references from a test unit. See [device-specific contributor issues and test reports](https://github.com/omnipha/device-nothing-asteroids),
+[the bring-up mission](https://github.com/omnipha/ports/issues/3),
+and [the first-boot issue](https://github.com/omnipha/ports/issues/6). Physical
 flashing/booting requires an explicit, scoped authorization and a verified
 rollback path; do not use the metadata below as a flashing recipe.
 
