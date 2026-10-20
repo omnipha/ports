@@ -1,7 +1,11 @@
 # xiaomi-laurel (Xiaomi Mi A3)
 
-SM6125 device, first fully working Omnipha target: boots, SSH (key-only), WiFi
-(WCN3990 via MPSS remoteproc — our kernel patch), display, GPU.
+SM6125 device. A self-built test on one unit booted with key-only SSH, WiFi
+(WCN3990 via MPSS remoteproc — our kernel patch), display and GPU. This is
+**field-tested hardware, not an Omnipha release**: no published Omnipha image
+or verified installation/rollback guide exists. Do not flash based on this
+README or a generic `fastboot` field in device.yaml. The camera stack is not
+verified; see [the open camera bring-up issue](https://github.com/omnipha/device-xiaomi-laurel/issues/1).
 
 - `device.yaml` — machine-readable status. Update it in the same PR as any change.
 - `APKBUILD`, `deviceinfo` — upstream packaging as reference.

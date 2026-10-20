@@ -497,6 +497,13 @@
         "storage_gb": 64
       }
     ],
+    "project": {
+      "stage": "field-tested"
+    },
+    "release": {
+      "status": "unreleased",
+      "maintenance": "unowned"
+    },
     "upstream_os": {
       "ut": {
         "key": "sargo",
@@ -639,6 +646,21 @@
         "storage_gb": 256
       }
     ],
+    "project": {
+      "stage": "bring-up",
+      "mission": "https://github.com/omnipha/ports/issues/3"
+    },
+    "status": {
+      "boot": "untested",
+      "ssh": "untested",
+      "wifi": "untested",
+      "display": "untested",
+      "cameras": "untested"
+    },
+    "release": {
+      "status": "unreleased",
+      "maintenance": "unowned"
+    },
     "upstream_os": {
       "ut": {
         "key": "asteroids",
@@ -649,7 +671,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). Device package is in this tree (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in the inspected upstream tree; no Omnipha image and no physical boot yet.",
+        "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). Device package is in this tree (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in the inspected upstream tree; no Omnipha image or successful Omnipha boot. Debug attempts returned to fastboot with no observed USB/SSH; they do not establish kernel execution. See mission issue.",
         "source": "mb003 ADB + github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635 + postmarketOS/pmaports",
         "checked": "2026-10-19"
       }
@@ -5377,7 +5399,7 @@
       "touchscreen": "untested",
       "audio": "untested",
       "bluetooth": "untested",
-      "cameras": "broken",
+      "cameras": "untested",
       "modem": "partial",
       "sensors": "untested",
       "gps": "untested",
@@ -5410,6 +5432,9 @@
         "storage_gb": 128
       }
     ],
+    "project": {
+      "stage": "field-tested"
+    },
     "upstream_os": {
       "ut": {
         "key": "laurel_sprout",

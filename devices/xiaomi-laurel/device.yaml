@@ -19,7 +19,7 @@ status:
   touchscreen: untested
   audio: untested
   bluetooth: untested
-  cameras: broken    # bring-up open
+  cameras: untested  # no captured camera test or working camera stack; bring-up open in device repo issue #1
   modem: partial     # MPSS remoteproc running; calls/data untested
   sensors: untested
   gps: untested
@@ -40,6 +40,10 @@ variants:
   storage_gb: 64
 - ram_gb: 4
   storage_gb: 128
+
+
+project:
+  stage: field-tested
 
 upstream_os:
   ut:
