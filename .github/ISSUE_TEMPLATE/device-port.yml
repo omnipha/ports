@@ -1,0 +1,40 @@
+name: Device port or missing hardware evidence
+description: Start a port or supply a reproducible test for a phone
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Search DEVICES.md, existing Issues and aliases first. Never attach partition images, proprietary firmware, full device identifiers, keys, phone numbers or credentials. A device issue is not permission to flash a phone.
+  - type: input
+    id: device
+    attributes:
+      label: Model and codename
+      placeholder: Xiaomi Mi A3, laurel_sprout / xiaomi-laurel
+    validations:
+      required: true
+  - type: input
+    id: variant
+    attributes:
+      label: Hardware variant and stock firmware version (non-identifying)
+    validations:
+      required: true
+  - type: input
+    id: record
+    attributes:
+      label: Link to ports device.yaml, or say new model
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Observed result and safe, reproducible evidence
+      description: Identify image/source commit, exact test, date, expected/observed result, redacted logs or public evidence URL. Use untested if no test was performed.
+    validations:
+      required: true
+  - type: textarea
+    id: next
+    attributes:
+      label: Proposed next step and component owner
+      description: Kernel, ports package, images build, or device test. Link related Issues/PRs.
+    validations:
+      required: true

@@ -4,7 +4,7 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 
 ## Layout
 - `devices/<codename>/device.yaml` — machine-readable device status. THE source of truth.
-- `devices.json` — aggregate index of all device.yaml; rebuild with `tools/harvest.py index`.
+- `devices.json` and `DEVICES.md` — generated machine-readable and human-readable indexes; rebuild with `tools/harvest.py index`.
 - `schema/device.schema.json` — validates every device.yaml; `tools/harvest.py check` fails on stale index or schema violations.
 - `devices/<codename>/` — packaging files (APKBUILD, deviceinfo) derived from upstream pmaports.
 - `firmware/` — policy: never commit blobs; document extraction + checksums.
@@ -23,8 +23,8 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 No build here directly; images are built from omnipha/images (which references this repo).
 
 ## Conventions
-- One device per PR. Update device.yaml in the same PR as any functional change.
-- Status vocabulary: works | partial | untested | broken.
+- One device per ports PR. Cross-repo code and device status require linked PRs; after implementation and public test evidence land, update device.yaml in a separate ports PR. GitHub PRs cannot span repositories. Never claim boot from CI alone.
+- Status vocabulary: works | partial | untested | broken. New measured claims require a public status_evidence URL, date and variant. Legacy snapshot is not proof; see CONTRIBUTING.md.
 - Never commit proprietary firmware. Reference firmware-sha256.txt entries.
 - Kernel packaging pins: repo `omnipha/linux-<soc>`, branch `omnipha`.
 - English only. Sign commits.

@@ -1,15 +1,19 @@
 # nothing-asteroids (Nothing Phone (3a) Pro)
 
-SM7635/volcano device, A/B slots, Android boot header v4. First boot has
-**not** been performed; this packaging is based on the stock partition
-layout and firmware references recorded read-only from the mb003 fleet
-unit. Physical flashing/booting is a separate human-gated step.
+SM7635/volcano device, A/B slots, Android boot header v4. No **successful Omnipha boot** is established: experimental, authorized boot
+attempts returned to fastboot with no observed USB network or SSH. These are
+not an installable server image and do not prove that the test kernel ran.
+This packaging is based on stock partition layout and read-only firmware
+references from a test unit. See [the bring-up mission](https://github.com/omnipha/ports/issues/3)
+and [first-boot issue](https://github.com/omnipha/ports/issues/6). Physical
+flashing/booting requires an explicit, scoped authorization and a verified
+rollback path; do not use the metadata below as a flashing recipe.
 
 - `device.yaml` — machine-readable status. Update it in the same PR as any change.
 - `APKBUILD`, `deviceinfo`, `modules-initfs` — device package modeled on
   `xiaomi-laurel`, adapted to A/B (no dedicated recovery/boot-ramdisk
   assumptions): header v4, `fastboot`, pagesize 4096, boot + vendor_boot
-  + dtbo partitions, vbmeta (flashed with verification disabled).
+  + dtbo partitions, vbmeta (experimental configuration only, not tested installation instructions).
 - `APKBUILD.linux-omnipha-nothing-sm7635` — vendor kernel package pinned
   to the immutable NothingOSS commit per
   [omnipha/linux-sm7635](https://github.com/omnipha/linux-sm7635) source

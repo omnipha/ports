@@ -18,7 +18,7 @@ SCHEMA = json.loads((ROOT / "schema" / "device.schema.json").read_text())
 
 def validate(data):
     data = json.loads(json.dumps(data, default=str))
-    return list(jsonschema.Draft202012Validator(SCHEMA).iter_errors(data))
+    return list(jsonschema.Draft202012Validator(SCHEMA, format_checker=jsonschema.FormatChecker()).iter_errors(data))
 
 
 def laurel():
@@ -65,6 +65,11 @@ def test_official_requires_gate_evidence():
     data["release"] = {
         "status": "official",
         "maintenance": "maintained",
+        "artifact": {
+            "url": "https://github.com/omnipha/images/releases/download/device-xiaomi-laurel-v1/image.img",
+            "sha256": "a" * 64,
+            "manifest": "https://github.com/omnipha/images/releases/download/device-xiaomi-laurel-v1/manifest.json",
+        },
         "evidence": {
             "ci_build": "https://ci.example/xiaomi-laurel/123",
             "flashing_rollback": "https://github.com/omnipha/device-xiaomi-laurel/blob/main/FLASHING.md",
@@ -106,6 +111,11 @@ def test_official_requires_named_release_owner():
     data["release"] = {
         "status": "official",
         "maintenance": "maintained",
+        "artifact": {
+            "url": "https://github.com/omnipha/images/releases/download/device-xiaomi-laurel-v1/image.img",
+            "sha256": "a" * 64,
+            "manifest": "https://github.com/omnipha/images/releases/download/device-xiaomi-laurel-v1/manifest.json",
+        },
         "evidence": {
             "ci_build": "https://ci.example/xiaomi-laurel/123",
             "flashing_rollback": "https://github.com/omnipha/device-xiaomi-laurel/blob/main/FLASHING.md",
@@ -148,3 +158,53 @@ def test_check_command_passes():
     )
     assert result.returncode == 0, result.stderr
     assert "check: ok" in result.stdout
+
+
+def test_installability_is_not_inferred_from_source_or_definition():
+    data = laurel()
+    assert data["status"]["boot"] == "works"
+    assert data["image"] == "images/xiaomi-laurel"
+    assert data["release"]["status"] == "unreleased"
+    data["release"] = {"status": "testing", "maintenance": "unowned"}
+    assert validate(data)  # missing artifact and evidence
+
+
+def test_new_hardware_claim_requires_test_record():
+    baseline = json.loads(harvest.LEGACY_STATUSES.read_text())
+    data = laurel()
+    assert not harvest.validate_status_evidence("p", data, baseline)
+    data["status"]["cameras"] = "broken"
+    assert harvest.validate_status_evidence("p", data, baseline)  # old broken claim not grandfathered
+    data["status"]["cameras"] = "works"
+    assert harvest.validate_status_evidence("p", data, baseline)
+    data["status_evidence"] = {"cameras": {
+        "date": "2026-10-21", "variant": "4/64 Mi A3", "url": "https://github.com/omnipha/device-xiaomi-laurel/issues/1"
+    }}
+    assert not harvest.validate_status_evidence("p", data, baseline)
+    assert not validate(data)
+    data["status_evidence"]["ghost"] = data["status_evidence"]["cameras"]
+    assert harvest.validate_status_evidence("p", data, baseline)
+
+
+def test_new_device_cannot_inherit_status_exception():
+    baseline = json.loads(harvest.LEGACY_STATUSES.read_text())
+    data = laurel()
+    data["codename"] = "new-device"
+    assert harvest.validate_status_evidence("p", data, baseline)
+
+
+def test_status_enum_and_stage():
+    data = laurel()
+    data["status"]["wifi"] = "awesome"
+    assert validate(data)
+    data["status"]["wifi"] = "works"
+    data["project"]["stage"] = "nonsense"
+    assert validate(data)
+
+
+def test_catalog_is_generated_and_no_omnipha_image_is_claimed():
+    catalog = harvest.render_catalog()
+    assert catalog == harvest.CATALOG.read_text()
+    assert "xiaomi-laurel" in catalog and "nothing-asteroids" in catalog
+    assert "0 with a tested or official Omnipha image" in catalog
+    assert "No device" not in catalog  # device inventory is present, but releases are not

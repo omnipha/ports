@@ -1,0 +1,34 @@
+{
+  "google-sargo": {
+    "audio": "untested",
+    "bluetooth": "untested",
+    "boot": "works",
+    "cameras": "partial",
+    "display": "works",
+    "gps": "untested",
+    "gpu": "works",
+    "modem": "partial",
+    "nfc": "partial",
+    "sensors": "partial",
+    "ssh": "works",
+    "touchscreen": "untested",
+    "ui": "works",
+    "usb_host": "works",
+    "wifi": "works"
+  },
+  "xiaomi-laurel": {
+    "audio": "untested",
+    "bluetooth": "untested",
+    "boot": "works",
+    "display": "works",
+    "gps": "untested",
+    "gpu": "works",
+    "modem": "partial",
+    "nfc": "untested",
+    "sensors": "untested",
+    "ssh": "works",
+    "touchscreen": "untested",
+    "ui": "partial",
+    "wifi": "works"
+  }
+}

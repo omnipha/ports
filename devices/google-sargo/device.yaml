@@ -49,6 +49,13 @@ variants:
 - ram_gb: 4
   storage_gb: 64
 
+
+project:
+  stage: field-tested
+release:
+  status: unreleased
+  maintenance: unowned
+
 upstream_os:
   ut:
     key: sargo
