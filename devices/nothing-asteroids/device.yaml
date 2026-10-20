@@ -12,6 +12,7 @@ variants:
 
 project:
   stage: bring-up
+device_repo: https://github.com/omnipha/device-nothing-asteroids
   mission: https://github.com/omnipha/ports/issues/3
 status:
   boot: untested
