@@ -49,9 +49,9 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 | [POCO F4 / Redmi K40S](https://github.com/omnipha/ports/tree/main/devices/xiaomi-munch) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Realme GT Neo 2](https://github.com/omnipha/ports/tree/main/devices/realme-rmx3370) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Mi 10T / Redmi K30S Ultra](https://github.com/omnipha/ports/tree/main/devices/xiaomi-apollo) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 8 GB | untested |
-| [Galaxy Note 10+ (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-d1x) | Exynos 9820 (`exynos9820`) | Mali-G76 MP12 | n/a | n/a | 12 GB | untested |
+| [Galaxy Note 10+ (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-d1x) | Exynos 9825 (`exynos9825`) | Mali-G76 MP12 | n/a | n/a | 12 GB | untested |
 | [Galaxy S10+ (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-beyond2lte) | Exynos 9820 (`exynos9820`) | Mali-G76 MP12 | n/a | n/a | 12 GB | untested |
-| [Galaxy Note 10 (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-d1) | Exynos 9820 (`exynos9820`) | Mali-G76 MP12 | n/a | n/a | 8 GB | untested |
+| [Galaxy Note 10 (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-d1) | Exynos 9825 (`exynos9825`) | Mali-G76 MP12 | n/a | n/a | 8 GB | untested |
 | [Galaxy S10 (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-beyond1lte) | Exynos 9820 (`exynos9820`) | Mali-G76 MP12 | n/a | n/a | 8 GB | untested |
 | [Galaxy S10 5G (Exynos)](https://github.com/omnipha/ports/tree/main/devices/samsung-beyondx) | Exynos 9820 (`exynos9820`) | Mali-G76 MP12 | n/a | n/a | 8 GB | untested |
 | [Google Pixel 3a](https://github.com/omnipha/ports/tree/main/devices/google-sargo) | `sdm670` | Adreno 615 | n/a | n/a | 4 GB | works |

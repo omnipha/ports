@@ -4366,8 +4366,8 @@
     "name": "Galaxy Note 10 (Exynos)",
     "vendor": "Samsung",
     "year": 2019,
-    "soc": "exynos9820",
-    "soc_name": "Exynos 9820",
+    "soc": "exynos9825",
+    "soc_name": "Exynos 9825",
     "variants": [
       {
         "ram_gb": 8,
@@ -4397,8 +4397,8 @@
     "name": "Galaxy Note 10+ (Exynos)",
     "vendor": "Samsung",
     "year": 2019,
-    "soc": "exynos9820",
-    "soc_name": "Exynos 9820",
+    "soc": "exynos9825",
+    "soc_name": "Exynos 9825",
     "variants": [
       {
         "ram_gb": 12,

@@ -49,4 +49,10 @@ exynos9820:
   gpu: mali-g76-mp12
   source: "https://www.notebookcheck.net/ARM-Mali-G76-MP12-GPU-Benchmarks-and-Specs.410627.0.html"
   checked: "2026-10-22"
-  note: Exynos 9820 and 9825 both use the Mali-G76 MP12 per the source; the Note 10 entries carry the 9825 but are filed under exynos9820 in this database
+  note: Exynos 9820 in the Galaxy S10, S10+ and S10 5G. Same Mali-G76 MP12 as the 9825, at a lower GPU clock
+
+exynos9825:
+  gpu: mali-g76-mp12
+  source: "https://www.notebookcheck.net/Samsung-Exynos-9825-SoC-Benchmarks-and-Specs.432496.0.html"
+  checked: "2026-10-22"
+  note: Exynos 9825 in the Galaxy Note 10 and Note 10+. Mali-G76 MP12, a bit faster than the 9820 version per the source
