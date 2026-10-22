@@ -1,7 +1,7 @@
 codename: unihertz-titan-2-elite-pro
 name: Unihertz Titan 2 Elite Pro
 vendor: Unihertz
-soc_name: Dimensity 8400
+soc_name: Dimensity 7400 (256 GB) or Dimensity 8400 (512 GB)
 variants:
 - ram_gb: 12
   storage_gb: 256

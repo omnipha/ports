@@ -5,8 +5,6 @@ soc_name: Dimensity 7400
 variants:
 - ram_gb: 12
   storage_gb: 1024
-- ram_gb: 16
-  storage_gb: 1024
 upstream_os:
   ut:
     key: s200-ultra
@@ -17,7 +15,8 @@ upstream_os:
     status: not-checked
     image: none
     note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer ("12GB
-      + up to 36GB extended"), a 16 GB version is also listed. Bootloader unlock not verified for this
-      exact model. Port candidate for an own MediaTek port.
+      + up to 36GB extended RAM", 1 TB). The product page comparison table also shows a 16 GB column that
+      could not be attributed to this model, so 16 GB is not listed. Bootloader unlock not verified for
+      this exact model. Port candidate for an own MediaTek port.
     source: https://www.doogee.com/products/s200-ultra
     checked: '2026-10-22'
