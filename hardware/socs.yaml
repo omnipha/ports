@@ -44,3 +44,9 @@ sdm670:
   source: "https://www.notebookcheck.net/Google-Pixel-3a-XL-Smartphone-Review.422368.0.html"
   checked: "2026-10-22"
   note: Snapdragon 670; Notebookcheck names the Adreno 615, no comparable benchmark collected yet
+
+exynos9820:
+  gpu: mali-g76-mp12
+  source: "https://www.notebookcheck.net/ARM-Mali-G76-MP12-GPU-Benchmarks-and-Specs.410627.0.html"
+  checked: "2026-10-22"
+  note: Exynos 9820 and 9825 both use the Mali-G76 MP12 per the source; the Note 10 entries carry the 9825 but are filed under exynos9820 in this database

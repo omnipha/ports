@@ -30,6 +30,7 @@ adreno-650:
   benchmarks:
     3dmark_wild_life_extreme_unlimited: {avg: 1218, min: 1103, max: 1246, n: 16, source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html", checked: "2026-10-22"}
     geekbench6_opencl: {avg: 3468, min: 2688, max: 4248, n: 2, source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html", checked: "2026-10-22"}
+    3dmark_sling_shot_extreme_es31_unlimited_graphics: {avg: 9728, min: 8593, max: 11999, n: 36, source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html", checked: "2026-10-22"}
 
 # No external benchmark collected yet. GPU model taken from our own device notes.
 adreno-615:
@@ -41,3 +42,12 @@ adreno-610:
   vendor: Qualcomm
   name: Adreno 610
   benchmarks: {}
+
+# The source has no Wild Life Extreme or Geekbench 6 OpenCL result for this GPU, so those GPU.md
+# columns stay n/a. Sling Shot Extreme (ES 3.1) Unlimited Graphics is the one comparable test it shares
+# with adreno-650 (n counts the source's result rows, avg/min/max are the source's own figures).
+mali-g76-mp12:
+  vendor: ARM
+  name: Mali-G76 MP12
+  benchmarks:
+    3dmark_sling_shot_extreme_es31_unlimited_graphics: {avg: 5606, min: 5358, max: 6087, n: 6, source: "https://www.notebookcheck.net/ARM-Mali-G76-MP12-GPU-Benchmarks-and-Specs.410627.0.html", checked: "2026-10-22"}
