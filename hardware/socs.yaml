@@ -1,0 +1,46 @@
+# SoC id (device.yaml `soc`) to GPU id in gpus.yaml.
+# A SoC listed here has a GPU we can name with a source. Missing SoCs are simply not
+# mapped yet; they appear in GPU.md as "GPU unknown".
+# `note` records variants that share the GPU model but differ in clock.
+
+sm8550:
+  gpu: adreno-740
+  source: "https://www.notebookcheck.net/Qualcomm-Adreno-740-GPU-Benchmarks-and-Specs.669947.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 8 Gen 2
+
+sm8475:
+  gpu: adreno-730
+  source: "https://www.notebookcheck.net/Qualcomm-Snapdragon-8-Gen-1-Processor-Benchmarks-and-Specs.633861.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 8+ Gen 1
+
+sm8450:
+  gpu: adreno-730
+  source: "https://www.notebookcheck.net/Qualcomm-Adreno-730-GPU-Benchmarks-and-Specs.583409.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 8 Gen 1
+
+sm8350:
+  gpu: adreno-660
+  source: "https://www.notebookcheck.net/Qualcomm-Adreno-660-GPU-Benchmarks-and-Specs.513908.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 888
+
+sm8250:
+  gpu: adreno-650
+  source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 865, 865+ and 870 share the Adreno 650 with different GPU clocks (587, 846 and 670 MHz per the source)
+
+sm6125:
+  gpu: adreno-610
+  source: "https://github.com/omnipha/ports/blob/main/devices/xiaomi-laurel/device.yaml"
+  checked: "2026-10-22"
+  note: Snapdragon 665 class; GPU named in our device notes, no external benchmark yet
+
+sdm670:
+  gpu: adreno-615
+  source: "https://www.notebookcheck.net/Google-Pixel-3a-XL-Smartphone-Review.422368.0.html"
+  checked: "2026-10-22"
+  note: Snapdragon 670; Notebookcheck names the Adreno 615, no comparable benchmark collected yet

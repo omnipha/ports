@@ -8,8 +8,10 @@ device database for Omnipha. This is where new device support lands.
   - `device.yaml` — status database entry (source of truth)
   - `APKBUILD`, `deviceinfo`, … — packaging, based on upstream pmaports, with our fixes
 - [`DEVICES.md`](DEVICES.md) — browsable status and contribution index, generated from `device.yaml`
+- [`GPU.md`](GPU.md) — devices ranked by GPU and max RAM for GPU workloads, generated from `hardware/*.yaml`
 - `devices.json` — machine-readable aggregate of all `device.yaml`, rebuilt by `tools/harvest.py index` (CI verifies it is fresh)
 - `schema/device.schema.json` — JSON Schema for `device.yaml`
+- `hardware/` — `gpus.yaml` and `socs.yaml`: GPU identity plus cited Android benchmarks. Not a Linux performance claim.
 - `tools/harvest.py` — database tooling: `ut` (refresh Ubuntu Touch status from devices.ubuntu-touch.io), `index`, `check`
 - `firmware/` — firmware extraction policy and helpers
 

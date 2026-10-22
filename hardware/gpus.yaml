@@ -1,0 +1,43 @@
+# GPU facts and external benchmark data, keyed by GPU id.
+# Benchmarks are Android results reported by the source. They rank GPUs, they do not
+# predict Linux performance. Measured Linux results belong in device.yaml.
+# Every benchmark needs source, n (sample count) and checked.
+
+adreno-740:
+  vendor: Qualcomm
+  name: Adreno 740
+  benchmarks:
+    3dmark_wild_life_extreme_unlimited: {avg: 3641, min: 3088, max: 3900, n: 32, source: "https://www.notebookcheck.net/Qualcomm-Adreno-740-GPU-Benchmarks-and-Specs.669947.0.html", checked: "2026-10-22"}
+    geekbench6_opencl: {avg: 8858, min: 6548, max: 9784, n: 21, source: "https://www.notebookcheck.net/Qualcomm-Adreno-740-GPU-Benchmarks-and-Specs.669947.0.html", checked: "2026-10-22"}
+
+adreno-730:
+  vendor: Qualcomm
+  name: Adreno 730
+  benchmarks:
+    3dmark_wild_life_extreme_unlimited: {avg: 2544, min: 1567, max: 2899, n: 45, source: "https://www.notebookcheck.net/Qualcomm-Adreno-730-GPU-Benchmarks-and-Specs.583409.0.html", checked: "2026-10-22"}
+    geekbench6_opencl: {avg: 5752, min: 5301, max: 6421, n: 3, source: "https://www.notebookcheck.net/Qualcomm-Adreno-730-GPU-Benchmarks-and-Specs.583409.0.html", checked: "2026-10-22"}
+
+adreno-660:
+  vendor: Qualcomm
+  name: Adreno 660
+  benchmarks:
+    3dmark_wild_life_extreme_unlimited: {avg: 1423, min: 974, max: 1564, n: 31, source: "https://www.notebookcheck.net/Qualcomm-Adreno-660-GPU-Benchmarks-and-Specs.513908.0.html", checked: "2026-10-22"}
+    geekbench6_opencl: {avg: 4299, min: 4055, max: 4620, n: 3, source: "https://www.notebookcheck.net/Qualcomm-Adreno-660-GPU-Benchmarks-and-Specs.513908.0.html", checked: "2026-10-22"}
+
+adreno-650:
+  vendor: Qualcomm
+  name: Adreno 650
+  benchmarks:
+    3dmark_wild_life_extreme_unlimited: {avg: 1218, min: 1103, max: 1246, n: 16, source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html", checked: "2026-10-22"}
+    geekbench6_opencl: {avg: 3468, min: 2688, max: 4248, n: 2, source: "https://www.notebookcheck.net/Qualcomm-Adreno-650-GPU-Benchmarks-and-Specs.448196.0.html", checked: "2026-10-22"}
+
+# No external benchmark collected yet. GPU model taken from our own device notes.
+adreno-615:
+  vendor: Qualcomm
+  name: Adreno 615
+  benchmarks: {}
+
+adreno-610:
+  vendor: Qualcomm
+  name: Adreno 610
+  benchmarks: {}

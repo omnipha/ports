@@ -208,3 +208,30 @@ def test_catalog_is_generated_and_no_omnipha_image_is_claimed():
     assert "xiaomi-laurel" in catalog and "nothing-asteroids" in catalog
     assert "0 with a tested or official Omnipha image" in catalog
     assert "No device" not in catalog  # device inventory is present, but releases are not
+
+
+def test_hardware_files_validate_and_cross_reference():
+    gpus, socs = harvest.load_hardware()
+    assert not harvest.validate_hardware(gpus, socs)
+
+
+def test_hardware_rejects_unknown_gpu_missing_source_and_bad_range():
+    gpus, socs = harvest.load_hardware()
+    bad_socs = {**socs, "sm8550": {"gpu": "adreno-999", "checked": "2026-10-22"}}
+    messages = harvest.validate_hardware(gpus, bad_socs)
+    assert any("unknown gpu" in m for m in messages)
+    assert any("missing source" in m for m in messages)
+    bad_gpus = json.loads(json.dumps(gpus))
+    bad_gpus["adreno-740"]["benchmarks"]["geekbench6_opencl"]["min"] = 99999
+    assert any("min <= avg <= max" in m for m in harvest.validate_hardware(bad_gpus, socs))
+
+
+def test_gpu_catalog_is_generated_and_separates_benchmark_from_linux_status():
+    catalog = harvest.render_gpu_catalog()
+    assert catalog == harvest.GPU_CATALOG.read_text()
+    assert "do not predict Linux performance" in catalog
+    rows = {r["id"]: r for r in harvest.gpu_rows()}
+    assert rows["oneplus-salami"]["gpu"] == "Adreno 740"
+    assert rows["oneplus-salami"]["max_ram"] == 16
+    assert rows["oneplus-salami"]["linux_gpu"] == "untested"
+    assert rows["xiaomi-laurel"]["linux_gpu"] == "works"

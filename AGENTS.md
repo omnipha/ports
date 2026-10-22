@@ -6,6 +6,7 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 - `devices/<codename>/device.yaml` — machine-readable device status. THE source of truth.
 - `devices.json` and `DEVICES.md` — generated machine-readable and human-readable indexes; rebuild with `tools/harvest.py index`.
 - `schema/device.schema.json` — validates every device.yaml; `tools/harvest.py check` fails on stale index or schema violations.
+- `hardware/gpus.yaml`, `hardware/socs.yaml` — GPU model and external Android benchmarks, keyed by SoC. `GPU.md` is generated from them. `status.gpu` stays the separate Linux test result.
 - `devices/<codename>/` — packaging files (APKBUILD, deviceinfo) derived from upstream pmaports.
 - `firmware/` — policy: never commit blobs; document extraction + checksums.
 
@@ -18,6 +19,7 @@ Purpose: device packages + device.yaml database for all Omnipha-supported phones
 - `release.status: official` requires the gate in README.md ("Official images"): reproducible CI build, flashing/rollback docs, physical boot/network/SSH test (`release.evidence`), named `release-owner`, and `maintenance: maintained`. Enforced by `tools/harvest.py check` and tests (`python3 -m pytest tools/`).
 - `variants` lists sold ram/storage combinations. Do not store ram and storage as independent lists.
 - Never add prices. Used-price estimates go to omnipha/market.
+- GPU model and external benchmarks live once in `hardware/`, never copied into a device file. A benchmark is not a Linux result.
 
 ## Commands
 No build here directly; images are built from omnipha/images (which references this repo).
