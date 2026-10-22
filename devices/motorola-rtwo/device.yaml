@@ -1,0 +1,29 @@
+codename: motorola-rtwo
+name: Motorola Edge 40 Pro
+vendor: Motorola
+year: 2023
+soc: sm8550
+soc_name: Snapdragon 8 Gen 2
+variants:
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 8
+  storage_gb: 512
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: rtwo
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0. Also sold as Edge+ (2023, 8 GB) and moto X40 (12 GB). No postmarketOS
+      device package found. Storage is 256 or 512 GB.
+    source: https://wiki.lineageos.org/devices/rtwo/
+    checked: '2026-10-22'

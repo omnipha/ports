@@ -1,0 +1,33 @@
+codename: motorola-tundra
+name: Motorola Edge 30 Fusion
+vendor: Motorola
+year: 2022
+soc: sm8350
+soc_name: Snapdragon 888+
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 8
+  storage_gb: 512
+- ram_gb: 12
+  storage_gb: 128
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: tundra
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for XT2243-1. No postmarketOS device package found. Also sold as moto
+      S30 Pro (XT2243-2), with 8 or 12 GB RAM and 128, 256 or 512 GB storage.
+    source: https://wiki.lineageos.org/devices/tundra/
+    checked: '2026-10-22'

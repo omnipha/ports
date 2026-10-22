@@ -590,6 +590,40 @@
     }
   },
   {
+    "id": "motorola-bangkk",
+    "codename": "motorola-bangkk",
+    "name": "Motorola Moto G84 5G",
+    "vendor": "Motorola",
+    "year": 2023,
+    "soc": "sm6375",
+    "soc_name": "Snapdragon 695",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "bangkk",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for XT2347-1 and XT2347-2. No postmarketOS device package found. Sold with 8 or 12 GB RAM and 256 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/bangkk/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
     "id": "motorola-dubai",
     "codename": "motorola-dubai",
     "name": "Motorola Edge 30",
@@ -625,6 +659,140 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "motorola-pstar",
+    "codename": "motorola-pstar",
+    "name": "Motorola Edge 20 Pro",
+    "vendor": "Motorola",
+    "year": 2021,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 870",
+    "variants": [
+      {
+        "ram_gb": 6,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pstar",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for XT2153-1. No postmarketOS device package found. Sold with 6, 8 or 12 GB RAM and 128 or 256 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/pstar/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "motorola-rtwo",
+    "codename": "motorola-rtwo",
+    "name": "Motorola Edge 40 Pro",
+    "vendor": "Motorola",
+    "year": 2023,
+    "soc": "sm8550",
+    "soc_name": "Snapdragon 8 Gen 2",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "rtwo",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0. Also sold as Edge+ (2023, 8 GB) and moto X40 (12 GB). No postmarketOS device package found. Storage is 256 or 512 GB.",
+        "source": "https://wiki.lineageos.org/devices/rtwo/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "motorola-tundra",
+    "codename": "motorola-tundra",
+    "name": "Motorola Edge 30 Fusion",
+    "vendor": "Motorola",
+    "year": 2022,
+    "soc": "sm8350",
+    "soc_name": "Snapdragon 888+",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tundra",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for XT2243-1. No postmarketOS device package found. Also sold as moto S30 Pro (XT2243-2), with 8 or 12 GB RAM and 128, 256 or 512 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/tundra/",
+        "checked": "2026-10-22"
       }
     }
   },
@@ -675,6 +843,48 @@
         "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). Device package is in this tree (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in the inspected upstream tree; no Omnipha image or successful Omnipha boot. Debug attempts returned to fastboot with no observed USB/SSH; they do not establish kernel execution. See mission issue.",
         "source": "mb003 ADB + github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635 + postmarketOS/pmaports",
         "checked": "2026-10-19"
+      }
+    }
+  },
+  {
+    "id": "nothing-pong",
+    "codename": "nothing-pong",
+    "name": "Nothing Phone (2)",
+    "vendor": "Nothing",
+    "year": 2023,
+    "soc": "sm8475",
+    "soc_name": "Snapdragon 8+ Gen 1",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "Pong",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 23.2 for A065 and AIN065. No postmarketOS device package found. Sold with 8 or 12 GB RAM and 128, 256 or 512 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/Pong/",
+        "checked": "2026-10-22"
       }
     }
   },
@@ -4462,6 +4672,44 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "sony-pdx203",
+    "codename": "sony-pdx203",
+    "name": "Sony Xperia 1 II",
+    "vendor": "Sony",
+    "year": 2020,
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "pdx203",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for XQ-AT72, XQ-AT52, XQ-AT51 and XQ-AT42. No postmarketOS device package found. Sold with 8 or 12 GB RAM and 128 or 256 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/pdx203/",
+        "checked": "2026-10-22"
       }
     }
   },

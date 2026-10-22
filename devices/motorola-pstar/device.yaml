@@ -1,0 +1,29 @@
+codename: motorola-pstar
+name: Motorola Edge 20 Pro
+vendor: Motorola
+year: 2021
+soc: sm8250
+soc_name: Snapdragon 870
+variants:
+- ram_gb: 6
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: pstar
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for XT2153-1. No postmarketOS device package found. Sold with 6, 8 or
+      12 GB RAM and 128 or 256 GB storage.
+    source: https://wiki.lineageos.org/devices/pstar/
+    checked: '2026-10-22'
