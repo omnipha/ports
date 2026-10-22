@@ -1,0 +1,21 @@
+codename: doogee-blade20-max
+name: Doogee Blade20 Max
+vendor: Doogee
+soc_name: Helio G100
+variants:
+- ram_gb: 12
+  storage_gb: 1024
+upstream_os:
+  ut:
+    key: blade20-max
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB LPDDR4X, plus up to
+      24 GB virtual RAM. Bootloader unlock not verified for this exact model. Port candidate for an own
+      MediaTek port.
+    source: https://www.doogee.com/products/blade20-max
+    checked: '2026-10-22'

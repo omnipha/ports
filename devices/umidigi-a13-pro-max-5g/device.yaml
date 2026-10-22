@@ -1,0 +1,21 @@
+codename: umidigi-a13-pro-max-5g
+name: UMIDIGI A13 Pro Max 5G
+vendor: UMIDIGI
+soc_name: Dimensity 900
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: a13-pro-max-5g
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR4X, UFS 2.1, plus 5 GB
+      virtual RAM. Ships Android 12. Amazon.de listing. Bootloader unlock not verified for this exact
+      model. Port candidate for an own MediaTek port.
+    source: https://www.umidigi.com/page-umidigi_a13promax5g_specification.html
+    checked: '2026-10-22'

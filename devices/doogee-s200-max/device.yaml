@@ -1,0 +1,21 @@
+codename: doogee-s200-max
+name: Doogee S200 Max
+vendor: Doogee
+soc_name: Dimensity 7050
+variants:
+- ram_gb: 16
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: s200-max
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 16 GB per manufacturer snippet
+      and Notebookcheck, plus up to 20 GB virtual RAM. Bootloader unlock not verified for this exact model.
+      Port candidate for an own MediaTek port.
+    source: https://www.doogee.com/products/s200-max
+    checked: '2026-10-22'

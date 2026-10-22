@@ -127,6 +127,438 @@
     }
   },
   {
+    "id": "blackview-bl9000-pro",
+    "codename": "blackview-bl9000-pro",
+    "name": "Blackview BL9000 Pro",
+    "vendor": "Blackview",
+    "soc_name": "Dimensity 8020",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "bl9000-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR4X, plus up to 24 GB expansion, UFS 3.1. Sold in the German Blackview store. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://de.blackview.hk/products/bl9000-pro-price",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "blackview-fort-5",
+    "codename": "blackview-fort-5",
+    "name": "Blackview FORT 5",
+    "vendor": "Blackview",
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "fort-5",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB LPDDR4X, plus 24 GB extension. Sold in the German Blackview store. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://de.blackview.hk/products/fort-5-price",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "blackview-xplore-1",
+    "codename": "blackview-xplore-1",
+    "name": "Blackview XPLORE 1",
+    "vendor": "Blackview",
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "xplore-1",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 and 16 GB LPDDR5. Sold in the German Blackview store. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://de.blackview.hk/products/xplore-1-price",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "blackview-xplore-2",
+    "codename": "blackview-xplore-2",
+    "name": "Blackview XPLORE 2",
+    "vendor": "Blackview",
+    "soc_name": "Dimensity 8300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "xplore-2",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 and 16 GB LPDDR5X, UFS 4.0. Sold in the German Blackview store. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://de.blackview.hk/products/xplore-2-price",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "cubot-kingkong-ax",
+    "codename": "cubot-kingkong-ax",
+    "name": "Cubot KingKong AX",
+    "vendor": "Cubot",
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "kingkong-ax",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended RAM. German availability not verified. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://cubot.net/phone/rugged-phone/KingKong-AX",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "cubot-kingkong-star-2",
+    "codename": "cubot-kingkong-star-2",
+    "name": "Cubot KingKong Star 2",
+    "vendor": "Cubot",
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "kingkong-star-2",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended RAM. Sold in Germany (Amazon.de, idealo.de, kaufland.de). A 4PDA snippet shows an unlock log, not verified. Port candidate for an own MediaTek port.",
+        "source": "https://www.gsmarena.com/cubot_kingkong_star_2-13369.php",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "cubot-kingkong-x-pro",
+    "codename": "cubot-kingkong-x-pro",
+    "name": "Cubot KingKong X Pro",
+    "vendor": "Cubot",
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "kingkong-x-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended RAM. Sold in Germany (idealo.de). Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://cubot.net/phones/rugged-phone/KingKong-X-Pro-specs",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "cubot-max-5",
+    "codename": "cubot-max-5",
+    "name": "Cubot Max 5",
+    "vendor": "Cubot",
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "max-5",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB DDR5, no card slot. Sold in Germany (idealo.de). Community reports of fastboot flashing unlock on this model (4PDA, Facebook), not verified. Port candidate for an own MediaTek port.",
+        "source": "https://cubot.net/phone/smartphones/MAX-5",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "cubot-p90",
+    "codename": "cubot-p90",
+    "name": "Cubot P90",
+    "vendor": "Cubot",
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": null
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "p90",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended RAM, storage not verified. Sold in Germany (idealo.de). Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://cubot.net/phone/smartphones/P90",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-blade-gt-pro",
+    "codename": "doogee-blade-gt-pro",
+    "name": "Doogee Blade GT Pro",
+    "vendor": "Doogee",
+    "soc_name": "Dimensity 7025",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "blade-gt-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus up to 20 GB extended RAM per spec line. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/blade-gt-pro",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-blade20-max",
+    "codename": "doogee-blade20-max",
+    "name": "Doogee Blade20 Max",
+    "vendor": "Doogee",
+    "soc_name": "Helio G100",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "blade20-max",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB LPDDR4X, plus up to 24 GB virtual RAM. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/blade20-max",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-s200",
+    "codename": "doogee-s200",
+    "name": "Doogee S200",
+    "vendor": "Doogee",
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "s200",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer, plus up to 36 GB virtual RAM. A 4PDA thread mentions fastboot flashing unlock for this model, page not readable, success unverified. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/s200",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-s200-max",
+    "codename": "doogee-s200-max",
+    "name": "Doogee S200 Max",
+    "vendor": "Doogee",
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "s200-max",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 16 GB per manufacturer snippet and Notebookcheck, plus up to 20 GB virtual RAM. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/s200-max",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-s200-ultra",
+    "codename": "doogee-s200-ultra",
+    "name": "Doogee S200 Ultra",
+    "vendor": "Doogee",
+    "soc_name": "Dimensity 7400",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "s200-ultra",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer (\"12GB + up to 36GB extended\"), a 16 GB version is also listed. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/s200-ultra",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "doogee-s200x",
+    "codename": "doogee-s200x",
+    "name": "Doogee S200X",
+    "vendor": "Doogee",
+    "soc_name": "Dimensity 7050",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "s200x",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer, plus 36 GB virtual RAM. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.doogee.com/products/s200x",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
     "id": "fairphone-fp3",
     "codename": "fairphone-fp3",
     "aliases": [
@@ -5912,6 +6344,206 @@
         "image": "none",
         "note": "Physical 16 GB RAM per manufacturer. No LineageOS, postmarketOS or Ubuntu Touch support found. Bootloader unlock not verified for this model. Port candidate for an own MediaTek port.",
         "source": "https://www.ulefone.com/products/armor-30-pro",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "umidigi-a13-pro-max-5g",
+    "codename": "umidigi-a13-pro-max-5g",
+    "name": "UMIDIGI A13 Pro Max 5G",
+    "vendor": "UMIDIGI",
+    "soc_name": "Dimensity 900",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "a13-pro-max-5g",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR4X, UFS 2.1, plus 5 GB virtual RAM. Ships Android 12. Amazon.de listing. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.umidigi.com/page-umidigi_a13promax5g_specification.html",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-tank-2-pro",
+    "codename": "unihertz-tank-2-pro",
+    "name": "Unihertz Tank 2 Pro",
+    "vendor": "Unihertz",
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tank-2-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR4X rugged phone. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/products/tank-2-pro",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-tank-3-pro",
+    "codename": "unihertz-tank-3-pro",
+    "name": "Unihertz Tank 3 Pro",
+    "vendor": "Unihertz",
+    "soc_name": "Dimensity 8200",
+    "variants": [
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tank-3-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 16 GB RAM per Unihertz shop, 512 GB, built-in projector. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/en-de/products/tank-3-pro",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-tank-mini",
+    "codename": "unihertz-tank-mini",
+    "name": "Unihertz Tank Mini",
+    "vendor": "Unihertz",
+    "soc_name": "Helio G99",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "tank-mini",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM version, 256 GB storage, 4.3 inch rugged phone. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/en-de/products/tank-mini",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-titan-2",
+    "codename": "unihertz-titan-2",
+    "name": "Unihertz Titan 2",
+    "vendor": "Unihertz",
+    "soc_name": "Dimensity 7300",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "titan-2",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR5, QWERTY phone. Bootloader unlock documented on a real Titan 2 (OEM unlock, fastboot flashing unlock, volume down to confirm): https://lichtmetzger.de/en/2025/10/28/rooting-the-unihertz-titan-2-and-installing-magisk/ Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/en-de/products/titan-2",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-titan-2-elite",
+    "codename": "unihertz-titan-2-elite",
+    "name": "Unihertz Titan 2 Elite",
+    "vendor": "Unihertz",
+    "soc_name": "Dimensity 7400",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "titan-2-elite",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM per Unihertz and Notebookcheck. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/products/titan-2-elite",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
+    "id": "unihertz-titan-2-elite-pro",
+    "codename": "unihertz-titan-2-elite-pro",
+    "name": "Unihertz Titan 2 Elite Pro",
+    "vendor": "Unihertz",
+    "soc_name": "Dimensity 8400",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "titan-2-elite-pro",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM. The standard edition has a Dimensity 7400 with 256 GB, the Pro edition a Dimensity 8400 with 512 GB. Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.",
+        "source": "https://www.unihertz.com/en-de/products/titan-2-elite-pro",
         "checked": "2026-10-22"
       }
     }

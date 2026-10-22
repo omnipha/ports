@@ -1,0 +1,21 @@
+codename: doogee-s200x
+name: Doogee S200X
+vendor: Doogee
+soc_name: Dimensity 7050
+variants:
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: s200x
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer, plus
+      36 GB virtual RAM. Bootloader unlock not verified for this exact model. Port candidate for an own
+      MediaTek port.
+    source: https://www.doogee.com/products/s200x
+    checked: '2026-10-22'

@@ -1,0 +1,21 @@
+codename: doogee-blade-gt-pro
+name: Doogee Blade GT Pro
+vendor: Doogee
+soc_name: Dimensity 7025
+variants:
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: blade-gt-pro
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus up to 20 GB extended
+      RAM per spec line. Bootloader unlock not verified for this exact model. Port candidate for an own
+      MediaTek port.
+    source: https://www.doogee.com/products/blade-gt-pro
+    checked: '2026-10-22'

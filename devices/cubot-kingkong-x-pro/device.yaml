@@ -1,0 +1,21 @@
+codename: cubot-kingkong-x-pro
+name: Cubot KingKong X Pro
+vendor: Cubot
+soc_name: Dimensity 8200
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: kingkong-x-pro
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended
+      RAM. Sold in Germany (idealo.de). Bootloader unlock not verified for this exact model. Port candidate
+      for an own MediaTek port.
+    source: https://cubot.net/phones/rugged-phone/KingKong-X-Pro-specs
+    checked: '2026-10-22'

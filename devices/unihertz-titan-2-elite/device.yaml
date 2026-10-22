@@ -1,0 +1,20 @@
+codename: unihertz-titan-2-elite
+name: Unihertz Titan 2 Elite
+vendor: Unihertz
+soc_name: Dimensity 7400
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: titan-2-elite
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM per Unihertz and Notebookcheck.
+      Bootloader unlock not verified for this exact model. Port candidate for an own MediaTek port.
+    source: https://www.unihertz.com/products/titan-2-elite
+    checked: '2026-10-22'

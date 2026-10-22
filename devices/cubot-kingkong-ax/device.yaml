@@ -1,0 +1,21 @@
+codename: cubot-kingkong-ax
+name: Cubot KingKong AX
+vendor: Cubot
+soc_name: Helio G99
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: kingkong-ax
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended
+      RAM. German availability not verified. Bootloader unlock not verified for this exact model. Port
+      candidate for an own MediaTek port.
+    source: https://cubot.net/phone/rugged-phone/KingKong-AX
+    checked: '2026-10-22'

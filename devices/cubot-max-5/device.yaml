@@ -1,0 +1,21 @@
+codename: cubot-max-5
+name: Cubot Max 5
+vendor: Cubot
+soc_name: Dimensity 8200
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: max-5
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB DDR5, no card slot. Sold in
+      Germany (idealo.de). Community reports of fastboot flashing unlock on this model (4PDA, Facebook),
+      not verified. Port candidate for an own MediaTek port.
+    source: https://cubot.net/phone/smartphones/MAX-5
+    checked: '2026-10-22'

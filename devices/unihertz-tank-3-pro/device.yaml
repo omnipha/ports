@@ -1,0 +1,21 @@
+codename: unihertz-tank-3-pro
+name: Unihertz Tank 3 Pro
+vendor: Unihertz
+soc_name: Dimensity 8200
+variants:
+- ram_gb: 16
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: tank-3-pro
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 16 GB RAM per Unihertz shop, 512 GB,
+      built-in projector. Bootloader unlock not verified for this exact model. Port candidate for an own
+      MediaTek port.
+    source: https://www.unihertz.com/en-de/products/tank-3-pro
+    checked: '2026-10-22'

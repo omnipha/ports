@@ -1,0 +1,23 @@
+codename: unihertz-titan-2-elite-pro
+name: Unihertz Titan 2 Elite Pro
+vendor: Unihertz
+soc_name: Dimensity 8400
+variants:
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: titan-2-elite-pro
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM. The standard edition has
+      a Dimensity 7400 with 256 GB, the Pro edition a Dimensity 8400 with 512 GB. Bootloader unlock not
+      verified for this exact model. Port candidate for an own MediaTek port.
+    source: https://www.unihertz.com/en-de/products/titan-2-elite-pro
+    checked: '2026-10-22'

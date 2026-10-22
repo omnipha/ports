@@ -1,0 +1,21 @@
+codename: unihertz-tank-mini
+name: Unihertz Tank Mini
+vendor: Unihertz
+soc_name: Helio G99
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: tank-mini
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB RAM version, 256 GB storage,
+      4.3 inch rugged phone. Bootloader unlock not verified for this exact model. Port candidate for an
+      own MediaTek port.
+    source: https://www.unihertz.com/en-de/products/tank-mini
+    checked: '2026-10-22'

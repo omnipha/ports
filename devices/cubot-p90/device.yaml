@@ -1,0 +1,21 @@
+codename: cubot-p90
+name: Cubot P90
+vendor: Cubot
+soc_name: Helio G100
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: p90
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended
+      RAM, storage not verified. Sold in Germany (idealo.de). Bootloader unlock not verified for this
+      exact model. Port candidate for an own MediaTek port.
+    source: https://cubot.net/phone/smartphones/P90
+    checked: '2026-10-22'

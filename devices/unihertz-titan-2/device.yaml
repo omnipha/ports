@@ -1,0 +1,22 @@
+codename: unihertz-titan-2
+name: Unihertz Titan 2
+vendor: Unihertz
+soc_name: Dimensity 7300
+variants:
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: titan-2
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: 'No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR5, QWERTY phone. Bootloader
+      unlock documented on a real Titan 2 (OEM unlock, fastboot flashing unlock, volume down to confirm):
+      https://lichtmetzger.de/en/2025/10/28/rooting-the-unihertz-titan-2-and-installing-magisk/ Port candidate
+      for an own MediaTek port.'
+    source: https://www.unihertz.com/en-de/products/titan-2
+    checked: '2026-10-22'

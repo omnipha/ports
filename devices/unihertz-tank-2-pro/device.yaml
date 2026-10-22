@@ -1,0 +1,20 @@
+codename: unihertz-tank-2-pro
+name: Unihertz Tank 2 Pro
+vendor: Unihertz
+soc_name: Helio G99
+variants:
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: tank-2-pro
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. 12 GB LPDDR4X rugged phone. Bootloader
+      unlock not verified for this exact model. Port candidate for an own MediaTek port.
+    source: https://www.unihertz.com/products/tank-2-pro
+    checked: '2026-10-22'

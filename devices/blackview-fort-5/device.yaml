@@ -1,0 +1,21 @@
+codename: blackview-fort-5
+name: Blackview FORT 5
+vendor: Blackview
+soc_name: Helio G100
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: fort-5
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB LPDDR4X, plus 24 GB
+      extension. Sold in the German Blackview store. Bootloader unlock not verified for this exact model.
+      Port candidate for an own MediaTek port.
+    source: https://de.blackview.hk/products/fort-5-price
+    checked: '2026-10-22'

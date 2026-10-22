@@ -1,0 +1,21 @@
+codename: cubot-kingkong-star-2
+name: Cubot KingKong Star 2
+vendor: Cubot
+soc_name: Dimensity 8200
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: kingkong-star-2
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB, plus 12 GB extended
+      RAM. Sold in Germany (Amazon.de, idealo.de, kaufland.de). A 4PDA snippet shows an unlock log, not
+      verified. Port candidate for an own MediaTek port.
+    source: https://www.gsmarena.com/cubot_kingkong_star_2-13369.php
+    checked: '2026-10-22'

@@ -1,0 +1,21 @@
+codename: doogee-s200
+name: Doogee S200
+vendor: Doogee
+soc_name: Dimensity 7050
+variants:
+- ram_gb: 12
+  storage_gb: 256
+upstream_os:
+  ut:
+    key: s200
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: No LineageOS, postmarketOS or Ubuntu Touch support found. Physical 12 GB per manufacturer, plus
+      up to 36 GB virtual RAM. A 4PDA thread mentions fastboot flashing unlock for this model, page not
+      readable, success unverified. Port candidate for an own MediaTek port.
+    source: https://www.doogee.com/products/s200
+    checked: '2026-10-22'
