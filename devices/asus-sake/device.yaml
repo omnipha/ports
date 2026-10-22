@@ -21,10 +21,10 @@ upstream_os:
     key: sake
     listed: false
     source: devices.ubuntu-touch.io
-    checked: '2026-10-19'
+    checked: '2026-10-22'
   nura:
     status: unverified
     image: none
-    note: official LineageOS; 16GB rare top SKU; compact flagship; port candidate
+    note: official LineageOS; 16GB rare top SKU; compact flagship; port candidate ASUS has discontinued its official bootloader unlock tool, including for the ZenFone 8 and other devices released in 2023 and earlier. A newly bought unit therefore probably cannot be unlocked and is not a practical flashing candidate.
     source: https://wiki.lineageos.org/devices/
-    checked: '2026-10-19'
+    checked: '2026-10-22'

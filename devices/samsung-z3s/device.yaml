@@ -1,0 +1,28 @@
+codename: samsung-z3s
+name: Samsung Galaxy S20 Ultra
+vendor: Samsung
+year: 2020
+soc: exynos990
+soc_name: Exynos 990
+variants:
+- ram_gb: 12
+  storage_gb: 128
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 16
+  storage_gb: 512
+
+upstream_os:
+  ut:
+    key: z3s
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for SM-G988B and SM-G988B/DS. No postmarketOS device package found. Sold with 12 or 16 GB RAM and 128, 256 or 512 GB storage.
+    source: https://wiki.lineageos.org/devices/z3s/
+    checked: '2026-10-22'

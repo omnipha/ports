@@ -1,0 +1,30 @@
+codename: samsung-b0s
+name: Samsung Galaxy S22 Ultra
+vendor: Samsung
+year: 2022
+soc: exynos2200
+soc_name: Exynos 2200
+variants:
+- ram_gb: 8
+  storage_gb: 128
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+- ram_gb: 12
+  storage_gb: 1024
+
+upstream_os:
+  ut:
+    key: b0s
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for SM-S908B and SM-S908B/DS. No postmarketOS device package found. Sold with 8 or 12 GB RAM and 128, 256, 512 or 1024 GB storage.
+    source: https://wiki.lineageos.org/devices/b0s/
+    checked: '2026-10-22'

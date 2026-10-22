@@ -16,10 +16,10 @@ upstream_os:
     key: obiwan
     listed: false
     source: devices.ubuntu-touch.io
-    checked: '2026-10-19'
+    checked: '2026-10-22'
   nura:
     status: unverified
     image: none
-    note: LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020).
+    note: LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020). ASUS has discontinued its official bootloader unlock tool, including for devices released in 2023 and earlier. A newly bought unit therefore probably cannot be unlocked and is not a practical flashing candidate.
     source: https://wiki.lineageos.org/devices/
-    checked: '2026-10-19'
+    checked: '2026-10-22'

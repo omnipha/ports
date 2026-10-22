@@ -26,14 +26,14 @@
         "key": "obiwan",
         "listed": false,
         "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
+        "checked": "2026-10-22"
       },
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020).",
+        "note": "LineageOS discontinued (18.1 only, no current builds). Sold 8/128, 12/256, 16/512 in DE (2020). ASUS has discontinued its official bootloader unlock tool, including for devices released in 2023 and earlier. A newly bought unit therefore probably cannot be unlocked and is not a practical flashing candidate.",
         "source": "https://wiki.lineageos.org/devices/",
-        "checked": "2026-10-19"
+        "checked": "2026-10-22"
       }
     }
   },
@@ -72,14 +72,14 @@
         "key": "sake",
         "listed": false,
         "source": "devices.ubuntu-touch.io",
-        "checked": "2026-10-19"
+        "checked": "2026-10-22"
       },
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "official LineageOS; 16GB rare top SKU; compact flagship; port candidate",
+        "note": "official LineageOS; 16GB rare top SKU; compact flagship; port candidate ASUS has discontinued its official bootloader unlock tool, including for the ZenFone 8 and other devices released in 2023 and earlier. A newly bought unit therefore probably cannot be unlocked and is not a practical flashing candidate.",
         "source": "https://wiki.lineageos.org/devices/",
-        "checked": "2026-10-19"
+        "checked": "2026-10-22"
       }
     }
   },
@@ -4450,6 +4450,52 @@
     }
   },
   {
+    "id": "samsung-b0s",
+    "codename": "samsung-b0s",
+    "name": "Samsung Galaxy S22 Ultra",
+    "vendor": "Samsung",
+    "year": 2022,
+    "soc": "exynos2200",
+    "soc_name": "Exynos 2200",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "b0s",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for SM-S908B and SM-S908B/DS. No postmarketOS device package found. Sold with 8 or 12 GB RAM and 128, 256, 512 or 1024 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/b0s/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
     "id": "samsung-beyond1lte",
     "codename": "samsung-beyond1lte",
     "name": "Galaxy S10 (Exynos)",
@@ -4567,6 +4613,36 @@
     }
   },
   {
+    "id": "samsung-c2s",
+    "codename": "samsung-c2s",
+    "name": "Samsung Galaxy Note20 Ultra",
+    "vendor": "Samsung",
+    "year": 2020,
+    "soc": "exynos990",
+    "soc_name": "Exynos 990",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "c2s",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for SM-N985F and SM-N986B (4G and 5G). No postmarketOS device package found. Sold with 12 GB RAM and 256 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/c2s/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
     "id": "samsung-d1",
     "codename": "samsung-d1",
     "name": "Galaxy Note 10 (Exynos)",
@@ -4629,6 +4705,48 @@
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
+      }
+    }
+  },
+  {
+    "id": "samsung-z3s",
+    "codename": "samsung-z3s",
+    "name": "Samsung Galaxy S20 Ultra",
+    "vendor": "Samsung",
+    "year": 2020,
+    "soc": "exynos990",
+    "soc_name": "Exynos 990",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "z3s",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "Official LineageOS 24.0 for SM-G988B and SM-G988B/DS. No postmarketOS device package found. Sold with 12 or 16 GB RAM and 128, 256 or 512 GB storage.",
+        "source": "https://wiki.lineageos.org/devices/z3s/",
+        "checked": "2026-10-22"
       }
     }
   },

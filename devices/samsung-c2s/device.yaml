@@ -1,0 +1,22 @@
+codename: samsung-c2s
+name: Samsung Galaxy Note20 Ultra
+vendor: Samsung
+year: 2020
+soc: exynos990
+soc_name: Exynos 990
+variants:
+- ram_gb: 12
+  storage_gb: 256
+
+upstream_os:
+  ut:
+    key: c2s
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for SM-N985F and SM-N986B (4G and 5G). No postmarketOS device package found. Sold with 12 GB RAM and 256 GB storage.
+    source: https://wiki.lineageos.org/devices/c2s/
+    checked: '2026-10-22'
