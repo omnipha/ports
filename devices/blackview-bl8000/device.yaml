@@ -1,0 +1,22 @@
+codename: blackview-bl8000
+name: Blackview BL8000
+vendor: Blackview
+year: 2024
+soc_name: Dimensity 7050
+variants:
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: bl8000
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: 'No LineageOS, postmarketOS or Ubuntu Touch support found. Manufacturer specifications list physical
+      12 GB LPDDR5 RAM and 512 GB UFS 3.1 storage, plus up to 12 GB virtual RAM. Bootloader unlock is
+      not verified for this exact model. Port candidate for an own MediaTek port.'
+    source: https://es.blackview.hk/products/item/bl8000
+    checked: '2026-10-22'
