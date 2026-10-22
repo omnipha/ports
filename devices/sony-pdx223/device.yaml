@@ -1,0 +1,22 @@
+codename: sony-pdx223
+name: Sony Xperia 1 IV
+vendor: Sony
+year: 2022
+soc: sm8450
+soc_name: Snapdragon 8 Gen1
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: pdx223
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for XQ-CT44, XQ-CT54, XQ-CT72. No postmarketOS device package found
+      in main, community or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/pdx223/
+    checked: '2026-10-22'

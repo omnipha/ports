@@ -1,0 +1,24 @@
+codename: oneplus-lemonades
+name: OnePlus 9R
+vendor: OnePlus
+year: 2021
+soc: sm8250
+soc_name: Snapdragon 870
+variants:
+- ram_gb: 8
+  storage_gb: null
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: lemonades
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for LE2100, LE2101. No postmarketOS device package found in main, community
+      or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/lemonades/
+    checked: '2026-10-22'

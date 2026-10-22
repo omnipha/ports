@@ -1,0 +1,21 @@
+codename: google-husky
+name: Google Pixel 8 Pro
+vendor: Google
+year: 2023
+soc_name: Google Tensor G3
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: husky
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0. No postmarketOS device package found in main, community or testing.
+      RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/husky/
+    checked: '2026-10-22'

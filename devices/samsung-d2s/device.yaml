@@ -1,0 +1,24 @@
+codename: samsung-d2s
+name: Samsung Galaxy Note10+
+vendor: Samsung
+year: 2019
+soc_name: Exynos 9825
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: d2s
+    listed: true
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+    supported: true
+    installer: false
+    release: xenial
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 23.2 for SM-N975F, SM-N975F/DS. No postmarketOS device package found in main,
+      community or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/d2s/
+    checked: '2026-10-22'

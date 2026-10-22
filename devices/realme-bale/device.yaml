@@ -1,0 +1,24 @@
+codename: realme-bale
+name: Realme GT Neo6
+vendor: Realme
+year: 2024
+soc: sm8635
+soc_name: Snapdragon 8s Gen3
+variants:
+- ram_gb: 12
+  storage_gb: null
+- ram_gb: 16
+  storage_gb: null
+upstream_os:
+  ut:
+    key: bale
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 23.2 for RMX3852. No postmarketOS device package found in main, community
+      or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/bale/
+    checked: '2026-10-22'

@@ -1,0 +1,21 @@
+codename: google-tokay
+name: Google Pixel 9
+vendor: Google
+year: 2024
+soc_name: Google Tensor G4
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: tokay
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0. No postmarketOS device package found in main, community or testing.
+      RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/tokay/
+    checked: '2026-10-22'

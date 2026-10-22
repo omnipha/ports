@@ -1,0 +1,20 @@
+codename: ulefone-armor-29-ultra
+name: Ulefone Armor 29 Ultra
+vendor: Ulefone
+soc_name: Dimensity 9300+
+variants:
+- ram_gb: 16
+  storage_gb: 1024
+upstream_os:
+  ut:
+    key: armor-29-ultra
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: Physical 16 GB RAM per manufacturer. No LineageOS, postmarketOS or Ubuntu Touch support found.
+      Bootloader unlock not verified for this model. Port candidate for an own MediaTek port.
+    source: https://www.ulefone.com/products/armor-29-ultra
+    checked: '2026-10-22'

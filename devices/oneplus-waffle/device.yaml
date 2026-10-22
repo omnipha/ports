@@ -1,0 +1,27 @@
+codename: oneplus-waffle
+name: OnePlus 12
+vendor: OnePlus
+year: 2023
+soc: sm8650
+soc_name: Snapdragon 8 Gen3
+variants:
+- ram_gb: 12
+  storage_gb: null
+- ram_gb: 16
+  storage_gb: null
+- ram_gb: 24
+  storage_gb: null
+upstream_os:
+  ut:
+    key: waffle
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 23.2 for CPH2573, CPH2581, CPH2583, PJD110. No postmarketOS device package
+      found in main, community or testing. RAM options from the LineageOS wiki; storage combinations not
+      verified.
+    source: https://wiki.lineageos.org/devices/waffle/
+    checked: '2026-10-22'

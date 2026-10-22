@@ -1,0 +1,24 @@
+codename: oneplus-giulia
+name: OnePlus 13R
+vendor: OnePlus
+year: 2025
+soc: sm8650
+soc_name: Snapdragon 8 Gen3
+variants:
+- ram_gb: 12
+  storage_gb: null
+- ram_gb: 16
+  storage_gb: null
+upstream_os:
+  ut:
+    key: giulia
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 23.2 for CPH2645, CPH2647, CPH2691. No postmarketOS device package found
+      in main, community or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/giulia/
+    checked: '2026-10-22'

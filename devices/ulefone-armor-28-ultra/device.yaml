@@ -1,0 +1,20 @@
+codename: ulefone-armor-28-ultra
+name: Ulefone Armor 28 Ultra
+vendor: Ulefone
+soc_name: Dimensity 9300
+variants:
+- ram_gb: 16
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: armor-28-ultra
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: not-checked
+    image: none
+    note: Physical 16 GB RAM per manufacturer. No LineageOS, postmarketOS or Ubuntu Touch support found.
+      Bootloader unlock not verified for this model. Port candidate for an own MediaTek port.
+    source: https://www.gsmarena.com/ulefone_unveils_the_first_rugged_phone_with_a_dimensity_9300_the_armor_28_ultra-news-64387.php
+    checked: '2026-10-22'

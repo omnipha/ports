@@ -1,0 +1,22 @@
+codename: sony-pdx234
+name: Sony Xperia 1 V
+vendor: Sony
+year: 2023
+soc: sm8550
+soc_name: Snapdragon 8 Gen2
+variants:
+- ram_gb: 12
+  storage_gb: null
+upstream_os:
+  ut:
+    key: pdx234
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-22'
+  nura:
+    status: unverified
+    image: none
+    note: Official LineageOS 24.0 for XQ-DQ54, XQ-DQ72. No postmarketOS device package found in main,
+      community or testing. RAM options from the LineageOS wiki; storage combinations not verified.
+    source: https://wiki.lineageos.org/devices/pdx234/
+    checked: '2026-10-22'
