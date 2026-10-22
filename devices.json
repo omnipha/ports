@@ -1282,6 +1282,51 @@
     }
   },
   {
+    "id": "motorola-cybert",
+    "codename": "motorola-cybert",
+    "name": "Motorola Edge 60 Pro",
+    "vendor": "Motorola",
+    "year": 2025,
+    "soc_name": "Dimensity 8350 Extreme",
+    "variants": [
+      {
+        "ram_gb": 8,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "aliases": [
+      "XT2507-1",
+      "XT2507"
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "cybert",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-22"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "Not in the official LineageOS wiki and not in the official LineageOS download API. An unofficial LineageOS 23.0 beta for codename cybert exists on XDA (all XT2507 variants, thread page not readable by bot, status not verified). A forum snippet mentions a 7 day wait before the OEM unlock switch could be set, unlock not verified by us. No postmarketOS package found. MediaTek, so a Nura port would be a new bring-up. RAM per GSMArena: 8, 12 or 16 GB (Motorola lists 12 GB / 512 GB).",
+        "source": "https://xdaforums.com/t/rom-unofficial-cybert-lineageos-23-0-motorola-edge-60-pro-beta-1.4776186/",
+        "checked": "2026-10-22"
+      }
+    }
+  },
+  {
     "id": "motorola-dubai",
     "codename": "motorola-dubai",
     "name": "Motorola Edge 30",
