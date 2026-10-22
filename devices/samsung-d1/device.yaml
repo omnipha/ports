@@ -18,7 +18,12 @@ upstream_os:
     image: none
     note: Exynos 9820 family, but device-samsung-exynos9820 provides only beyond1lte and beyond2lte; this
       model is not covered. Official LineageOS 23.2 (Android 16, kernel 4.14, SM-N970F and SM-N970F/DS) per
-      https://wiki.lineageos.org/devices/d1/ checked 2026-10-22; Android only, not a Nura image.
+      https://wiki.lineageos.org/devices/d1/ checked 2026-10-22; Android only, not a Nura image. Kernel
+      state checked 2026-10-22 at commit 62fdd500 of https://github.com/chiffathefox/exynos-9820-mainline-linux,
+      the base of linux-postmarketos-exynos9820. No Exynos 9820/9825 device tree under
+      arch/arm64/boot/dts/exynos, so no d1 device tree; the G3D clock block is an empty placeholder in
+      clk-exynos9820.c and CONFIG_DRM_PANFROST is off in the pmaports config, so no GPU acceleration yet
+      (Mesa itself supports the Mali-G76 via Panfrost/PanVK). A d1 port needs its own device tree.
     source: pmaports-mirror
     url: https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing
     checked: '2026-10-18'
