@@ -9,7 +9,7 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 
 **Max RAM** is the largest sold variant. For language models RAM usually limits model size before the GPU does. A device is not suitable just because it appears here: check the Linux GPU column and [DEVICES.md](DEVICES.md).
 
-63 of 251 devices have a known GPU. 188 are not mapped yet.
+64 of 252 devices have a known GPU. 188 are not mapped yet.
 
 | Phone | SoC | GPU | 3DMark Wild Life Extreme | Geekbench 6 OpenCL | Max RAM | Linux GPU |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -50,6 +50,7 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 | [Realme GT 5G](https://github.com/omnipha/ports/tree/main/devices/realme-rmx2202) | Snapdragon 888 (`sm8350`) | Adreno 660 | 1423 | 4299 | 12 GB | untested |
 | [Redmi K40 Pro / Mi 11i](https://github.com/omnipha/ports/tree/main/devices/xiaomi-haydn) | Snapdragon 888 (`sm8350`) | Adreno 660 | 1423 | 4299 | 12 GB | untested |
 | [Xiaomi Mi 11 Pro](https://github.com/omnipha/ports/tree/main/devices/xiaomi-mars) | Snapdragon 888 (`sm8350`) | Adreno 660 | 1423 | 4299 | 12 GB | untested |
+| [Xiaomi Mi 11 Ultra](https://github.com/omnipha/ports/tree/main/devices/xiaomi-star) | Snapdragon 888 (`sm8350`) | Adreno 660 | 1423 | 4299 | 12 GB | untested |
 | [Xperia 1 III](https://github.com/omnipha/ports/tree/main/devices/sony-pdx215) | Snapdragon 888 (`sm8350`) | Adreno 660 | 1423 | 4299 | 12 GB | untested |
 | [Mi 10 Ultra](https://github.com/omnipha/ports/tree/main/devices/xiaomi-cas) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 16 GB | untested |
 | [Red Magic 5G / 5S](https://github.com/omnipha/ports/tree/main/devices/nubia-nx659j) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 16 GB | untested |

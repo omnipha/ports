@@ -1,0 +1,28 @@
+codename: xiaomi-star
+name: Xiaomi Mi 11 Ultra
+vendor: Xiaomi
+year: 2021
+soc: sm8350
+soc_name: Snapdragon 888
+variants:
+- ram_gb: 8
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 256
+- ram_gb: 12
+  storage_gb: 512
+upstream_os:
+  ut:
+    key: star
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-24'
+  nura:
+    status: unverified
+    image: none
+    note: No official LineageOS. Unofficial LineageOS 20 (XDA, 2023) and custom ROM collections
+      exist. Nura wiki page exists but close-to-mainline kernel is not possible and no device
+      package is in the repositories. Bootloader unlock via Xiaomi Mi account with waiting
+      period (about 168 hours) is documented for this model.
+    source: https://xdaforums.com/t/rom-13-unofficial-lineageos-20-for-mi-11-ultra.4618973
+    checked: '2026-10-24'
