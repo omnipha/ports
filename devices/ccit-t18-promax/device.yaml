@@ -1,0 +1,20 @@
+codename: ccit-t18-promax
+name: CCIT T18 Promax
+vendor: CCIT
+upstream_os:
+  ut:
+    key: t18-promax
+    listed: false
+    source: devices.ubuntu-touch.io
+    checked: '2026-10-26'
+  nura:
+    status: not-checked
+    image: none
+    note: >-
+      Research-only candidate. Retail listings advertise 16 GB RAM and 1 TB storage,
+      but physical RAM, built-in storage capacity, chipset and actual device codename
+      are unverified. No device-specific bootloader unlock procedure or successful
+      unlock report was found in searches on 2026-10-26. Do not count this model
+      among verified 16 GB physical-RAM devices or assume it can be flashed.
+    source: https://www.noon.com/kuwait-en/t18-promax-5g-mobile-phone-16gb-ram-1tb-storage-6-8-inch-display-bordeaux-red/ZB4AE8D2E905EEA6F5261Z/p/
+    checked: '2026-10-26'
