@@ -7992,6 +7992,40 @@
     }
   },
   {
+    "id": "xiaomi-nezha",
+    "codename": "xiaomi-nezha",
+    "name": "Xiaomi 17 Ultra",
+    "vendor": "Xiaomi",
+    "year": 2026,
+    "soc": "sm8850",
+    "soc_name": "Snapdragon 8 Elite Gen 5",
+    "variants": [
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 1024
+      }
+    ],
+    "upstream_os": {
+      "ut": {
+        "key": "nezha",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-10-27"
+      },
+      "nura": {
+        "status": "unverified",
+        "image": "none",
+        "note": "No official LineageOS image for nezha. An active unofficial LineageOS 24 (Android 17) build for Xiaomi 17 Ultra is published on XDA; its author requires a specific Chinese stock firmware and a separate modem firmware flash for global devices. A xiaomi-nezha Nura wiki page exists, but its package/installability and physical boot have not been verified (wiki access was blocked on 2026-10-27). No Omnipha image or boot test.",
+        "source": "https://xdaforums.com/t/rom-unofficial-nezha-xiaomi-17-ultra-lineageos-24-android-17-2026-10-27.4799476/",
+        "checked": "2026-10-27"
+      }
+    }
+  },
+  {
     "id": "xiaomi-nuwa",
     "codename": "xiaomi-nuwa",
     "name": "Xiaomi 13 Pro",
