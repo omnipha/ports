@@ -1665,16 +1665,33 @@
       }
     ],
     "project": {
-      "stage": "bring-up",
+      "stage": "field-tested",
       "mission": "https://github.com/omnipha/ports/issues/3"
     },
     "device_repo": "https://github.com/omnipha/device-nothing-asteroids",
     "status": {
-      "boot": "untested",
-      "ssh": "untested",
-      "wifi": "untested",
+      "boot": "partial",
+      "ssh": "partial",
+      "wifi": "partial",
       "display": "untested",
       "cameras": "untested"
+    },
+    "status_evidence": {
+      "boot": {
+        "date": "2026-10-28",
+        "variant": "mb003 (A059P), held RAM session on stock 6.1.84 kernel, not an Omnipha image",
+        "url": "https://github.com/omnipha/linux-sm7635/blob/main/records/2026-10-28-2284-run-52-measured-postmarketos-pid-1-cutover-and-u.md"
+      },
+      "ssh": {
+        "date": "2026-10-28",
+        "variant": "mb003 (A059P), key-only USB SSH in held session",
+        "url": "https://github.com/omnipha/linux-sm7635/blob/main/records/2026-10-28-2284-run-52-measured-postmarketos-pid-1-cutover-and-u.md"
+      },
+      "wifi": {
+        "date": "2026-10-29",
+        "variant": "mb003 (A059P), association, DHCP and external reachability in one held session; not persistent, not after reboot",
+        "url": "https://github.com/omnipha/linux-sm7635/blob/main/records/2026-10-29-2294-run-57-measured-openrc-wpa-supplicant-and-networ.md"
+      }
     },
     "release": {
       "status": "unreleased",
@@ -1690,7 +1707,7 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). Device package is in this tree (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in the inspected upstream tree; no Omnipha image or successful Omnipha boot. Debug attempts returned to fastboot with no observed USB/SSH; they do not establish kernel execution. See mission issue.",
+        "note": "Codename asteroids, model A059P, platform volcano. Measured on mb003: ro.soc.model=SM7635, Android 15 V3.1-250112-1904, kernel 6.1.84-android14, bootloader unlocked. Official GPL source NothingOSS/android_kernel_msm-6.1_nothing_sm7635 has volcano and volcano-qrd-pro DTs under arch/arm64/boot/dts/vendor/qcom. The exact 250112 build was not found in the published V3.1 history (earliest observed release 250302). Device package is in this tree (device-nothing-asteroids plus linux-omnipha-nothing-sm7635 pinned to commit d5f5f965fd0b478eaf4eb63fd984c5a4a92135a7). No mainline DT in the inspected upstream tree and no installable Omnipha image. Coordinator-held RAM sessions later measured postmarketOS PID 1, USB SSH and in-session WLAN on the stock kernel; these are not a cold boot, persistent installation or release. Earlier fastboot returns alone did not establish kernel execution. See mission issue and the dated Omnipha status evidence above.",
         "source": "mb003 ADB + github.com/NothingOSS/android_kernel_msm-6.1_nothing_sm7635 + postmarketOS/pmaports",
         "checked": "2026-10-19"
       }
