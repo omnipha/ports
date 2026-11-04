@@ -1,0 +1,5 @@
+subsystems:
+  oneplus-instantnoodlep-packaging:
+    state: ported
+    evidence: records/2026-11-04-155324-instantnoodlep-merged-package-checks.md
+next_question: When will a build and device-specific firmware extraction be validated?
