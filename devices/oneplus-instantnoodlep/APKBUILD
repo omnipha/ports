@@ -1,0 +1,41 @@
+maintainer="kouling <k0ul1ng@proton.me>"
+pkgname=device-oneplus-instantnoodlep
+pkgdesc="OnePlus 8 Pro"
+pkgver=7
+pkgrel=0
+url="https://postmarketos.org"
+license="MIT"
+arch="aarch64"
+options="!check !archcheck"
+depends="
+	linux-postmarketos-qcom-sm8250=7.2.0_git20261010-r0
+	mkbootimg
+	postmarketos-base
+"
+makedepends="
+	devicepkg-dev
+	dtc
+"
+source="
+	deviceinfo
+	kernel-cmdline.conf
+	sm8250-oneplus-instantnoodlep-empty.dts
+"
+
+build() {
+	devicepkg_build $startdir $pkgname
+
+	dtc -O dtb -o "$srcdir/dtbo.img" -I dts "$srcdir/sm8250-oneplus-instantnoodlep-empty.dts"
+}
+
+package() {
+	devicepkg_package $startdir $pkgname
+
+	install -Dm644 "$srcdir/dtbo.img" "$pkgdir/boot/dtbo.img"
+}
+
+sha512sums="
+57e839b0cf31441771e1e30e5c7482713ec5811ba3bf969d2812c68aeb2cd27e757218bd427ed6d1d1cc798fbc51b932fd703794b83458737ee0ae36aa1836e5  deviceinfo
+04cc87ed6b0041ede7edb2693ee4dd58d6ac8f1b036a0b37e1a86cce57b66e35d9f400a3ea75d75278b028132535033915f3a2fff919866e85336c5f92a68ffe  kernel-cmdline.conf
+06269dcbd405a18576a476bb976d39bcf91e8c7885a87716f510d66abc2ffe3bfabe56c286ad6fc88878de07427e58965ac833ac0e8cfa7ad393c2fa3b535c88  sm8250-oneplus-instantnoodlep-empty.dts
+"
