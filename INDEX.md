@@ -2,13 +2,17 @@
 
 ## Latest 10
 
+- [2026-11-04-154816-instantnoodlep-package-checks](records/2026-11-04-154816-instantnoodlep-package-checks.md) | packaging-tests | confirmed | ports#26 | instantnoodlep package checks
 - [2026-11-04-153603-port-device-oneplus-instantnoodlep](records/2026-11-04-153603-port-device-oneplus-instantnoodlep.md) | ports | confirmed | ports#26 | OnePlus 8 Pro package port
 
 ## By subsystem (latest 3, total in brackets)
+
+### packaging-tests [1]
+- [2026-11-04-154816-instantnoodlep-package-checks](records/2026-11-04-154816-instantnoodlep-package-checks.md) | packaging-tests | confirmed | ports#26 | instantnoodlep package checks
 
 ### ports [1]
 - [2026-11-04-153603-port-device-oneplus-instantnoodlep](records/2026-11-04-153603-port-device-oneplus-instantnoodlep.md) | ports | confirmed | ports#26 | OnePlus 8 Pro package port
 
 ## By month
 
-- [2026-11](records/index-2026-11.md) [1]
+- [2026-11](records/index-2026-11.md) [2]
