@@ -1,0 +1,509 @@
+diff --git a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
+index 399acaa..d87c261 100644
+--- a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
++++ b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
+@@ -5,6 +5,7 @@
+ #include <dt-bindings/regulator/qcom,rpmh-regulator.h>
+ #include <dt-bindings/phy/phy.h>
+ #include <dt-bindings/usb/pd.h>
++#include <dt-bindings/clock/qcom,camcc-sm8250.h>
+ #include <dt-bindings/clock/qcom,dispcc-sm8250.h>
+ #include <dt-bindings/clock/qcom,gcc-sm8250.h>
+ #include <dt-bindings/sound/qcom,q6asm.h>
+@@ -285,6 +286,132 @@
+ 		wlan-en-gpios = <&tlmm 20 GPIO_ACTIVE_HIGH>;
+ 	};
+ 
++	vreg_cam_filter_avdd: regulator-cam-filter-avdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_filter_avdd";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&pm8150l_gpios 1 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++	};
++
++	vreg_cam_filter_dvdd: regulator-cam-filter-dvdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_filter_dvdd";
++		regulator-min-microvolt = <1200000>;
++		regulator-max-microvolt = <1200000>;
++		vin-supply = <&vreg_s4a_1p8>;
++		gpio = <&tlmm 74 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_filter_dvdd_en>;
++	};
++
++	vreg_cam_front_avdd: regulator-cam-front-avdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_front_avdd";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&tlmm 24 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_front_avdd_en>;
++	};
++
++	vreg_cam_main_avdd: regulator-cam-main-avdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_main_avdd";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&tlmm 156 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_main_avdd_en>;
++	};
++
++	vreg_cam_main_avdd2: regulator-cam-main-avdd2 {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_main_avdd2";
++		regulator-min-microvolt = <1800000>;
++		regulator-max-microvolt = <1800000>;
++		vin-supply = <&vreg_s5a_1p9>;
++		gpio = <&tlmm 26 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_main_avdd2_en>;
++	};
++
++	vreg_cam_main_vaf: regulator-cam-main-vaf {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_main_vaf";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&tlmm 93 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_main_vaf_en>;
++	};
++
++	vreg_cam_tele_avdd: regulator-cam-tele-avdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_tele_avdd";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&tlmm 139 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_tele_avdd_en>;
++	};
++
++	vreg_cam_tele_vaf: regulator-cam-tele-vaf {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_tele_vaf";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&tlmm 140 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_tele_vaf_en>;
++	};
++
++	vreg_cam_uw_avdd: regulator-cam-uw-avdd {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_uw_avdd";
++		regulator-min-microvolt = <2800000>;
++		regulator-max-microvolt = <2800000>;
++		vin-supply = <&vreg_bob>;
++		gpio = <&pm8009_gpios 1 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++	};
++
++	vreg_cam_uw_avdd2: regulator-cam-uw-avdd2 {
++		compatible = "regulator-fixed";
++		regulator-name = "cam_uw_avdd2";
++		regulator-min-microvolt = <1800000>;
++		regulator-max-microvolt = <1800000>;
++		vin-supply = <&vreg_s5a_1p9>;
++		gpio = <&tlmm 159 GPIO_ACTIVE_HIGH>;
++		enable-active-high;
++		startup-delay-us = <2000>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_uw_avdd2_en>;
++	};
++
+ 	battery: battery {
+ 		compatible = "simple-battery";
+ 
+@@ -345,10 +472,24 @@
+ 			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
+ 		};
+ 
+-		vreg_l2f_1p2: ldo2 {
+-			regulator-name = "vreg_l2f_1p2";
+-			regulator-min-microvolt = <1200000>;
+-			regulator-max-microvolt = <1200000>;
++		vreg_l2f_1p1: ldo2 {
++			regulator-name = "vreg_l2f_1p1";
++			regulator-min-microvolt = <1104000>;
++			regulator-max-microvolt = <1104000>;
++			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
++		};
++
++		vreg_l3f_1p05: ldo3 {
++			regulator-name = "vreg_l3f_1p05";
++			regulator-min-microvolt = <1056000>;
++			regulator-max-microvolt = <1056000>;
++			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
++		};
++
++		vreg_l4f_1p05: ldo4 {
++			regulator-name = "vreg_l4f_1p05";
++			regulator-min-microvolt = <1056000>;
++			regulator-max-microvolt = <1056000>;
+ 			regulator-initial-mode = <RPMH_REGULATOR_MODE_HPM>;
+ 		};
+ 
+@@ -619,6 +760,218 @@
+ 	status = "okay";
+ };
+ 
++&camss {
++	vdda-phy-supply = <&vreg_l5a_0p88>;
++	vdda-pll-supply = <&vreg_l9a_1p2>;
++	status = "okay";
++
++	ports {
++		port@0 {
++			camss_in_main: endpoint {
++				remote-endpoint = <&imx689_out>;
++				bus-type = <1>;
++				data-lanes = <0 1 2>;
++			};
++		};
++
++		port@1 {
++			camss_in_uw: endpoint {
++				remote-endpoint = <&imx586_out>;
++				bus-type = <1>;
++				data-lanes = <0 1 2>;
++			};
++		};
++
++		port@2 {
++			camss_in_tele: endpoint {
++				remote-endpoint = <&s5k3m5_out>;
++				clock-lanes = <7>;
++				data-lanes = <0 1 2 3>;
++			};
++		};
++
++		port@3 {
++			camss_in_front: endpoint {
++				remote-endpoint = <&imx471_out>;
++				clock-lanes = <7>;
++				data-lanes = <0 1 2 3>;
++			};
++		};
++
++		port@4 {
++			camss_in_filter: endpoint {
++				remote-endpoint = <&gc5035_out>;
++				clock-lanes = <7>;
++				data-lanes = <0 1>;
++			};
++		};
++	};
++};
++
++&cci0 {
++	status = "okay";
++};
++
++&cci0_i2c0 {
++	lens_main: lens@c {
++		compatible = "asahi-kasei,ak7375";
++		reg = <0x0c>;
++		vdd-supply = <&vreg_cam_main_vaf>;
++		vio-supply = <&vreg_l7f_1p8>;
++	};
++
++	camera@1a {
++		compatible = "sony,imx689";
++		reg = <0x1a>;
++		clocks = <&camcc CAM_CC_MCLK0_CLK>;
++		assigned-clocks = <&camcc CAM_CC_MCLK0_CLK>;
++		assigned-clock-rates = <19200000>;
++		reset-gpios = <&tlmm 145 GPIO_ACTIVE_LOW>;
++		avdd-supply = <&vreg_cam_main_avdd>;
++		avdd2-supply = <&vreg_cam_main_avdd2>;
++		dvdd-supply = <&vreg_l1f_1p1>;
++		dovdd-supply = <&vreg_l7f_1p8>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_mclk0_default &cam_main_default>;
++		orientation = <1>;
++		rotation = <270>;
++		lens-focus = <&lens_main>;
++
++		port {
++			imx689_out: endpoint {
++				remote-endpoint = <&camss_in_main>;
++				bus-type = <1>;
++				data-lanes = <1 2 3>;
++				link-frequencies = /bits/ 64 <422400000>;
++			};
++		};
++	};
++};
++
++&cci0_i2c1 {
++	lens_uw: lens@f {
++		compatible = "asahi-kasei,ak7375";
++		reg = <0x0f>;
++		vdd-supply = <&vreg_l7c_cam_vcm0_2p85>;
++		vio-supply = <&vreg_l7f_1p8>;
++	};
++
++	camera@10 {
++		compatible = "sony,imx586";
++		reg = <0x10>;
++		clocks = <&camcc CAM_CC_MCLK1_CLK>;
++		assigned-clocks = <&camcc CAM_CC_MCLK1_CLK>;
++		assigned-clock-rates = <19200000>;
++		reset-gpios = <&tlmm 144 GPIO_ACTIVE_LOW>;
++		avdd-supply = <&vreg_cam_uw_avdd>;
++		avdd2-supply = <&vreg_cam_uw_avdd2>;
++		dvdd-supply = <&vreg_l2f_1p1>;
++		dovdd-supply = <&vreg_l7f_1p8>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_mclk1_default &cam_uw_default>;
++		orientation = <1>;
++		rotation = <270>;
++		lens-focus = <&lens_uw>;
++
++		port {
++			imx586_out: endpoint {
++				remote-endpoint = <&camss_in_uw>;
++				bus-type = <1>;
++				data-lanes = <1 2 3>;
++				link-frequencies = /bits/ 64 <421200000>;
++			};
++		};
++	};
++
++	camera@37 {
++		compatible = "galaxycore,gc5035";
++		reg = <0x37>;
++		clocks = <&camcc CAM_CC_MCLK4_CLK>;
++		assigned-clocks = <&camcc CAM_CC_MCLK4_CLK>;
++		assigned-clock-rates = <19200000>;
++		reset-gpios = <&tlmm 92 GPIO_ACTIVE_LOW>;
++		avdd-supply = <&vreg_cam_filter_avdd>;
++		dvdd-supply = <&vreg_cam_filter_dvdd>;
++		dovdd-supply = <&vreg_l7f_1p8>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_filter_default>;
++		orientation = <1>;
++		rotation = <270>;
++
++		port {
++			gc5035_out: endpoint {
++				remote-endpoint = <&camss_in_filter>;
++				data-lanes = <1 2>;
++				link-frequencies = /bits/ 64 <438000000>;
++			};
++		};
++	};
++};
++
++&cci1 {
++	status = "okay";
++};
++
++&cci1_i2c0 {
++	lens_tele: lens@74 {
++		compatible = "onnn,lc898217xc";
++		reg = <0x74>;
++		vdd-supply = <&vreg_cam_tele_vaf>;
++		vana-supply = <&vreg_l6f_2p8>;
++	};
++
++	camera@2d {
++		compatible = "samsung,s5k3m5";
++		reg = <0x2d>;
++		clocks = <&camcc CAM_CC_MCLK2_CLK>;
++		assigned-clocks = <&camcc CAM_CC_MCLK2_CLK>;
++		assigned-clock-rates = <24000000>;
++		reset-gpios = <&tlmm 90 GPIO_ACTIVE_LOW>;
++		vdda-supply = <&vreg_cam_tele_avdd>;
++		vddd-supply = <&vreg_l4f_1p05>;
++		vddio-supply = <&vreg_l7f_1p8>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_tele_default>;
++		orientation = <1>;
++		rotation = <270>;
++		lens-focus = <&lens_tele>;
++
++		port {
++			s5k3m5_out: endpoint {
++				remote-endpoint = <&camss_in_tele>;
++				data-lanes = <1 2 3 4>;
++				link-frequencies = /bits/ 64 <602500000>;
++			};
++		};
++	};
++};
++
++&cci1_i2c1 {
++	camera@10 {
++		compatible = "sony,imx471";
++		reg = <0x10>;
++		clocks = <&camcc CAM_CC_MCLK3_CLK>;
++		assigned-clocks = <&camcc CAM_CC_MCLK3_CLK>;
++		assigned-clock-rates = <19200000>;
++		reset-gpios = <&tlmm 78 GPIO_ACTIVE_LOW>;
++		avdd-supply = <&vreg_cam_front_avdd>;
++		dvdd-supply = <&vreg_l3f_1p05>;
++		dovdd-supply = <&vreg_l7f_1p8>;
++		pinctrl-names = "default";
++		pinctrl-0 = <&cam_mclk3_default &cam_front_default>;
++		orientation = <0>;
++		rotation = <90>;
++
++		port {
++			imx471_out: endpoint {
++				remote-endpoint = <&camss_in_front>;
++				data-lanes = <1 2 3 4>;
++				link-frequencies = /bits/ 64 <748800000 400000000>;
++			};
++		};
++	};
++};
++
+ &cdsp {
+ 	firmware-name = "postmarketos/cdsp.mbn";
+ 	status = "okay";
+@@ -902,6 +1255,115 @@
+ &tlmm {
+ 	gpio-reserved-ranges = <28 4>, <40 4>;
+ 
++	cam_filter_default: cam-filter-default-state {
++		mclk-pins {
++			pins = "gpio98";
++			function = "cam_mclk";
++			drive-strength = <2>;
++			bias-disable;
++		};
++
++		reset-pins {
++			pins = "gpio92";
++			function = "gpio";
++			drive-strength = <2>;
++			bias-disable;
++		};
++	};
++
++	cam_filter_dvdd_en: cam-filter-dvdd-en-state {
++		pins = "gpio74";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_front_avdd_en: cam-front-avdd-en-state {
++		pins = "gpio24";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_front_default: cam-front-default-state {
++		pins = "gpio78";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_main_avdd_en: cam-main-avdd-en-state {
++		pins = "gpio156";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_main_avdd2_en: cam-main-avdd2-en-state {
++		pins = "gpio26";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_main_default: cam-main-default-state {
++		pins = "gpio145";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_main_vaf_en: cam-main-vaf-en-state {
++		pins = "gpio93";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_tele_avdd_en: cam-tele-avdd-en-state {
++		pins = "gpio139";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_tele_default: cam-tele-default-state {
++		mclk-pins {
++			pins = "gpio96";
++			function = "cam_mclk";
++			drive-strength = <16>;
++			bias-disable;
++		};
++
++		rst-pins {
++			pins = "gpio90";
++			function = "gpio";
++			drive-strength = <2>;
++			bias-disable;
++		};
++	};
++
++	cam_tele_vaf_en: cam-tele-vaf-en-state {
++		pins = "gpio140";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_uw_avdd2_en: cam-uw-avdd2-en-state {
++		pins = "gpio159";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
++	cam_uw_default: cam-uw-default-state {
++		pins = "gpio144";
++		function = "gpio";
++		drive-strength = <2>;
++		bias-disable;
++	};
++
+ 	bt_en_state: bt-default-state {
+ 		bt-en {
+ 			pins = "gpio21";

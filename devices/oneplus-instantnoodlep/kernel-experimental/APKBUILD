@@ -1,0 +1,84 @@
+# Experimental Omnipha kernel; no device/firmware payload, not production-ready.
+# Public sm8250 tag + display and device patch series; not yet hardware tested.
+_flavor="omnipha-qcom-sm8250"
+pkgname="linux-$_flavor"
+pkgver=7.2.0_git20261107
+pkgrel=1
+pkgdesc="Experimental SM8250 kernel based on the mb005 build"
+url="https://gitlab.postmarketos.org/soc/qualcomm-sm8250/linux"
+arch="aarch64"
+_carch="arm64"
+license="GPL-2.0-only"
+options="!strip !check !tracedeps pmb:cross-native"
+makedepends="
+	bash
+	bison
+	clang
+	elfutils-dev
+	findutils
+	flex
+	linux-headers
+	lld
+	llvm
+	openssl-dev
+	pahole
+	perl
+	python3
+"
+_commit="3c5440e9dd3c3e3b5735ad8f1b22bdfd02c707d9"
+_config="config-$_flavor.$arch"
+# Public commit archive corresponds to tag sm8250-7.2.0_git20261010.
+source="
+	https://gitlab.postmarketos.org/soc/qualcomm-sm8250/linux/-/archive/$_commit/linux-$_commit.tar.gz
+	0001-display-bindings.patch
+	0002-display-panel.patch
+	0003-display-dts.patch
+	0004-audio.patch
+	0005-camera-drivers.patch
+	0006-camera-dts.patch
+	0007-gpu-fastboot.patch
+	$_config
+"
+builddir="$srcdir/linux-$_commit"
+
+prepare() {
+	default_prepare
+	cp "$srcdir/$_config" .config
+	make ARCH="$_carch" LLVM=1 olddefconfig
+}
+
+build() {
+	unset LDFLAGS
+	export KBUILD_BUILD_USER=omnipha KBUILD_BUILD_HOST=build
+	export KBUILD_BUILD_TIMESTAMP="Sat Nov  7 18:10:03 UTC 2026"
+	make ARCH="$_carch" LLVM=1 \
+		KBUILD_BUILD_VERSION="$((pkgrel + 1))-$_flavor"
+}
+
+package() {
+	mkdir -p "$pkgdir"/boot
+	if [ -e "$builddir/arch/$_carch/boot/vmlinuz.efi" ]; then
+		install -Dm644 "$builddir/arch/$_carch/boot/vmlinuz.efi" "$pkgdir/boot/linux.efi"
+		install -Dm644 "$builddir/arch/$_carch/boot/vmlinuz" "$pkgdir/boot/vmlinuz"
+	else
+		install -Dm644 "$builddir/arch/$_carch/boot/Image.gz" "$pkgdir/boot/vmlinuz"
+	fi
+	make modules_install dtbs_install ARCH="$_carch" LLVM=1 \
+		INSTALL_PATH="$pkgdir/boot" \
+		INSTALL_MOD_PATH="$pkgdir/usr" INSTALL_MOD_STRIP=1 \
+		INSTALL_DTBS_PATH="$pkgdir/boot/dtbs"
+	rm -f "$pkgdir"/usr/lib/modules/*/build "$pkgdir"/usr/lib/modules/*/source
+	install -Dm644 "$builddir/include/config/kernel.release" \
+		"$pkgdir/usr/share/kernel/$_flavor/kernel.release"
+}
+sha512sums="
+57ef7cc9e7b6d3060e3430b8d48a65f2807ecafa0d5d80d7d4a3160e49b312db0e52de4741e4253dfba6cff0659bddba7532838263355b195da36274b7107d8a  linux-3c5440e9dd3c3e3b5735ad8f1b22bdfd02c707d9.tar.gz
+7aebacfbcfa28aa696548fcdf5c920d2c5167b17f09c8ae465086e7cfbf0decefd70167a79234928783a5acc0a6a99800957a12a20828fba79bf3c94267d49e9  0001-display-bindings.patch
+4ac1fa0c36d924225e503a75153a55e58d9842cc425d74c9e7b2774e860a4d1d6fd2d94bb424e83c61cbff4d07dfdde6a262e4917ec6bcfe46c89fbbe1edb907  0002-display-panel.patch
+4626c061aff57e78464870b7d7f141148280fe5c2645b8ffe72643bfbb00b1fa4a33d70bedc625b2dd26aff61704c6a51dc410f91db3655cfea60d23c53cc4ce  0003-display-dts.patch
+23f458c2d86aaeebd6c7add4fafb8029a4d45b7a601c15fc71dfd83927e1b1d66e8b3d06b6df07005cecd1a6f8761fa15f65d823ada85ca40149974b1d2781df  0004-audio.patch
+c86d6ab784fe572d0a627c58eadba848ac44a5bb6fd13e7c8c8a311a2547fcd28c7ace3dea279d603d78bca8ce7b2b4d8c726c644e79b9d2a89534b782b1b010  0005-camera-drivers.patch
+95df386f41c0c3136525efaa09593d80c2a58574bffb32bb678bb8e4ce2d07f50164c1d6467d73cce2bfb89a10e88b6dffe243cc868cb53cdcd1fa7c28333803  0006-camera-dts.patch
+a937004679ede2b608ac3a31f1bdcf5b0fe4e37d74c1a08c220c559ec78d10e4f882cd1abf1d47179bd12afcad5dcd9e72c77c1f676e139966ad09b350afd54a  0007-gpu-fastboot.patch
+dd029ed2b942b64340181337f70537a2e10fa6bcacb55ed588c41260baa4b7e4dc67d61be38ed29d29a43c92830234158da3e1ceaf5fc3fe32bc4a06a0e735fe  config-omnipha-qcom-sm8250.aarch64
+"

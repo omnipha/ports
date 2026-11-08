@@ -1,0 +1,40 @@
+diff --git a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
+index d87c261..78f839a 100644
+--- a/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
++++ b/arch/arm64/boot/dts/qcom/sm8250-oneplus-instantnoodlep.dts
+@@ -998,7 +998,11 @@
+ };
+ 
+ &gpu {
+-	status = "disabled";
++	status = "okay";
++
++	zap-shader {
++		firmware-name = "qcom/sm8250/OnePlus/instantnoodlep/a650_zap.mbn";
++	};
+ };
+ 
+ &i2c1 {
+@@ -1221,6 +1225,11 @@
+        status = "okay";
+ };
+ 
++&pon {
++	mode-bootloader = <0x02>;
++	mode-recovery = <0x01>;
++};
++
+ &pon_pwrkey {
+ 	status = "okay";
+ };
+@@ -1230,6 +1239,10 @@
+ 	status = "okay";
+ };
+ 
++&pm8009_pon {
++	status = "disabled";
++};
++
+ &qup_spi4_cs_gpio {
+ 	drive-strength = <6>;
+ 	bias-disable;
