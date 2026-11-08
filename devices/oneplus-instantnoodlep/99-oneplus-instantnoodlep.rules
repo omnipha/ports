@@ -1,0 +1,3 @@
+# OnePlus 8 Pro (instantnoodlep) udev rules
+# Blacklist fake charger battery reporting
+ACTION=="add", SUBSYSTEM=="module", KERNEL=="bq25980_charger", RUN+="/bin/sh -c 'echo 5-0066 > /sys/bus/i2c/drivers/bq25980-charger/unbind || true'"

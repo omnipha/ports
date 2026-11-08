@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=Kamera
+GenericName=Kamera-Sucher
+Comment=Live-Kamera mit libcamera
+Exec=qcam -r qt
+Icon=camera-photo
+Terminal=false
+Type=Application
+Categories=AudioVideo;Video;Photography;
+StartupNotify=true

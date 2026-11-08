@@ -61,7 +61,7 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 | [Mi 10S](https://github.com/omnipha/ports/tree/main/devices/xiaomi-thyme) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Motorola Edge 20 Pro](https://github.com/omnipha/ports/tree/main/devices/motorola-pstar) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [OnePlus 8](https://github.com/omnipha/ports/tree/main/devices/oneplus-instantnoodle) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
-| [OnePlus 8 Pro](https://github.com/omnipha/ports/tree/main/devices/oneplus-instantnoodlep) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
+| [OnePlus 8 Pro](https://github.com/omnipha/ports/tree/main/devices/oneplus-instantnoodlep) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | works |
 | [OnePlus 8T](https://github.com/omnipha/ports/tree/main/devices/oneplus-kebab) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [OnePlus 9R](https://github.com/omnipha/ports/tree/main/devices/oneplus-lemonades) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Poco F2 Pro / Redmi K30 Pro](https://github.com/omnipha/ports/tree/main/devices/xiaomi-lmi) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |

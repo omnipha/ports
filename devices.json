@@ -2613,6 +2613,74 @@
         "storage_gb": 256
       }
     ],
+    "project": {
+      "stage": "field-tested",
+      "mission": "https://github.com/omnipha/ports/issues/25"
+    },
+    "device_repo": "https://github.com/omnipha/device-oneplus-instantnoodlep",
+    "status": {
+      "boot": "works",
+      "display": "works",
+      "touch": "works",
+      "gpu": "works",
+      "wifi": "works",
+      "bluetooth": "works",
+      "audio": "works",
+      "battery": "works",
+      "cameras": "works",
+      "modem": "untested"
+    },
+    "status_evidence": {
+      "boot": {
+        "date": "2026-11-08",
+        "variant": "mb005 (IN2023 12GB/256GB), postmarketOS Linux 7.2.0 slot A bootloader unlocked",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "display": {
+        "date": "2026-11-08",
+        "variant": "mb005, native panel msmdrmfb 1440x3168@120Hz",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "touch": {
+        "date": "2026-11-08",
+        "variant": "mb005, s6sy761 touchscreen active",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "gpu": {
+        "date": "2026-11-08",
+        "variant": "mb005, Adreno 650 freedreno FD650 gles2 GMU v2.1.8",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "wifi": {
+        "date": "2026-11-08",
+        "variant": "mb005, QCA6390 ath11k NetworkManager connected",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "bluetooth": {
+        "date": "2026-11-08",
+        "variant": "mb005, BlueZ 5.87 bootmac BD-address powered",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "audio": {
+        "date": "2026-11-08",
+        "variant": "mb005, TFA9874 stereo speakers WCD9385 PipeWire HiFi UCM",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "battery": {
+        "date": "2026-11-08",
+        "variant": "mb005, bq27411 fuel-gauge 100% bq25980 blacklisted",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      },
+      "cameras": {
+        "date": "2026-11-08",
+        "variant": "mb005, 5 sensors bound /dev/media0 ak7375 VCM qcam live viewfinder",
+        "url": "https://github.com/sprintberlin/phone-second-life/blob/main/devices/mb005.md"
+      }
+    },
+    "release": {
+      "status": "unreleased",
+      "maintenance": "unowned"
+    },
     "upstream_os": {
       "ut": {
         "key": "instantnoodlep",
@@ -2623,10 +2691,10 @@
       "nura": {
         "status": "packaged-edge",
         "image": "none",
-        "note": "device package in pmaports testing; no release image",
+        "note": "device package in pmaports testing; full hardware bring-up measured on mb005",
         "source": "pmaports-mirror",
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
-        "checked": "2026-10-18"
+        "checked": "2026-11-08"
       }
     }
   },
