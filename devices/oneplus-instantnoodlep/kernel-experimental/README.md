@@ -10,4 +10,10 @@ audio, camera and GPU/fastboot patches from omnipha/linux-sm8250. The
 complete public archive was compared byte for byte with the local copy.
 `olddefconfig` resolves the module directory to
 `/usr/lib/modules/7.2.0-omnipha-sm8250-r1`, so it does not overwrite the
-installed 7.2.0 modules. No package has been built from this recipe yet.
+installed 7.2.0 modules. A local abuild of this exact recipe finished on 2026-11-08:
+`linux-omnipha-qcom-sm8250-7.2.0_git20261107-r1.apk`, 52 MB,
+SHA-256 `0d46096d124687bfb83fecda55b0fe304adbf1106b125b2bb8719d22bccf6395`.
+The package contains `boot/vmlinuz`, the OnePlus DTB and the camera
+modules under `/usr/lib/modules/7.2.0-omnipha-sm8250-r1`. The built DTB
+has GPU status okay, the zap-shader firmware name, PM8150 fastboot and
+recovery modes, and PM8009 PON disabled. It has not been installed or booted.
