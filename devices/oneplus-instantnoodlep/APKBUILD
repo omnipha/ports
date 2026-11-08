@@ -2,43 +2,66 @@
 maintainer="kouling <k0ul1ng@proton.me>"
 pkgname=device-oneplus-instantnoodlep
 pkgdesc="OnePlus 8 Pro"
-pkgver=7
-pkgrel=1
+pkgver=8
+pkgrel=0
 url="https://postmarketos.org"
 license="MIT"
 arch="aarch64"
 options="!check !archcheck"
-# Firmware is not fetched here; see the local README and firmware policy.
-# The kernel package is supplied separately; see the pinned upstream recipe.
 depends="
+	alsa-ucm-conf
+	bootmac
+	bootmac-systemd
 	linux-postmarketos-qcom-sm8250=7.2.0_git20261010-r0
 	mkbootimg
 	postmarketos-base
+	qcam
+	soc-qcom-qbootctl
 "
 makedepends="
 	devicepkg-dev
 	dtc
 "
+install="$pkgname.post-install"
 source="
+	80-battery-ignore-charger.rules
+	OnePlus8Pro-HiFi.conf
+	OnePlus8Pro.conf
+	bq25980-blacklist.conf
 	deviceinfo
+	disable-bq25980.service
 	kernel-cmdline.conf
+	qcam.desktop
 	sm8250-oneplus-instantnoodlep-empty.dts
 "
 
 build() {
 	devicepkg_build $startdir $pkgname
-
 	dtc -O dtb -o "$srcdir/dtbo.img" -I dts "$srcdir/sm8250-oneplus-instantnoodlep-empty.dts"
 }
 
 package() {
 	devicepkg_package $startdir $pkgname
-
 	install -Dm644 "$srcdir/dtbo.img" "$pkgdir/boot/dtbo.img"
+	install -Dm644 "$srcdir/bq25980-blacklist.conf" "$pkgdir/etc/modprobe.d/bq25980-blacklist.conf"
+	install -Dm644 "$srcdir/80-battery-ignore-charger.rules" "$pkgdir/usr/lib/udev/rules.d/80-battery-ignore-charger.rules"
+	install -Dm644 "$srcdir/disable-bq25980.service" "$pkgdir/usr/lib/systemd/system/disable-bq25980.service"
+	install -Dm644 "$srcdir/qcam.desktop" "$pkgdir/usr/share/applications/qcam.desktop"
+	install -Dm644 "$srcdir/OnePlus8Pro-HiFi.conf" "$pkgdir/usr/share/alsa/ucm2/OnePlus8Pro/HiFi.conf"
+	install -Dm644 "$srcdir/OnePlus8Pro.conf" "$pkgdir/usr/share/alsa/ucm2/OnePlus8Pro/OnePlus8Pro.conf"
+	install -Dm644 "$srcdir/OnePlus8Pro.conf" "$pkgdir/usr/share/alsa/ucm2/conf.d/OnePlus8Pro/OnePlus8Pro.conf"
+	mkdir -p "$pkgdir/usr/share/alsa/ucm2/conf.d/sm8250"
+	ln -s ../../OnePlus8Pro/OnePlus8Pro.conf "$pkgdir/usr/share/alsa/ucm2/conf.d/sm8250/OnePlus8Pro.conf"
 }
 
 sha512sums="
+32f5cef1820eea51f8fc15aacc5065fbbd4583a6ce2fd1666f7a0ae61f0036e177ae6a1ded0bf16ea00b553c780d398930e23e933cee632a7c9c49f0892f19d6  80-battery-ignore-charger.rules
+a0030479c33e85bd04cb1d04117a43cc66267f1607c855fd82cafd9b0eb268d27b30a13d1f1f93ebfc0a54fc657f02ac2acbfb89fd7d4d310da461c507729273  OnePlus8Pro-HiFi.conf
+efc4bf407d70226ddcdfb1c69dfc46f48d315eb72003bebf949844106ccb43a8b4c8c40af51f6268b45901413ed2dbad9ed7b7778ed68f780f85c72463db76d4  OnePlus8Pro.conf
+549f8df08d4a9c3ed8f7076b39864ee667a0585d83b3661545a21b74034a045660382f32eb88a4d329eaf9af2f56cdc40181febe024302cd8f21378013ed1709  bq25980-blacklist.conf
 a70fa2b360f8e719a28f80eed31a1d2a440e0779a7a11da527b872c12535c14ed015fb8b1a56274b873f4d9c7916a872cf3845bb0eb59efcf05557ec183c83ac  deviceinfo
+d07950ac0dbca6f3dbf68a700a9673a2d1c40b704a74ec48ca0d21209fde217fc343e8e0577a594e4328a9d6a6d90aaa582d730821b8977ff23e0400992bc178  disable-bq25980.service
 04cc87ed6b0041ede7edb2693ee4dd58d6ac8f1b036a0b37e1a86cce57b66e35d9f400a3ea75d75278b028132535033915f3a2fff919866e85336c5f92a68ffe  kernel-cmdline.conf
+d8925ab3720ce0862014f5409bbc2b03071fd1829ec5aafaea5a3cb47b0471f7cab27289f898531655ed6e3025a34bd3804a156cd27170826c9c90099c58da11  qcam.desktop
 06269dcbd405a18576a476bb976d39bcf91e8c7885a87716f510d66abc2ffe3bfabe56c286ad6fc88878de07427e58965ac833ac0e8cfa7ad393c2fa3b535c88  sm8250-oneplus-instantnoodlep-empty.dts
 "

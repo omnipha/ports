@@ -1,0 +1,2 @@
+# Ignore bq25980-battery so upower doesn't aggregate it as a fake 0% battery
+SUBSYSTEM=="power_supply", KERNEL=="bq25980-battery", ENV{UPOWER_IGNORE}="1"

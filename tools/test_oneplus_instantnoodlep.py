@@ -25,14 +25,20 @@ def test_package_metadata_and_source_checksums():
     names = ("pkgname", "pkgver", "pkgrel", "arch", "depends", "makedepends", "source", "sha512sums")
     package = shell_values(DEVICE / "APKBUILD", names)
     assert (package["pkgname"], package["pkgver"], package["arch"]) == (
-        "device-oneplus-instantnoodlep", "7", "aarch64"
+        "device-oneplus-instantnoodlep", "8", "aarch64"
     )
     assert set(package["depends"].split()) == {
-        "linux-postmarketos-qcom-sm8250=7.2.0_git20261010-r0", "mkbootimg", "postmarketos-base"
+        "alsa-ucm-conf", "bootmac", "bootmac-systemd",
+        "linux-postmarketos-qcom-sm8250=7.2.0_git20261010-r0", "mkbootimg",
+        "postmarketos-base", "qcam", "soc-qcom-qbootctl",
     }
     assert set(package["makedepends"].split()) == {"devicepkg-dev", "dtc"}
     sources = set(package["source"].split())
-    assert sources == {"deviceinfo", "kernel-cmdline.conf", "sm8250-oneplus-instantnoodlep-empty.dts"}
+    assert sources == {
+        "80-battery-ignore-charger.rules", "OnePlus8Pro-HiFi.conf", "OnePlus8Pro.conf",
+        "bq25980-blacklist.conf", "deviceinfo", "disable-bq25980.service",
+        "kernel-cmdline.conf", "qcam.desktop", "sm8250-oneplus-instantnoodlep-empty.dts",
+    }
     checksums = {name: digest for digest, name in (line.split() for line in package["sha512sums"].splitlines() if line)}
     assert set(checksums) == sources
     for name in sources:
@@ -56,7 +62,9 @@ def test_deviceinfo_matches_upstream_boot_parameters():
 def test_dtbo_build_and_install_with_stubbed_devicepkg(tmp_path):
     srcdir = tmp_path / "src"
     srcdir.mkdir()
-    shutil.copy(DEVICE / "sm8250-oneplus-instantnoodlep-empty.dts", srcdir)
+    package = shell_values(DEVICE / "APKBUILD", ("source",))
+    for name in package["source"].split():
+        shutil.copy(DEVICE / name, srcdir / Path(name).name)
     pkgdir = tmp_path / "pkg"
     script = (
         '. "$1"; startdir="$2"; srcdir="$3"; pkgdir="$4"; '

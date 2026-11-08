@@ -1,0 +1,13 @@
+[Unit]
+Description=Unbind bq25980 charger to fix dual-battery 48% aggregation
+DefaultDependencies=no
+After=systemd-modules-load.service
+Before=upower.service
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'if [ -e /sys/bus/i2c/drivers/bq25980-charger/5-0066 ]; then echo 5-0066 > /sys/bus/i2c/drivers/bq25980-charger/unbind; fi'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=basic.target
