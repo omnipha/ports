@@ -1,0 +1,19 @@
+# SPDX-License-Identifier: CC0-1.0
+%YAML 1.1
+---
+version: 1
+algorithms:
+  - BlackLevel:
+      blackLevel: 4096
+  - Awb:
+  - Adjust:
+  - Agc:
+  - Af:
+      coarseStep: 384
+      fineSteps: 4
+      warmup: 4
+      stopRatio: 0.95
+      stopCount: 2
+      changeThreshold: 0.1
+      changeCount: 2
+...
