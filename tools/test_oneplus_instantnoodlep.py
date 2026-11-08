@@ -24,8 +24,8 @@ def shell_values(path, names):
 def test_package_metadata_and_source_checksums():
     names = ("pkgname", "pkgver", "pkgrel", "arch", "depends", "makedepends", "source", "sha512sums")
     package = shell_values(DEVICE / "APKBUILD", names)
-    assert (package["pkgname"], package["pkgver"], package["arch"]) == (
-        "device-oneplus-instantnoodlep", "8", "aarch64"
+    assert (package["pkgname"], package["pkgver"], package["pkgrel"], package["arch"]) == (
+        "device-oneplus-instantnoodlep", "8", "1", "aarch64"
     )
     assert set(package["depends"].split()) == {
         "alsa-ucm-conf", "bootmac", "bootmac-systemd",
@@ -37,7 +37,7 @@ def test_package_metadata_and_source_checksums():
     assert sources == {
         "80-battery-ignore-charger.rules", "OnePlus8Pro-HiFi.conf", "OnePlus8Pro.conf",
         "bq25980-blacklist.conf", "deviceinfo", "disable-bq25980.service",
-        "kernel-cmdline.conf", "qcam.desktop", "sm8250-oneplus-instantnoodlep-empty.dts",
+        "kernel-cmdline.conf", "oneplus-instantnoodlep-qcam.desktop", "sm8250-oneplus-instantnoodlep-empty.dts",
     }
     checksums = {name: digest for digest, name in (line.split() for line in package["sha512sums"].splitlines() if line)}
     assert set(checksums) == sources
@@ -81,3 +81,6 @@ def test_dtbo_build_and_install_with_stubbed_devicepkg(tmp_path):
         text=True,
     )
     assert 'compatible = "qcom,kona";' in result.stdout
+    apps = pkgdir / "usr" / "share" / "applications"
+    assert (apps / "oneplus-instantnoodlep-qcam.desktop").is_file()
+    assert not (apps / "qcam.desktop").exists()  # owned by the qcam package
