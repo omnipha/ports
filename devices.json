@@ -7290,10 +7290,10 @@
       "nura": {
         "status": "unverified",
         "image": "none",
-        "note": "Model 23117RA68G (4G, not garnet 5G); experimental port candidate. No emerald or mt6789 device package in pinned pmaports mirror dfb010f5. Android emerald device tree uses a prebuilt kernel and DTB; no verified Nura boot. Exact unit bootloader unlock and firmware are not yet tested.",
+        "note": "Model 23117RA68G (4G, not garnet 5G); experimental port candidate. No emerald or mt6789 device package in pinned pmaports mirror dfb010f5. Android emerald device tree uses a prebuilt kernel and DTB; no verified Nura boot. Bootloader unlock severely blocked: Xiaomi HyperOS community quota daily limit reached, MTK V6 BROM requires paid credit auth and complex manual intervention; not recommended for purchase.",
         "source": "https://github.com/omnipha/pmaports-mirror/commit/dfb010f5b9885d185d089b6e1e493030062f9756",
         "url": "https://github.com/rexprjkt/android_device_xiaomi_emerald",
-        "checked": "2026-10-19"
+        "checked": "2026-11-11"
       }
     }
   },
