@@ -1,0 +1,65 @@
+--- a/board/samsung/exynos-mobile/exynos-mobile.env
++++ b/board/samsung/exynos-mobile/exynos-mobile.env
+@@ -5,7 +5,7 @@
+ bootdelay=0
+ bootmenu_delay=30
+ bootcmd=mw.l 0x19030070 0x1281 1;
+-	font select 16x32;
++	font select 32x64;
+ 	setenv loadaddr 0x90000000;
+ 	if ufs init && scsi scan &&
+ 	   part start scsi 0 31 ud_start &&
+@@ -33,4 +33,4 @@
+ bootmenu_5=Recovery=run reboot_recovery
+ 
+ button_cmd_0_name=Volume Down Key
+-button_cmd_0=mw.l 0x19030070 0x1281 1; font select 16x32; bootmenu -1
++button_cmd_0=mw.l 0x19030070 0x1281 1; font select 32x64; bootmenu -1
+--- a/drivers/video/Kconfig
++++ b/drivers/video/Kconfig
+@@ -50,6 +50,11 @@
+ 	  Font for video console driver, 16 x 32 pixels
+ 	  Provides character bitmap data in header file.
+ 	  When selecting multiple fonts, you may want to enable CMD_SELECT_FONT too.
++
++config VIDEO_FONT_32X64
++	bool "32 x 64 font size"
++	help
++	  Double-sized 16 x 32 bitmap font for the video console.
+ 
+ config VIDEO_LOGO
+ 	bool "Show the U-Boot logo on the display"
+--- a/include/video_font.h
++++ b/include/video_font.h
+@@ -21,6 +21,9 @@
+ #if defined(CONFIG_VIDEO_FONT_16X32)
+ #include <video_font_ter16x32.h>
+ #endif
++#if defined(CONFIG_VIDEO_FONT_32X64)
++#include <video_font_ter32x64.h>
++#endif
+ 
+ static struct video_fontdata __maybe_unused fonts[] = {
+ #if defined(CONFIG_VIDEO_FONT_8X16)
+@@ -35,6 +38,9 @@
+ #if defined(CONFIG_VIDEO_FONT_16X32)
+ 	FONT_ENTRY(16, 32, 16x32),
+ #endif
++#if defined(CONFIG_VIDEO_FONT_32X64)
++	FONT_ENTRY(32, 64, 32x64),
++#endif
+ 	{/* list terminator */}
+ };
+ 
+--- a/lib/efi_loader/efi_console.c
++++ b/lib/efi_loader/efi_console.c
+@@ -344,7 +344,8 @@
+ 	struct udevice *dev;
+ 	struct vidconsole_priv *priv;
+ 
+-	if (!stdout_name || strncmp(stdout_name, "vidconsole", 10))
++	/* stdout can be a comma-separated console mux, e.g. serial,vidconsole. */
++	if (!stdout_name || !strstr(stdout_name, "vidconsole"))
+ 		return -ENODEV;
+ 	stdout_dev = stdio_get_by_name("vidconsole");
+ 	if (!stdout_dev)

@@ -1,0 +1,14 @@
+diff --git a/board/samsung/exynos-mobile/exynos-mobile.env b/board/samsung/exynos-mobile/exynos-mobile.env
+index c1889b3..ff2a812 100644
+--- a/board/samsung/exynos-mobile/exynos-mobile.env
++++ b/board/samsung/exynos-mobile/exynos-mobile.env
+@@ -5,0 +6 @@ bootdelay=0
++bootmenu_delay=30
+@@ -6,0 +8 @@ bootcmd=mw.l 0x19030070 0x1281 1;
++	font select 16x32;
+@@ -17 +19 @@ bootcmd=mw.l 0x19030070 0x1281 1;
+-	bootmenu
++	bootmenu -1
+@@ -34 +36 @@ button_cmd_0_name=Volume Down Key
+-button_cmd_0=mw.l 0x19030070 0x1281 1; bootmenu
++button_cmd_0=mw.l 0x19030070 0x1281 1; font select 16x32; bootmenu -1

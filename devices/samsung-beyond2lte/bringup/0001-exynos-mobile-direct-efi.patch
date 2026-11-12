@@ -1,0 +1,29 @@
+diff --git a/board/samsung/exynos-mobile/exynos-mobile.env b/board/samsung/exynos-mobile/exynos-mobile.env
+index 4e68f8c3..c1889b3d 100644
+--- a/board/samsung/exynos-mobile/exynos-mobile.env
++++ b/board/samsung/exynos-mobile/exynos-mobile.env
+@@ -5,15 +5,15 @@ stderr=serial,vidconsole
+ bootdelay=0
+ bootcmd=mw.l 0x19030070 0x1281 1;
+ 	setenv loadaddr 0x90000000;
+-	ufs init;
+-	scsi scan;
+-	part start scsi 0 31 ud_start;
+-	part size  scsi 0 31 ud_size;
+-	blkmap create root;
+-	blkmap map root 0 0x${ud_size} linear scsi 0 0x${ud_start};
+-	ls blkmap 0:1;
+-	bootefi bootmgr;
+-	pause;
++	if ufs init && scsi scan &&
++	   part start scsi 0 31 ud_start &&
++	   part size scsi 0 31 ud_size &&
++	   blkmap create root &&
++	   blkmap map root 0 0x${ud_size} linear scsi 0 0x${ud_start} &&
++	   load blkmap 0:1 ${loadaddr} EFI/BOOT/BOOTAA64.EFI; then
++		bootefi ${loadaddr};
++	fi;
++	echo Direct EFI boot failed or returned;
+ 	bootmenu
+ 
+ fastbootcmd=echo "Fastboot Mode";
