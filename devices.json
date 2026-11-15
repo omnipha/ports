@@ -6099,6 +6099,52 @@
     }
   },
   {
+    "id": "samsung-p3s",
+    "codename": "samsung-p3s",
+    "name": "Samsung Galaxy S21 Ultra 5G",
+    "vendor": "Samsung",
+    "year": 2021,
+    "soc": "exynos2100",
+    "soc_name": "Exynos 2100",
+    "aliases": [
+      "p3s"
+    ],
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 128
+      },
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      },
+      {
+        "ram_gb": 16,
+        "storage_gb": 512
+      }
+    ],
+    "hardware_source": "https://www.samsung.com/lb/business/smartphones/galaxy-s/galaxy-s21-ultra-5g-g988-sm-g998bztgmea/",
+    "hardware_checked": "2026-11-15",
+    "project": {
+      "stage": "research"
+    },
+    "upstream_os": {
+      "ut": {
+        "key": "p3s",
+        "listed": false,
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-11-15"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "Device status not checked; the Nura wiki page was inaccessible during inspection. No Omnipha boot or hardware tests recorded.",
+        "source": "https://wiki.nura.eco/wiki/Samsung_Galaxy_S21_Ultra_(samsung-p3s)",
+        "checked": "2026-11-15"
+      }
+    }
+  },
+  {
     "id": "samsung-z3s",
     "codename": "samsung-z3s",
     "name": "Samsung Galaxy S20 Ultra",
