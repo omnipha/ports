@@ -3102,6 +3102,41 @@
     }
   },
   {
+    "id": "oppo-cph2207",
+    "codename": "oppo-cph2207",
+    "name": "OPPO Find X3 Neo",
+    "vendor": "OPPO",
+    "soc": "sm8250",
+    "soc_name": "Snapdragon 865",
+    "variants": [
+      {
+        "ram_gb": 12,
+        "storage_gb": 256
+      }
+    ],
+    "hardware_source": "https://www.oppo.com/es/smartphones/series-find-x/find-x3-neo/",
+    "hardware_checked": "2026-11-15",
+    "project": {
+      "stage": "research"
+    },
+    "upstream_os": {
+      "ut": {
+        "key": "cph2207",
+        "listed": false,
+        "note": "No match for the provisional model-number key in the Ubuntu Touch device index. The device codename is unverified.",
+        "source": "devices.ubuntu-touch.io",
+        "checked": "2026-11-15"
+      },
+      "nura": {
+        "status": "not-checked",
+        "image": "none",
+        "note": "Nura support has not been checked. No Omnipha boot or hardware tests are recorded.",
+        "source": "not checked",
+        "checked": "2026-11-15"
+      }
+    }
+  },
+  {
     "id": "oppo-cph2305",
     "codename": "oppo-cph2305",
     "name": "Oppo Find X5 Pro",

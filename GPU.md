@@ -9,7 +9,7 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 
 **Max RAM** is the largest sold variant. For language models RAM usually limits model size before the GPU does. A device is not suitable just because it appears here: check the Linux GPU column and [DEVICES.md](DEVICES.md).
 
-64 of 255 devices have a known GPU. 191 are not mapped yet.
+65 of 256 devices have a known GPU. 191 are not mapped yet.
 
 | Phone | SoC | GPU | 3DMark Wild Life Extreme | Geekbench 6 OpenCL | Max RAM | Linux GPU |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -64,6 +64,7 @@ Use this to pick hardware for GPU workloads such as local language models. Two d
 | [OnePlus 8 Pro](https://github.com/omnipha/ports/tree/main/devices/oneplus-instantnoodlep) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [OnePlus 8T](https://github.com/omnipha/ports/tree/main/devices/oneplus-kebab) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [OnePlus 9R](https://github.com/omnipha/ports/tree/main/devices/oneplus-lemonades) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
+| [OPPO Find X3 Neo](https://github.com/omnipha/ports/tree/main/devices/oppo-cph2207) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Poco F2 Pro / Redmi K30 Pro](https://github.com/omnipha/ports/tree/main/devices/xiaomi-lmi) | Snapdragon 865 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [Poco F3 / Redmi K40](https://github.com/omnipha/ports/tree/main/devices/xiaomi-alioth) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
 | [POCO F4 / Redmi K40S](https://github.com/omnipha/ports/tree/main/devices/xiaomi-munch) | Snapdragon 870 (`sm8250`) | Adreno 650 | 1218 | 3468 | 12 GB | untested |
