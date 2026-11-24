@@ -5939,6 +5939,16 @@
         "url": "https://gitlab.postmarketos.org/postmarketOS/pmaports/-/tree/master/device/testing",
         "checked": "2026-10-18"
       }
+    },
+    "status": {
+      "stability": "partial"
+    },
+    "status_evidence": {
+      "stability": {
+        "date": "2026-11-24",
+        "variant": "SM-G975F 6/128",
+        "url": "https://github.com/omnipha/linux-samsung-s10-exynos9820/issues/44#issuecomment-7140717271"
+      }
     }
   },
   {
