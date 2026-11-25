@@ -1852,14 +1852,6 @@
       {
         "ram_gb": 6,
         "storage_gb": 256
-      },
-      {
-        "ram_gb": 8,
-        "storage_gb": 256
-      },
-      {
-        "ram_gb": 12,
-        "storage_gb": 256
       }
     ],
     "hardware_source": "https://www.gsmarena.com/zte_nubia_focus-12849.php",
@@ -1871,7 +1863,7 @@
       "ut": {
         "key": "nx6437n",
         "listed": false,
-        "note": "No match in the Ubuntu Touch device index. NX6437N is a model number from a retail listing, not a verified device codename; GSMArena lists model Z2455.",
+        "note": "No match in the Ubuntu Touch device index. Z2455 is confirmed by GSMArena, DevCheck and DeviceAtlas; NX6437N appears only in a retail listing and has no source. Key remains provisional. Manufacturer-confirmed RAM is 4 and 6 GB; 8 and 12 GB listings (GSMArena, retailers) are unconfirmed, 12 GB likely expanded-RAM confusion. Official 16 GB dynamic = 6 GB physical + 10 GB virtual.",
         "source": "devices.ubuntu-touch.io",
         "checked": "2026-11-25"
       },
